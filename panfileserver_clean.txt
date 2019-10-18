@@ -1,0 +1,3 @@
+while read name; do mv -v ./$name.pdf /mnt/panfiles03/ ; done < ~/list100719.txt
+while read name; do ls -lart ./$name.pdf  ; done < ~/list100719.txt
+

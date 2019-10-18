@@ -1,0 +1,31 @@
+STEP 1: Edit the /etc/my.cnf file. Under the [mysqld] section, add the following four lines:
+
+log-bin
+server_id=1
+replicate-do-db=employees
+bind-address=192.168.0.18
+and restart MariaDB:
+
+# systemctl restart mariadb
+
+MariaDB [(none)]> CREATE USER 'slave'@'localhost' IDENTIFIED BY 'nx123@19';
+MariaDB [(none)]> GRANT REPLICATION SLAVE ON *.* TO slave IDENTIFIED BY 'nx123@19' WITH GRANT OPTION;
+MariaDB [(none)]> FLUSH PRIVILEGES;
+MariaDB [(none)]> FLUSH TABLES WITH READ LOCK;
+MariaDB [(none)]> SHOW MASTER STATUS;
+
+
++---------------------+----------+--------------+------------------+
+| File                | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++---------------------+----------+--------------+------------------+
+| irctcnew-bin.000002 |     1387 |              |                  |
++---------------------+----------+--------------+------------------+
+1 row in set (0.00 sec)
+
+
+
+MariaDB [(none)]> UNLOCK TABLES;
+MariaDB [(none)]> exit;
+
+
+MariaDB [(none)]> CHANGE MASTER TO MASTER_HOST='192.168.10.220', MASTER_USER='slave', MASTER_PASSWORD='nx123@19', MASTER_PORT=3306, MASTER_LOG_FILE='irctcnew-bin.000002', MASTER_LOG_POS=1387, MASTER_CONNECT_RETRY=10, MASTER_USE_GTID=current_pos;
