@@ -34,3 +34,12 @@ echo "*****************"
 echo "Checking installed ports for known security problems"
 pkg audit -F | tee ${LOG_FILE}
 echo "Finished updates: `date`" | tee ${LOG_FILE}
+
+
+# pkg update
+# pkg install webmin
+# /usr/local/lib/webmin/setup.sh
+# sysrc webmin_enable="YES"
+service webmin start
+sockstat -4 -6 |grep 10000
+

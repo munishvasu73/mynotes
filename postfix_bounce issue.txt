@@ -1,0 +1,9 @@
+
+
+In order to avoid the loop issue you have to enable in /etc/postfix/main.cf the following statement.
+header_checks = regexp:/etc/postfix/header_checks
+Then, add the following line in /etc/postfix/header_checks
+/^Delivered-To: .*/ IGNORE
+Then, rebuild the hash table and reload the postfix configuration:
+# postmap /etc/postfix/header_checks
+# service postfix reload
