@@ -1,0 +1,22 @@
+
+ls-boot:~ # cat /etc/init.d/after.local 
+touch /var/log/test.log
+to this:
+ls-boot:~ # cat /etc/init.d/after.local 
+#!/bin/bash
+touch /var/log/test.log
+Reboot the server or restart the systemd processes as follows:
+ls-boot:~ # systemctl daemon-reload
+ls-boot:~ # systemctl restart after.local
+ls-boot:~ # systemctl status after.local
+after.local.service
+   Loaded: loaded (/etc/init.d/after.local)
+   Active: active (exited) since Wed 2016-01-06 09:32:19 MST; 11s ago
+  Process: 2594 ExecStart=/etc/init.d/after.local start (code=exited, status=0/SUCCESS)
+
+ls-boot:~ # ls -l /var/log/test.log
+-rw-r--r-- 1 root root 0 Jan  6 09:32 /var/log/test.log
+
+
+Cause
+The /etc/init.d/after.local file was missing the hashpling at the beginning of the file. A hashpling is required for any systemd service script.

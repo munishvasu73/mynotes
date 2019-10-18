@@ -1,0 +1,35 @@
+Configuring in E1 mode
+******************************
+Step 1:
+Go to   :   /etc/modprobe.d/dahdi.conf  (ie:  vi /etc/modprobe.d/dahdi.conf)
+And enter below line at last  ,save and exit
+options wcte13xp default_linemode=e1
+
+Step 2:
+Run the below command as root
+# modprobe wcte13xp default_linemode=e1
+#dahdi_genconf -v
+#dahdi_cfg -v   (make sure the ouput should show 31 channels)
+
+Note:  dahdi_genconf  will generate default configs for digium cards,  if  your  pri  CRC4 is disabled, then do the changes in   /etc/dahdi/system.conf
+
+Step 3
+Now open /etc/asterisk/chan_dahdi.conf and add the below line at the last line (use shift+g to go to last line in putty)
+#include dahdi-channels.conf
+
+Step 4
+Dialplan to dial via PRI
+vi /etc/asterisk/extension.conf
+
+[default]   ; the default will already exists in most asterisk installation if not create a new
+exten => _9X.,1,Dial(DAHDI/g0/${EXTEN:1},30)
+exten => _9X.,2,Hangup()
+
+Note:  9 is just a prefix, and it will be discarded while dialling out
+Note: for vicidial /goautodial use below dialplan in dialplan entry or extensions.conf
+exten => _9X.,1,AGI(agi://127.0.0.1:4577/call_log)
+exten => _9X.,2,Dial(DAHDI/g0/${EXTEN:1},,Tto)
+exten => _9X.,3,Hangup
+
+
+php_errors.log
