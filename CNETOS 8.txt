@@ -1,0 +1,23 @@
+
+Webmin on centos 8
+
+#dnf upgrade
+Install perl dependencies
+#dnf -y install perl perl-Net-SSLeay openssl perl-IO-Tty perl-Encode-Detect
+Create Repo
+sudo tee  /etc/yum.repos.d/webmin.repo<<EOF
+[Webmin]
+name=Webmin Distribution Neutral
+baseurl=https://download.webmin.com/download/yum
+enabled=1
+EOF
+import repository GPG key
+rpm --import http://www.webmin.com/jcameron-key.asc
+Install webmin
+dnf install webmin
+Package info
+rpm -qi webmin 
+Firewall
+firewall-cmd --zone=public --add-port=10000/tcp --permanent
+firewall-cmd --reload
+
