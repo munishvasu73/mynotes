@@ -1,0 +1,44 @@
+freebsd 12
+
+
+
+
+root@myfreebsd:~ # zfs list
+NAME                 USED  AVAIL  REFER  MOUNTPOINT
+zroot               2.88G  12.3G   117K  /zroot
+zroot/ROOT          1.15G  12.3G   117K  none
+zroot/ROOT/default  1.15G  12.3G  1.15G  /
+zroot/tmp            128K  12.3G   128K  /tmp
+zroot/usr           1.73G  12.3G   117K  /usr
+zroot/usr/home       165K  12.3G   165K  /usr/home
+zroot/usr/ports      945M  12.3G   945M  /usr/ports
+zroot/usr/src        823M  12.3G   823M  /usr/src
+zroot/var            805K  12.3G   117K  /var
+zroot/var/audit      117K  12.3G   117K  /var/audit
+zroot/var/crash      117K  12.3G   117K  /var/crash
+zroot/var/log        218K  12.3G   218K  /var/log
+zroot/var/mail       117K  12.3G   117K  /var/mail
+zroot/var/tmp        117K  12.3G   117K  /var/tmp
+
+
+root@myfreebsd:~ # zfs mount
+zroot/ROOT/default              /
+zroot/tmp                       /tmp
+zroot/usr/home                  /usr/home
+zroot/usr/ports                 /usr/ports
+zroot/usr/src                   /usr/src
+zroot/var/audit                 /var/audit
+zroot/var/crash                 /var/crash
+zroot/var/log                   /var/log
+zroot/var/mail                  /var/mail
+zroot/var/tmp                   /var/tmp
+zroot                           /zroot
+
+
+#pkg update
+#pkg install webmin
+
+#/usr/local/lib/webmin/setup.sh
+#sysrc webmin_enable="YES"
+#service webmin start
+#sockstat -4 -6 |grep 10000

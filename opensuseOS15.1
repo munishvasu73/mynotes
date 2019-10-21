@@ -1,0 +1,60 @@
+
+opensuse
+
+
+webmin install
+
+zypper install perl perl-Net-SSLeay openssl perl-IO-Tty perl-Encode-Detect
+
+cat <<EOF > /etc/zypp/repos.d/webmin.repo
+[Webmin]
+name=Webmin Distribution Neutral
+#baseurl=http://download.webmin.com/download/yum
+mirrorlist=http://download.webmin.com/download/yum/mirrorlist
+enabled=1
+EOF
+'
+> wget -q http://www.webmin.com/jcameron-key.asc
+> sudo rpm --import jcameron-key.asc
+
+sudo zypper -n in webmin
+
+
+
+
+
+script to install webmin
+#!/bin/sh
+
+ROOT_PASSWORD="password"
+TMP=`mktemp -t opensuse-setup-webmin.sh.XXXXXX`
+trap "rm $TMP* 2>/dev/null" 0
+
+sudo su -c '
+cat <<EOF > /etc/zypp/repos.d/webmin.repo
+[Webmin]
+name=Webmin Distribution Neutral
+#baseurl=http://download.webmin.com/download/yum
+mirrorlist=http://download.webmin.com/download/yum/mirrorlist
+enabled=1
+EOF
+'
+wget -q http://www.webmin.com/jcameron-key.asc -O ${TMP}
+sudo rpm --import ${TMP}
+
+sudo zypper -n in webmin
+sudo /usr/libexec/webmin/changepass.pl /etc/webmin root ${ROOT_PASSWORD}
+sudo systemctl enable webmin
+
+firewall_open_tcp()
+{
+  for t in FW_SERVICES_EXT_TCP FW_SERVICES_DMZ_TCP FW_SERVICES_INT_TCP; do
+    sudo sed -e "s/^${t}=\"\(.*\)\"/${t}=\"\1 $1\"/g" \
+         -i /etc/sysconfig/SuSEfirewall2
+  done
+  sudo systemctl restart SuSEfirewall2
+}
+firewall_open_tcp 10000
+
+sudo reboot
+
