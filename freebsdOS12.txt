@@ -35,6 +35,21 @@ zroot/var/tmp                   /var/tmp
 zroot                           /zroot
 
 
+STATIC IP
+$ su -
+# hostname freebsd.example.com
+# echo "\"hostname=freebsd.example.com\"" >>  /etc/rc.conf
+
+# vi /etc/rc.conf
+ifconfig_em0="inet 192.168.13.4 netmask 255.255.255.0"
+defaultrouter="192.168.13.1"
+# /etc/rc.d/netif restart && /etc/rc.d/routing restart
+
+UPDATE
+#freebsd-update fetch install
+
+
+WEBMIN
 #pkg update
 #pkg install webmin
 
