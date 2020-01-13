@@ -1,0 +1,466 @@
+    1  nmtui
+    2  ip add show
+    3  yum install nano wget 
+    4  yum update
+    5  nano /etc/selinux/config 
+    6  reboot
+    7  getenforce 
+    8  yum install deltarpm
+    9  yum update
+   10  reboot
+   11  cd /usr/local/src ; wget http://centos-webpanel.com/cwp-latest ;sh cwp-latest
+   12  reboot
+   13  http://203.122.13.226:2030
+   14  SSL: https://203.122.13.226:2031
+   15  ---------------------
+   16  Username: root
+   17  Password: ssh server root password
+   18  MySQL root Password: T0BIpLyUa7mq
+   19  mysql -u root -p
+   20  mysql -u root -p irctc < ~/irctc010819.sql 
+   21  mysql -u irctc01  -p irctc < ~/irctc010819.sql 
+   22  mysql -u irctc01  -p irctc01_irctc < ~/irctc010819.sql 
+   23  cd /home/irctc01/
+   24  ls
+   25  cd public_html/
+   26  ls -lart
+   27  mv .htaccess .htaccess.bak
+   28  ls -lart
+   29  chown -R irctc01:irctc01 *
+   30  ls -lart
+   31  chown -R irctc01:irctc01 .htaccess.bak 
+   32  nano phpinfo.php
+   33  chown -R irctc01:irctc01 phpinfo.php 
+   34  mv .htaccess.bak .htaccess
+   35  ls -lart
+   36  mv .htaccess .htaccess.bak01
+   37  ls -lart
+   38  cd /usr/local/apache/
+   39  cd bin
+   40  ./apachectl -M
+   41  cd /home/irctc01/
+   42  ls
+   43  cd public_html/
+   44  ls
+   45  nano /etc/postfix/main.cf 
+   46  mailq
+   47  hostname -r
+   48  hostname -s
+   49  hostname -f
+   50  nano /etc/hostname
+   51  nano /etc/hosts
+   52  cat /etc/hosts
+   53  mailq
+   54  postsuper -d ALL
+   55  yum install mailx
+   56  nano /etc/postfix/main.cf 
+   57  locate ca-bundle.crt
+   58  yum install cyrus-sasl-plain
+   59  locate ca-bundle.crt
+   60  nano /etc/postfix/main.cf 
+   61  nano /etc/postfix/sasl_passwd
+   62  postmap /etc/postfix/sasl_passwd
+   63  chown root:postfix /etc/postfix/sasl_passwd*
+   64  chmod 640 /etc/postfix/sasl_passwd*
+   65  service postfix restart
+   66  echo "This is a test." | mail -s "test message" admin@jaisteel.in
+   67  mailq
+   68  nano /etc/postfix/sasl_passwd
+   69  postmap /etc/postfix/sasl_passwd
+   70  echo "This is a test." | mail -s "test message" admin@jaisteel.in
+   71  mailq
+   72  echo "This is a test." | mail -s "test message" admin@nationxpress.in
+   73  echo "This is a test." | mail -d  -s "test message" admin@nationxpress.in
+   74  echo "This is a test." | mail -v  -s "test message" admin@nationxpress.in
+   75  clear
+   76  echo "This is a test." | mail -vvv  -s "test message" admin@nationxpress.in
+   77  man mail
+   78  ls
+   79  mail -v -s "test" itadmin@nationxpress.in < devirctc.csr
+   80  echo "This is a test. irctc.textnow.xyz is sending mail via nationxpress.co noreply mails " | mail -vvv  -s "test message" itincharge@nationxpress.in
+   81  echo "This is a test. irctc.textnow.xyz is sending mail via nationxpress.co noreply mails " | mail -vvv  -s "test message" itadmin@nationxpress.in
+   82  tailf /var/log/maillog
+   83  mailq
+   84  cat /var/log/maillog
+   85  service postfix restart
+   86  cat /var/log/maillog
+   87  echo "This is a test. irctc.textnow.xyz is sending mail via nationxpress.co noreply mails " | mail -vvv  -s "test message" itadmin@nationxpress.in
+   88  cat /var/log/maillog
+   89  history
+   90  cat /etc/redhat-release 
+   91   yum install cyrus-sasl-plainlocate ca-bundle.crt
+   92  59
+   93  locate ca-bundle.crt
+   94  nano /etc/postfix/main.cf
+   95  crontab -l
+   96  cd /var/spool/cron/
+   97  ls
+   98  cd root
+   99  cat root 
+  100  ip add show
+  101  cd /home/
+  102  ls
+  103  cd irctc01/
+  104  ls
+  105  cd tmp
+  106  ls
+  107  cd ..
+  108  grep -r -H "cron-auto-refund.php" ./
+  109  ls
+  110  cd public_html/
+  111  ls
+  112  cd cron/
+  113  ls
+  114  ls -lart
+  115  which php
+  116  pwd
+  117  /usr/local/bin/php -q /home/irctc01/public_html/cron/cron-auto-refund.php
+  118  time /usr/local/bin/php -q /home/irctc01/public_html/cron/cron-auto-refund.php
+  119  /usr/local/bin/php  /home/irctc01/public_html/cron/cron-auto-refund.php
+  120  cat  /home/irctc01/public_html/cron/cron-auto-refund.php
+  121  yum update
+  122  nano /etc/ssh/sshd_config 
+  123  service sshd restart
+  124  nano /etc/ssh/sshd_config 
+  125  /usr/local/bin/php -version
+  126  crontab -l
+  127  passwd 
+  128  mysql -u root -p
+  129  cd
+  130  ls
+  131  ls -lart
+  132  mysql -u root -p
+  133  yum update
+  134  ls
+  135  yum install xinetd
+  136  rpm -ivh check-mk-agent-1.5.0p21-1.noarch.rpm 
+  137  nano /etc/xinetd.d/check_mk 
+  138  yum update
+  139  nano /etc/sysconfig/network-scripts/ifcfg-ens192 
+  140  reboot
+  141  cd /home/irctc01/public_html/
+  142  ls
+  143  nano .htaccess
+  144  reboot
+  145  cd /home/irctc01/
+  146  ls
+  147  cd public_html/
+  148  ls
+  149  csf -x
+  150  cd /usr/local/apache/logs/
+  151  ls
+  152  cat access_log 
+  153  cat error_log 
+  154  tail -f /var/log/php-selector-rebuild.log
+  155  nano /etc/sysconfig/network-scripts/ifcfg-ens192 
+  156  ip add show
+  157  reboot
+  158  netstat -tuna
+  159  ip add show
+  160  journalctl -xe
+  161  nano /usr/local/apache/conf/sharedip.conf
+  162  nano /usr/local/apache/conf/httpd.conf
+  163  nano /usr/local/apache/conf/sharedip.conf
+  164  journalctl -xe
+  165  vi /usr/local/apache/conf/sharedip.conf
+  166  tail -f /var/log/apache-rebuild.log
+  167  journalctl -xe
+  168  tail -f /var/log/apache-rebuild.log
+  169  systemctl status httpd.service
+  170  cd /usr/local/apache/conf/
+  171  ls
+  172  cp httpd.conf httpd.conf.mmm
+  173  rm -f /usr/local/apache/conf/httpd.conf
+  174  yum reinstall cwp-httpd
+  175  service httpd restart
+  176  nano /etc/sysconfig/network-scripts/ifcfg-ens192 
+  177  reboot
+  178  service httpd restart
+  179  history
+  180  nano /usr/local/apache/conf/sharedip.conf
+  181  rm -f /usr/local/apache/conf/httpd.conf
+  182  yum reinstall cwp-httpd
+  183  nano /etc/sysconfig/network-scripts/ifcfg-ens192 
+  184  reboot
+  185  mysql -u root -p
+  186  mysql -u root 
+  187  mysqldump -u root irctc01_irctc > irctc01_irctc111019.sql 
+  188  cat irctc01_irctc111019.sql 
+  189  mysql -u root -p -h 192.168.10.38
+  190  telnet 192.168.10.230 3306
+  191  yum install telnet
+  192  telnet 192.168.10.230 3306\
+  193  ip add show
+  194  service mariadb restart
+  195  mysql -u rodbuser -p -h 192.168.10.38
+  196  mysql -u rodbuser -p -h 192.168.10.220
+  197  mailq
+  198  cd /var/spool/mail/
+  199  ls
+  200  cat irctc01 
+  201  postcat -vq E96202000F85
+  202  postsuper -d ALL
+  203  su - irctc01 
+  204  crontab -l
+  205  cd /etc/cron.d
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd cron.daily/
+  210  ls
+  211  nano cwp_acme.sh 
+  212  nano cwp
+  213  mailq
+  214  nano /etc/hosts
+  215  cd /var/www/
+  216  cd /home/irctc01/
+  217  ls
+  218  cd public_html/
+  219  ;s
+  220  ls
+  221  ls -lart
+  222  cd ..
+  223  scp -rv public_html root@192.168.10.220:/var/www/html/ -P 5022 
+  224  scp -P 5022 -rv public_html root@192.168.10.220:/var/www/html/ 
+  225  exit
+  226  cd /home//irctc01/
+  227  ls
+  228  cd  public_html/
+  229  ls
+  230  cd assets/
+  231  ls
+  232  scp -P 5022 -rv  deposit_slip root@192.168.10.220:~
+  233  exit
+  234  mysql -u root -p 
+  235  mysql -u root
+  236  mysqldump -u root irctc01_irctc01 > ~/irctc01_irctc01.sql
+  237  scp -P 5022 irctc01_irctc01.sql root@192.168.10.220:~
+  238  exit
+  239  cd /home/irctc01/public_html/
+  240  ls
+  241  cd application/
+  242  ls
+  243  cd core
+  244  ls
+  245  scp MY_Controller.php root@192.168.10.220:~
+  246  scp -P 5022 MY_Controller.php root@192.168.10.220:~
+  247  cd ..
+  248  pwd
+  249  cd application/
+  250  cd models/
+  251  ls
+  252  pwd
+  253  scp -P m_user.php root@192.168.10.220:~
+  254  scp -P 5022  m_user.php root@192.168.10.220:~
+  255  exit
+  256  mailq
+  257  history
+  258  postsuper -d ALL
+  259  exit
+  260  cd /home/
+  261  ls
+  262  cd irctc01/
+  263  ls
+  264  cd public_html/
+  265  ;s
+  266  ls
+  267  ip add show
+  268  cd ..
+  269  ls -lart
+  270  cp -a public_html public_html_new
+  271  ls -lart
+  272  cd public_html_new/
+  273  ls
+  274  ls -lart
+  275  cd ..
+  276  ls
+  277  cd public_html
+  278  ls
+  279  cd ..
+  280  tar -cvpf public_html.tgz ./public_html
+  281  cd public_html
+  282  ls
+  283  rm -rf *
+  284  ip add show
+  285  pwd
+  286  ls -lart
+  287  rm .htaccess*
+  288  ls -lart
+  289  cd ../public_html_new/
+  290  ls
+  291  ls -lart
+  292  chmod 755 ../public_html/
+  293  chown irctc01:irctc01 ../public_html/
+  294  cd /home/irctc01/
+  295  ls
+  296  cd public_html
+  297  ls
+  298  ls -lart
+  299  chmod -R 755 ./public_html
+  300  chmod -R 755 ../public_html/
+  301  chown -R irctc01:irctc01 ../public_html/
+  302  mailq
+  303  history | grep post
+  304  postsuper -d ALL
+  305  exit
+  306  mailq
+  307  postsuper -d ALL
+  308  mailq
+  309  postsuper -d ALL
+  310  mailq
+  311  postsuper -d ALL
+  312  history
+  313  postsuper -d ALL
+  314  mailq
+  315  postsuper -d ALL
+  316  mailq
+  317  postsuper -d ALL
+  318  yum update
+  319  cat /etc/rsyslog.conf 
+  320  ip add show
+  321  nano /etc/rsyslog.conf 
+  322  service rsyslog.conf
+  323  service rsyslog.conf restrt
+  324  service rsyslog.conf restart
+  325  service rsyslog restart
+  326  ip add show
+  327  cd /mscript
+  328  mkdir /mscript
+  329  mkdir /mbackup
+  330  mount
+  331  cd /mscript
+  332  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  333  nano backup.sh
+  334  nano mysqlbackup.sh
+  335  mysql -u root -p
+  336  mysql 
+  337  mysql -u root -p
+  338  cd /home/
+  339  ls
+  340  cd irctc01/
+  341  ls
+  342  cd public_html
+  343  ls
+  344  cd application/
+  345  ls
+  346  grep -r -H db ./
+  347  grep -r -H db ./ | grep pass
+  348  mailq
+  349  history
+  350  postsuper -d ALL
+  351  yum update
+  352  apt upgrae
+  353  yum upgrade
+  354  top
+  355  ps -aux
+  356  ps -aux | grep php
+  357  crontab -e
+  358  cd /mscript/
+  359  ls
+  360  cat /etc/rsyslog.conf 
+  361  mailq
+  362  history 
+  363  postsuper -d ALL
+  364  showmount -e 192.168.10.251
+  365  mount
+  366  df -kh
+  367  umount /mbackup
+  368  mount
+  369  showmount -e 192.168.10.251
+  370  mount 192.168.10.251:/export/backup /mbackup
+  371  mount
+  372  cd /mbackup/
+  373  ls
+  374  dmesg
+  375  yum update
+  376  ip add show
+  377  reboot
+  378  top
+  379  mount 192.168.10.251:/export/backup /mbackup
+  380  mount
+  381  history
+  382  postsuper -d ALL
+  383  cd /home/
+  384  ls
+  385  cd irctc01/
+  386  ls
+  387  ls -lart
+  388  mv public_html public_html.bak20112
+  389  mkdir public_html
+  390  ip add show
+  391  ls
+  392  ls -lart
+  393  chown irctc01:irctc01 public_html
+  394  cd public_html
+  395  pwd
+  396  ls
+  397  ls -lart
+  398  cd ..
+  399  ip add show
+  400  ls -lart
+  401  chown -R irctc01:irctc01 public_html
+  402  chown -Rv irctc01:irctc01 public_html
+  403  ls
+  404  cd public_html
+  405  ls
+  406  ip add show
+  407  ls -lart
+  408  ls
+  409  cat .htaccess 
+  410  cd ..
+  411  ls
+  412  cd public_html
+  413  mv .htaccess .htaccess.bak201219
+  414  cd ..
+  415  cp ./public_html.bak20112/.htaccess ./public_html/
+  416  cd public_html
+  417  ls -lart
+  418  cat .htaccess
+  419  ls
+  420  grep -r -H "nx123@19" ./
+  421  grep -r -H "nx123@19" ../public_html.bak20112/
+  422  ip add show
+  423  mysql -u root
+  424  grep -r -H "irctc01_irctc" ../public_html.bak20112/
+  425  ls
+  426  grep -r -H "nx123@19" ./
+  427  grep -r -H "irctc01_irctc" ../public_html.bak20112/
+  428  cd  ../public_html.bak20112/application/helpers/function_helper.php /application/helpers/
+  429  cp  ../public_html.bak20112/application/helpers/function_helper.php /application/helpers/
+  430  cp  ../public_html.bak20112/application/helpers/function_helper.php ./application/helpers/
+  431  cd ./application/helpers/
+  432  ls
+  433  ls -lart
+  434  cp ../public_html.bak20112/go-live/index.php ./go-live/
+  435  pwd
+  436  cd ..
+  437  cp ../public_html.bak20112/go-live/index.php ./go-live/
+  438  yum update
+  439  postsuper -d ALL
+  440  cat /etc/password
+  441  cat /etc/passwd
+  442  cd /home/irctc01/
+  443  ls
+  444  cd public_html
+  445  ls
+  446  cd ..
+  447  mv public_html public_html.bak261219
+  448  mkdir public_html
+  449  ls
+  450  ls -lart
+  451  chown irctc01:irctc01 public_html
+  452  ls
+  453  cd public_html
+  454  ls
+  455  ip add show
+  456  history
+  457   chown -Rv irctc01:irctc01 public_html
+  458   chown -Rv irctc01:irctc01 ../public_html
+  459  history
+  460  cd ..
+  461  ls
+  462  postsuper -d ALL
+  463  apt update
+  464  yum update
+  465  history
+  466  history > ~/mun-pm-230.txt

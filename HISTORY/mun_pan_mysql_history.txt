@@ -1,0 +1,48 @@
+show databases;
+show variables;
+ SELECT @@innodb_buffer_pool_size/1024/1024/1024;
+SELECT @@innodb_buffer_pool_size;
+SELECT @@innodb_buffer_pool_chunk_size;
+GRANT ALL PRIVILEGES ON *.* TO 'nxuser'@'%' IDENTIFIED BY 'nx123' WITH GRANT OPTION;
+flush privileges;
+SHOW BINARY LOGS
+;
+SHOW VARIABLES LIKE 'max_allowed_packet';
+SET GLOBAL max_allowed_packet=41943040;
+SHOW VARIABLES LIKE 'max_allowed_packet';
+mysql --max_allowed_packet=100M
+;
+SHOW VARIABLES LIKE 'max_allowed_packet';
+SET GLOBAL max_allowed_packet=4194304;
+SHOW VARIABLES LIKE 'max_allowed_packet';
+show databases;
+CREATE USER 'slave'@'localhost' IDENTIFIED BY '321Nx@19';
+GRANT REPLICATION SLAVE ON *.* TO slave IDENTIFIED BY '321Nx@19' WITH GRANT OPTION;
+flush priviliges;
+flush previliges;
+FLUSH PRIVILEGES;
+ FLUSH TABLES WITH READ LOCK;
+SHOW MASTER STATUS;
+unlock tables;
+exit;
+SHOW MASTER STATUS;
+GRANT REPLICATION SLAVE ON *.* TO 'slave'@'localhost'  IDENTIFIED BY '321Nx@19' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+GRANT REPLICATION SLAVE ON *.* TO 'slave'@'%'  IDENTIFIED BY '321Nx@19' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+show processlist;
+show databases
+;
+GRANT ALL PRIVILEGES ON 'nationxp_pan'.* TO 'pandbuser'@'localhost'  IDENTIFIED BY '122019@@##pan';
+GRANT ALL PRIVILEGES ON `nationxp_pan`.* TO 'pandbuser'@'localhost'  IDENTIFIED BY '122019@@##pan';
+GRANT ALL PRIVILEGES ON `support_ticket`.* TO 'supportdbuser'@'localhost' IDENTIFIED BY '122019@@##support';
+FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON `nationxp_pan`.* TO 'pandbuser'@'localhost'  IDENTIFIED BY '037NX@20';
+GRANT ALL PRIVILEGES ON `support_ticket`.* TO 'supportdbuser'@'localhost' IDENTIFIED BY '037NX@20';
+show databases;
+GRANT ALL PRIVILEGES ON `nationxp_pan`.* TO 'niteshk'@'192.168.10.214'  IDENTIFIED BY 'TBuszPRz'; 
+GRANT ALL PRIVILEGES ON `support_ticket`.* TO 'niteshk'@'192.168.10.214'  IDENTIFIED BY 'TBuszPRz';
+GRANT ALL PRIVILEGES ON `nationxp_pan`.* TO 'ashutoshk'@'192.168.10.214'  IDENTIFIED BY 'J7597KVg'; 
+GRANT ALL PRIVILEGES ON `support_ticket`.* TO 'ashutoshk'@'192.168.10.214'  IDENTIFIED BY 'J7597KVg';
+FLUSH PRIVILEGES;
+show databases;

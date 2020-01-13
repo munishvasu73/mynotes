@@ -1,0 +1,219 @@
+1  hostname mail.policymaster.com
+    2  vi /etc/hosts
+    3  vi /etc/hostname
+    4  hostname pm4.policymaster.com
+    5  vi /etc/hostname
+    6  vi /etc/hosts
+    7  vi /etc/sysconfig/selinux
+    8  init 6
+    9  vi /etc/sysconfig/network-scripts/ifcfg-eno16780032
+   10  service network restart
+   11  ifcon
+   12  ip a
+   13  vi /etc/resolv.conf
+   14  ping google.com
+   15  cat /etc/hosts
+   16  cat /etc/hostname
+   17  getenforce
+   18  vi /etc/hosts
+   19  date
+   20  vi /etc/hosts
+   21  vi /etc/resolv.conf
+   22  service NetworkManager stop
+   23  chkconfig NetworkManager off
+   24  service NetworkManager status
+   25  vi /etc/resolv.conf
+   26  ping google.com
+   27  yum clean all
+   28  systemctl disable firewalld
+   29  systemctl stop firewalld
+   30  systemctl mask firewalld
+   31  systemctl status firewalld
+   32  yum install iptables-services -y
+   33  systemctl enable iptables
+   34  systemctl start iptables
+   35  systemctl status iptables
+   36  iptables -L
+   37  iptables -F
+   38  service  iptables save
+   39  iptables -L
+   40  iptables -t nat -L
+   41  yum install ntp -y
+   42  service ntpd start
+   43  chkconfig ntpd on
+   44  service ntpd status
+   45  ntpdate
+   46  date
+   47  yum update -y
+   48  cat /etc/redhat-release
+   49  init 6
+   50  yum install caching-nameserver -y
+   51  service postfix stop
+   52  chkconfig postfix off
+   53  yum install vim -y
+   54  yum install nano wget curl net-tools lsof vim -y
+   55  netstat -rn
+   56  ifconfig
+   57  route -n
+   58  getenforce
+   59  vim \\\
+   60  ls
+   61  vim /etc/named.conf
+   62  cat /etc/named.conf
+   63  vim /etc/named.rfc1912.zones
+   64  cat /etc/named.rfc1912.zones
+   65  cd /var/named/
+   66  ls
+   67  cp -p named.localhost policymaster.fwd
+   68  cp -p named.localhost archive.policymaster.fwd
+   69  ls
+   70  vim policymaster.fwd
+   71  cat policymaster.fwd
+   72  vim archive.policymaster.fwd
+   73  cat archive.policymaster.fwd
+   74  cat /etc/hosts
+   75  vim /etc/resolv.conf
+   76  service named start
+   77  ls -l
+   78  service named status
+   79  vim /etc/named.conf
+   80  service named status
+   81  service named start
+   82  chkconfig named on
+   83  service named status
+   84  cd
+   85  yum install bind-utils
+   86  nslookup policymaster.com
+   87  nslookup pm4.policymaster.com
+   88  nslookup
+   89  nslookup archive.policymaster.com
+   90  ls
+   91  tar -zxvf zcs-8.7.11_GA_1854.RHEL7_64.20170531151956.tgz
+   92  ls
+   93  lsblk
+   94  cd /home/
+   95  ls
+   96  cd
+   97  umount /home/
+   98  vim /etc/fstab
+   99  lvs
+  100  lvdisplay
+  101  lvremove /dev/centos/home
+  102  lvdisplay
+  103  vgdisplay
+  104  lvextend -l +187842 /dev/mapper/centos-root
+  105  xfs_growfs /dev/centos/root
+  106  init 6
+  107  nslookup policymaster.com
+  108  service postfix status
+  109  telnet 192.168.10.228 11211
+  110  iptables -L
+  111  iptables -t nat -L
+  112  su - zimbra
+  113  vim /var/named/policymaster.fwd
+  114  cat /var/named/policymaster.fwd
+  115  lsblk
+  116  hostname
+  117  vim /etc/fstab
+  118  ls
+  119  cd zcs-8.7.11_GA_1854.RHEL7_64.20170531151956
+  120  ./install.sh --platform-override
+  121  cd
+  122  su - zimbra
+  123  yum install telnet -y
+  124  telnet 192.168.10.228 11211
+  125  su - zimbra
+  126  touch /opt/zimbra/{whitelist,blacklist,spamlovers}
+  127  chown zimbra:zimbra /opt/zimbra/{whitelist,blacklist,spamlovers}
+  128  su - zimbra
+  129  telnet 127.0.0.1 11211
+  130  telnet 192.168.10.228 11211
+  131  yum install mlocate -y
+  132  vim /opt/zimbra/common/conf/archivelist-sending
+  133  vim /opt/zimbra/common/conf/archivelist-sending
+  134  cat /opt/zimbra/common/conf/archivelist-sending
+  135  vim /opt/zimbra/common/conf/archivelist-receving
+  136  cat /opt/zimbra/common/conf/archivelist-receving
+  137  su -zimbra
+  138  su - zimbra
+  139  service named restart
+  140  service named status
+  141  su - zimbra
+  142  cat /var/named/policymaster.fwd
+  143  useradd jaiadmin
+  144  passwd jaiadmin
+  145  vim /etc/ssh/sshd_config
+  146  service sshd restart
+  147  passwd
+  148  vim /etc/ssh/sshd_config
+  149  init 0
+  150  exit
+  151  yum install xinetd
+  152  cd /home/jaiadmin/
+  153  rpm -ivh check-mk-agent-1.5.0p11-1.noarch.rpm
+  154  nano /etc/xinetd.d/check_mk
+  155  serivce xinetd restart
+  156  service xinetd restart
+  157  nano /bin/check_mk_agent
+  158  ip add show
+  159  service xinetd restart
+  160  netstat -tuna
+  161  mailq
+  162  exit
+  163  tailf /opt/zimbra/log/mailbox.log
+  164  nano /usr/bin/check_mk_agent
+  165  service xinetd restart
+  166  passwd
+  167  ip add show
+  168  halt -p
+  169  ip add show
+  170  reboot
+  171  history
+  172  cat /etc/hosts
+  173  su - zimbra
+  174  history
+  175  exit
+  176  df -kh
+  177  mount
+  178  cd /opt/
+  179  cd
+  180  ls
+  181  cd /opt/
+  182  ls
+  183  cd zimbra/
+  184  ls
+  185  cd
+  186  ls
+  187  scp zcs-8.7.11_GA_1854.RHEL7_64.20170531151956.tgz top
+  188  ls
+  189  ls -lart
+  190  rm top
+  191  ls
+  192  hostname
+  193  cat /etc/dnsmasq.conf
+  194  cd /etc/dnsmasq.d/
+  195  ls
+  196  ls -lrt
+  197  yum update
+  198  cat /var/log/yum.log
+  199  yum update
+  200  df -kh
+  201  reboot
+  202  ip add show
+  203  yum update
+  204  rpm -qa | grep zimbra
+  205  rpm -qa | grep zimbra | less
+  206  rpm -qa | grep zimbra | grep 8
+  207  df -kh
+  208  du -sh /opt/
+  209  su - zimbra
+  210  su - zimbra
+  211  reboot
+  212  tailf /var/log/zimbra.log
+  213  netstat -tunalp
+  214  netstat -tunalp | grep 25
+  215  lsof -Pni | grep LIST | grep ":25"
+  216  kill 6896
+  217  lsof -Pni | grep LIST | grep ":25"
+  218  su - zimbra
+  219  history

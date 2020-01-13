@@ -1,0 +1,1000 @@
+    6  ls -lart
+    7  chown -Rv nxweb:apache support
+    8  ls -lart
+    9  cd db_backup/
+   10  ls
+   11  ls -lart
+   12  cd
+   13  mysql -u root -p
+   14  cd
+   15  mysql -u root -p support_ticket < erptest_ticket.sql 
+   16  cat erptest_ticket.sql 
+   17  vi erptest_ticket.sql 
+   18  cd /var/www/nationxp/support
+   19  ls -all
+   20  cd application/config/
+   21  sudo nano database.php 
+   22  ls -lar
+   23  pwd
+   24  cd ../../system/
+   25  ls
+   26  ls -lart
+   27  find ./ -name "tmp"
+   28  find ./ -name "*tmp*"
+   29  cd ..
+   30  ls
+   31  cd support
+   32  ls
+   33  ls -lart
+   34  cd ..
+   35  ls
+   36  cd support/
+   37  ls
+   38  cd ..
+   39  cd nationxp/support
+   40  ls
+   41  cp -rv * ../../support/
+   42  ls
+   43  cd  ../../support/
+   44  ls
+   45  ls -lart
+   46  ls
+   47  nano mun.txt
+   48  ip add show
+   49  cd /var/www/html/
+   50  ls
+   51  cd /var/log/httpd/
+   52  ls
+   53  cat access.log
+   54  cat access_log
+   55  cat access_log | grep support
+   56  cd /var/www/support/
+   57  ls
+   58  systemctl reload httpd
+   59  ls
+   60  cd tmp
+   61  ls
+   62  cd ..
+   63  chmod -R 777 ./tmp
+   64  ls
+   65  cd ..
+   66  ls
+   67  ls -lart
+   68  chown -Rv supportftp:apache support/
+   69  cd /var/log/
+   70  ls -lart
+   71  systemctl reload httpd
+   72  cd support/
+   73  ;s
+   74  ls
+   75  cd tmp/
+   76  ls
+   77  rm *
+   78  rm -rf *
+   79  ls
+   80  ftp 127.0.0.1
+   81  yum install ftp
+   82  ftp 127.0.0.1
+   83  cd /var/log/proftpd/
+   84  ls
+   85  cat controls.log 
+   86  cd ..
+   87  cat audit/audit.log
+   88  netstat -tuna
+   89  netstat -tuna | grep 3306
+   90  htop
+   91  top
+   92  mysql -u root -p
+   93  ls
+   94  cd /var/www/
+   95  cd nationxp/
+   96  ls
+   97  nano .htaccess 
+   98  ls -lart
+   99  cd /var/www/nationxp/user/upload_pic/thumb/
+  100  ls
+  101  ls -1
+  102  ls /mnt/panfiles/
+  103  mount
+  104  while read name; do mv -v ./$name.pdf /mnt/panfiles/ ; done < ~/list01.txt
+  105  while read name; do ls -l  ./$name.pdf /mnt/panfiles/ ; done < ~/list01.txt
+  106  while read name; do ls -l   /mnt/panfiles/$name.pdf ; done < ~/list01.txt
+  107  nano ~/list02.txt
+  108  head ~/list03.txt 
+  109  tail  ~/list03.txt 
+  110  while read name; do mv -v ./$name.pdf /mnt/panfiles/ ; done < ~/list03.txt
+  111  dos2unix ~/list03.txt 
+  112  while read name; do mv -v ./$name.pdf /mnt/panfiles/ ; done < ~/list03.txt
+  113  mkdir /mnt/panfiles01
+  114  while read name; do mv -v ./$name.pdf /mnt/panfiles01/ ; done < ~/list03.txt
+  115  exit
+  116  htop
+  117  top
+  118  htop
+  119  service mysql restart
+  120  top
+  121  df -kh
+  122  htop
+  123  service mysld restart
+  124  service mysqld restart
+  125  service httpd reload
+  126  service httpd status
+  127  htop
+  128  ls
+  129  history
+  130  nano list01.txt
+  131  screen -ls
+  132  screen 
+  133  history
+  134  screen
+  135  cd /var/www/nationxp/user/upload_pic/thumb/
+  136  while read name; do mv -v ./$name.pic /mnt/panfiles01/ ; done < ~/list03.txt
+  137  reboot
+  138  ls
+  139  history
+  140  history | grep mount
+  141  mount 192.168.10.218:/export/serverbackup /mnt
+  142  cd /mnt/panfiles/
+  143  ls
+  144  df -kh
+  145  du -sh 
+  146  df -kh
+  147  htop
+  148  df -kh
+  149  htop
+  150  df -kh
+  151  cd /mnt/panfiles01
+  152  ls
+  153  htop
+  154  netstat -tuna
+  155  ls
+  156  top
+  157  exit
+  158  cd /var/www/nationxp/user/upload_pic/thumb/
+  159  while read name; do mv -v ./$name.pic /mnt/panfiles01/ ; done < ~/list03.txt
+  160  df -kh
+  161  top
+  162  df -kh
+  163  top
+  164  halt -p
+  165  screen
+  166  history | grep mount
+  167  mount 192.168.10.218:/export/serverbackup /mnt
+  168  screen
+  169  cd /var/www/nationxp/user/upload_pic/thumb/
+  170  exit
+  171  htop
+  172  mount 192.168.10.218:/export/serverbackup /mnt
+  173  cd /mnt
+  174  ls
+  175  cd
+  176  screen
+  177  cd /mnt/panfiles01
+  178  ls
+  179  df -kh
+  180  du -sh /mnt/panfiles01
+  181  top
+  182  htop
+  183  top
+  184  ls
+  185  df -kh
+  186  top
+  187  ls
+  188  umount /mnt
+  189  df -kh
+  190  yum update
+  191  nano /etc/yum.repos.d/codeit.el7.repo 
+  192  yum update
+  193  cd
+  194  ls
+  195  cd /var/log/httpd/
+  196  ls
+  197  cat error_log
+  198  cat error_log-20190714 
+  199  netstat -tua
+  200  cat access_log
+  201  cat error_log-20190714 
+  202  grep -r -H "203.153.46.5" ./
+  203  ping 203.153.46.5
+  204  curl http://203.153.46.5
+  205  ping www.myutiitsl.com
+  206  find / -name "*check*"
+  207  find / -name "*mysql*"
+  208  nano /usr/share/check-mk-agent/available-plugins/mk_mysql
+  209  cd /usr/share/check-mk-agent/available-plugins/
+  210  find / -name "*plugin*"
+  211  pwd
+  212  ls
+  213  scp mk_mysql apache_status root@192.168.10.220:~ -p 5022
+  214  scp mk_mysql apache_status root@192.168.10.220:~ -P 5022
+  215  scp -P 5022 mk_mysql apache_status root@192.168.10.220:~ 
+  216  cd /etc/check_mk/
+  217  ls
+  218  cat mysql.cfg 
+  219  ls -lart
+  220  ls
+  221  cd
+  222  find / -name "mk*"
+  223  cd /usr/lib/check_mk_agent/
+  224  ls
+  225  cd plugins/
+  226  ls -lar
+  227  ls -lart
+  228  history
+  229  cd /var/lib/mysql
+  230  ls
+  231  ls -lart
+  232  crontab -e
+  233  ls
+  234  cd /var/
+  235  cd webmin/
+  236  ls
+  237  cd
+  238  find / -name "*.tar*"
+  239  find / -name "*.sql*"
+  240  cd /var/www/nationxp/db_backup/
+  241  ls
+  242  ls -lart
+  243  mysql -u root -p
+  244  yum update
+  245  htop
+  246  yum install rkhunter
+  247  rkhunter --update
+  248  rkhunter --check --sk
+  249  nano /etc/default/rkhunter
+  250  nano /etc/rkhunter.conf 
+  251  rkhunter --propupd
+  252  rkhunter --check --sk
+  253  passwd
+  254  cat /etc/passwd
+  255  passwd nimda
+  256  ls -lart
+  257  cd /
+  258  ls
+  259  apt update
+  260  yum update
+  261  ip add show
+  262  cat /etc/passwd
+  263  passwd
+  264  passwd nimda
+  265  exit
+  266  ls
+  267  cd /var/log
+  268  find . -type f -size +100M
+  269  find . -type f -size +100M > /tmp/tmp.txt
+  270  cd /tmp
+  271  ls
+  272  cat tmp.txt 
+  273  nano tmp.txt 
+  274  cd /var/log/
+  275  ls
+  276  cd httpd/
+  277  ls
+  278  du -sh *
+  279  rm -rf access_log-20190* ssl_access_log-20190* ssl_request_log-20190*
+  280  df -kh
+  281  apt update
+  282  yum update
+  283  df -kh
+  284  cd /mnt/panfiles02
+  285  watch ls -lart
+  286  watch ls 
+  287  watch ls -1
+  288  watch ls -w 6
+  289  watch ls -w6
+  290  watch ls -lart
+  291  watch du -sh ../
+  292  watch ls -lart
+  293  ls
+  294  ls
+  295  du -sh *
+  296  rm nationxp_pan210519.sql 
+  297  df -kh
+  298  history
+  299  less list03.txt 
+  300  mount 192.168.10.218:/export/serverbackup /mnt
+  301  cd /mnt/panfiles
+  302  cd ..
+  303  cd panfiles01
+  304  ls
+  305  cd ..
+  306  ls
+  307  mkdir panfiles02
+  308  ls
+  309  cd
+  310  cat list05.txt 
+  311  history
+  312  cd /var/www/nationxp/user/upload_pic/thumb/
+  313  ls
+  314  history
+  315  screen
+  316  ls
+  317  history
+  318  history | grep ssl
+  319  history | grep crt
+  320  history
+  321  netstat -tuna
+  322  service apache reload
+  323  service httpd reload
+  324  service httpd restart
+  325  journalctl -xe
+  326  service httpd restart
+  327  service httpd status
+  328  journalctl -xe
+  329  reboot
+  330  netstat -tuna
+  331  clear
+  332  showmount -e 192.168.10.218
+  333  ls /mnt/panfiles02
+  334  ls -lart /mnt/panfiles02
+  335  less ~/list05.txt
+  336  while read name; do mv -v ./$name.pdf /mnt/panfiles02/ ; done < ~/list05.txt
+  337  dos2unix ~/list05.txt
+  338  while read name; do mv -v ./$name.pdf /mnt/panfiles02/ ; done < ~/list05.txt
+  339  ls
+  340  while read name; do mv -v ./$name.pic /mnt/panfiles02/ ; done < ~/list05.txt
+  341  while read name; do mv -v ./$name.sig /mnt/panfiles02/ ; done < ~/list05.txt
+  342  mount
+  343  umount /mnt
+  344  cd
+  345  umount /mnt
+  346  top
+  347  cd /var/www/nationxp/user/upload_pic/thumb/
+  348  dos2unix ~/list04.txt 
+  349  while read name; do mv -v ./$name.pdf /mnt/panfiles01/ ; done < list04.txt
+  350  while read name; do mv -v ./$name.pdf /mnt/panfiles01/ ; done < ~/list04.txt
+  351  cd /var/www/nationxp/user/upload_pic/thumb/
+  352  while read name; do mv -v ./$name.pic /mnt/panfiles01/ ; done < ~/list04.txt
+  353  service httpd status
+  354  journalctl -xe
+  355  service httpd restart
+  356  netstat -tuna
+  357  service httpd restart
+  358  service httpd status
+  359  service httpd reload
+  360  netstat -tuna
+  361  ls
+  362  rm erptest_ticket.sql 
+  363  du -sh home.tgz 
+  364  rm home.tgz 
+  365  cd munish/
+  366  ls
+  367  cd ..
+  368  history | grep find
+  369  find . -type f -size +100M
+  370  find / -type f -size +100M
+  371  yum clean all
+  372  cd /var/log/httpd/
+  373  ls
+  374  rm access_log-2019092*
+  375  rm error_log-201909*
+  376  df -kh
+  377  ls
+  378  rm ssl_error_log-201909*
+  379  df -kh
+  380  ls
+  381  rm default.vcl.varnish 
+  382  du -sh *
+  383  find / -type f -size +100M
+  384  cd /var/log/httpd/
+  385  ls
+  386  rm ssl_access_log-2019092*
+  387  rm ssl_request_log-2019092*
+  388  df -kh
+  389  yum clean packages
+  390  df -kh
+  391  mount
+  392  df -lh
+  393  df -kh
+  394  netstat -tuna
+  395  df -kh
+  396  hisory | grep assert
+  397  history | grep assert
+  398  cd /var/www/nationxp/
+  399  ls
+  400  cd asserts
+  401  cd assets/
+  402  ls
+  403  du -sh *
+  404  cd ..
+  405  history
+  406  cd /var/www/nationxp/user/upload_pic/thumb/
+  407  ls
+  408  du -sh J00060*
+  409  history | grep mount
+  410  mount 192.168.10.218:/export/serverbackup /mnt
+  411  ls /mnt
+  412  mkdir imp00
+  413  mkdir /mnt/imp00
+  414  cp -v J00060* /mnt/imp00/
+  415  cp -v J000600* /mnt/imp00/
+  416  mkdir /mnt/imp01
+  417  cp -v J000600* /mnt/imp01/
+  418  mkdir /mnt/imp02
+  419  cp -v J0006000* /mnt/imp02/
+  420  cp -v J0006001* /mnt/imp02/
+  421  tar -zcvpf /mnt/file1.tgz J0006001* 
+  422  tar -zcvpf /mnt/file1.tgz J0006000* 
+  423  rm   J0006001* 
+  424  rm  -rf  J0006001* 
+  425  rm  -rf  J0006000* 
+  426  df -kh
+  427  cp -v J0006002* /mnt/imp02/
+  428  cp -v J0006003* /mnt/imp02/
+  429  tar -zcvpf /mnt/file1.tgz J0006002* 
+  430  tar -zcvpf /mnt/file3.tgz J0006003* 
+  431  ls -lart /mnt/imp02/
+  432  rm -rf   J0006002* 
+  433  rm -rvf   J0006003* 
+  434  df -kh
+  435  service httpd restart
+  436  service mariadb restart
+  437  df -kh
+  438  cp -v J0006004* /mnt/imp02/
+  439  cp -v J0006005* /mnt/imp02/
+  440  cp -v J0006006* /mnt/imp02/
+  441  tar -zcvpf /mnt/file5.tgz J0006005* 
+  442  tar -zcvpf /mnt/file6.tgz J0006006* 
+  443  rm -rvf   J0006005* 
+  444  rm -rvf   J0006006* 
+  445  df -kh
+  446  reboot
+  447  df -kh
+  448  history
+  449  df -kh
+  450  mount 192.168.10.218:/export/serverbackup /mnt
+  451  cd .mnt
+  452  cd /mnt
+  453  ls
+  454  cd imp02
+  455  ls
+  456  history
+  457  cd /var/www/nationxp/user/upload_pic/thumb/
+  458  mkdir /mnt/imp04
+  459  cp -v J000600* /mnt/imp04/
+  460  tar -zcvpf /mnt/imp04/file00.tgz     000600* 
+  461  tar -zcvpf /mnt/imp04/file00.tgz    j000600* 
+  462  tar -zcvpf /mnt/file000.tgz    j000600* 
+  463  tar -zcvpf /mnt/file000010.tgz J000600*
+  464  tar -zcvpf /mnt/file0000101111.tgz J00060*
+  465  df -kh
+  466  cd /mnt/imp02
+  467  ls -lart
+  468  cd imp04
+  469  cd ../imp04
+  470  ls -lart
+  471  df -kh
+  472  df -kh
+  473  nano  .bash_history 
+  474  df -kh
+  475  ls
+  476  history  | grep find
+  477  find / -type f -size +100M
+  478  cd /var/log/http
+  479  cd /var/log/httpd/
+  480  ls -lart
+  481  rm access_log-20191006 
+  482  rm error_log-20191006 
+  483  ls -lart
+  484  rm ssl_error_log-20191006 
+  485  ls -lart
+  486  rm -rf ssl_request_log-20191006 
+  487  ls -lart
+  488  rm ssl_access_log-20191006 
+  489  df -kh
+  490  who
+  491  find / -type f -size +50M
+  492  df -kh
+  493  find / -name "IT"
+  494  history
+  495  cd /var/www/nationxp/user/upload_pic/thumb/
+  496  cd /mnt
+  497  ls
+  498  mkdir panfiles03
+  499  ls -lart
+  500  cd /var/www/nationxp/user/upload_pic/thumb/
+  501  while read name; do ls -lart ./$name.pdf  ; done < ~/list100719.txt
+  502  cd /
+  503  cd
+  504  dos2unix ./list100719.txt 
+  505  cd /var/www/nationxp/user/upload_pic/thumb/
+  506  while read name; do ls -lart ./$name.pdf  ; done < ~/list100719.txt
+  507  ls -lart /mnt/panfiles03
+  508  while read name; do mv -v ./$name.pdf /mnt/panfiles03/ ; done < ~/list100719.txt
+  509  ls -lart /mnt/panfiles03
+  510  while read name; do mv -v ./$name.pdf /mnt/panfiles03/ ; done < ~/list100719.txt
+  511  ls -lart /mnt/panfiles03
+  512  df -kh
+  513  history
+  514  cd /var/www/nationxp/user/upload_pic/thumb/
+  515  ls  /mnt/imp04/ | less
+  516  ls  /mnt/imp03/ | less
+  517  ls  /mnt/imp02/ | less
+  518  ls -lart  /mnt/imp02/ | less
+  519  chmod -R 777 /mnt/imp02/ 
+  520  chmod -Rv 777 /mnt/imp02/ 
+  521  cp -rv /mnt/imp02/* ./ 
+  522  cp -rnv /mnt/imp02/* ./ 
+  523  ls -lart
+  524  ls J000600*
+  525  chown apache:apache J000600*
+  526  ls J000600*
+  527  ls -lart J000600*
+  528  chmod -x  J000600*
+  529  ls -lart J000600*
+  530  df -kh
+  531  ls -lart J000600* | grep less
+  532  ls -lart J000600* |  less
+  533  ls  J000600* |  less
+  534  df -kh
+  535  apt update
+  536  yum update
+  537  df -kh
+  538  ls
+  539  df -kh
+  540  cd /var/log/
+  541  ls
+  542  cd httpd/
+  543  ls
+  544  cat error_log 
+  545  cp error_log ~
+  546  cd
+  547  nano error_log 
+  548  vi error_log 
+  549  cd /var/log/httpd/
+  550  ls
+  551  cat error_log 
+  552  cp error_log ~
+  553  cat access_log 
+  554  cat error_log 
+  555  cat error_log clear
+  556  clear
+  557  cat error_log clear
+  558  cat error_log 
+  559  cp error_log ~
+  560  cat error_log | grep HUP
+  561  cat error_log | grep restart
+  562  cat error_log | grep session
+  563  cp access_log ~
+  564  df -kh
+  565  mount
+  566  history
+  567  cd /var/www/nationxp/user/upload_pic/thumb/
+  568  ls /mnt/panfiles03
+  569  screen
+  570  cd /var/www/nationxp/user/upload_pic/thumb/
+  571  exit
+  572  df -kh
+  573  screen 
+  574  mount
+  575  screen -ls
+  576  history
+  577  cd /var/www/nationxp/user/upload_pic/thumb/
+  578  ls
+  579  screen
+  580  screen ls
+  581  screen
+  582  history
+  583  while read name; do mv -v ./$name.pic /mnt/panfiles03/ ; done < ~/list100719.txt
+  584  ls
+  585  while read name; do mv -v ./$name.sig /mnt/panfiles03/ ; done < ~/list100719.txt
+  586  df -kh
+  587  while read name; do mv -v ./$name.pdf /mnt/panfiles03/ ; done < ~/list100719.txt
+  588  top
+  589  reboot
+  590   ~/list100719.txt
+  591  service mysqld status
+  592  service httpd status
+  593  tailf /var/log/httpd/access_log 
+  594  ls
+  595  cd /var/www/nationxp/
+  596  ls
+  597  yum update
+  598  ps -aux | grep php
+  599  service php-fpm status
+  600  service php-fpm restart
+  601  cd /var/www/html/
+  602  service mysqld status
+  603  service mysqld restart
+  604  service mysqld status
+  605  ip add show
+  606  reboot
+  607  passwd
+  608  cat /etc/ftp
+  609  cat /etc/passwd
+  610  passwd supportftp
+  611  passwd nxweb
+  612  cd /var/www/nationxp/
+  613  ls
+  614  grep -r -H "db" ./
+  615  grep -r -H "root" ./
+  616  grep -r -H "nx123@19" ./
+  617  ls
+  618  cd ..
+  619  cd /var/log
+  620  ls
+  621  cd php-fpm/
+  622  ls
+  623  cat error.log
+  624  cat www-error.log
+  625  cd ..
+  626  cat messages
+  627  nano /etc/rsyslog.conf 
+  628  exit
+  629  nano /etc/rsyslog.conf 
+  630  service rsyslog restart
+  631  logger "Test from logclient 37"
+  632  nano /etc/rsyslog.conf 
+  633  service rsyslog restart
+  634  logger "Test from logclient 37"
+  635  tailf /var/log/messages
+  636  logger "Test from logclient 37"
+  637  nano /etc/rsyslog.conf 
+  638  service rsyslog restart
+  639  logger "Test from logclient 37"
+  640  ping 192.168.10.228
+  641  nano /etc/rsyslog.conf 
+  642  service rsyslog restart
+  643  logger "Test from logclient 37"
+  644  apt update
+  645  yum update
+  646  top
+  647  df -kh
+  648  ls
+  649  mount
+  650  ls
+  651  cd /
+  652  ls
+  653  mkdir mscript
+  654  mkdir mbackup
+  655  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  656  mount
+  657  screen
+  658  passwd
+  659  df -kh
+  660  top
+  661  service httpd restart
+  662  cat /var/log/messages
+  663  date
+  664  cat /var/log/php-fpm/error.log
+  665  cat /var/log/php-fpm/www-error.log
+  666  cat /var/www/top
+  667  top\
+  668  apt install htop
+  669  exit
+  670  cat /etc/rsyslog.conf 
+  671  exit
+  672  history
+  673  screen 
+  674  ls
+  675  du -sh *
+  676  rm -rf ssl_access_log-201911*
+  677  df -kh
+  678  cat /var/www/topcd
+  679  cd 
+  680  exit
+  681  history | grep find
+  682  find / -type f -size +100M
+  683  cd /var/log/httpd/
+  684  du -sh *
+  685  rm -rf access_log-201911*
+  686  rm -rf error_log-201911*
+  687  rm -rf ssl_error_log-201911*
+  688  df -kh
+  689  rm -rf ssl_request_log-201911*
+  690  df -kh
+  691  history 
+  692  screen 
+  693  history | grep find
+  694  find / -type f -size +50M
+  695  du -sh /var/www/nationxp/user/service/api_response.dat
+  696  less /var/www/nationxp/user/service/api_response.dat
+  697  cd /mbackup/
+  698  ls
+  699  crontab -e
+  700  exit
+  701  cd /mscript/
+  702  cat backup.sh 
+  703  crontab -l
+  704  cd /etc
+  705  nano .my.cnf
+  706  nano mysqlbackup.sh
+  707  chmod +x mysqlbackup.sh 
+  708  nano mysqlbackup.sh
+  709  ./mysqlbackup.sh 
+  710  cat /var/log/messages
+  711  cat /etc/rsyslog.conf 
+  712  cd /mscript/
+  713  ls
+  714  cd /mscript/
+  715  ls
+  716  history
+  717  ls
+  718  cd /etc
+  719  ls
+  720  mv mysqlbackup.sh /mscript/
+  721  crontab -e
+  722  df -kh
+  723  apt update
+  724  yum update
+  725  history
+  726  cd /mbackup/
+  727  ls
+  728  mkdir mountok
+  729  ls
+  730  which logger
+  731  cd /mscript/
+  732  nano backup.sh
+  733  chmod +x backup.sh 
+  734  cat backup.sh 
+  735  nano backup.sh
+  736  mount
+  737  ./backup.sh 
+  738  history
+  739  history | grep chmod
+  740  df -kh
+  741  cd /mbackup/
+  742  ls
+  743  history
+  744  dos2unix list8.txt 
+  745  cat list8.txt 
+  746  ls
+  747  history
+  748  cd /mbackup/
+  749  ls
+  750  mkdir panfiles
+  751  cd 
+  752   cd /var/www/nationxp/user/upload_pic/thumb/
+  753   while read name; do ls -1 ./$name.pdf /mbackup/panfiles/ ; done < ~/list8.txt
+  754  ls /mbackup/
+  755  while read name; do ls -1 ./$name.pdf /mbackup/panfiles/ ; done < ~/list8.txt
+  756  while read name; do ls -ll ./$name.pdf /mbackup/panfiles/ ; done < ~/list8.txt
+  757  ls
+  758  ls -l
+  759  while read name; do mv -v ./$name.pdf /mbackup/panfiles/ ; done < ~/list8.txt
+  760  /bin/tar   -zcvpf /mbackup/panserver_10_37_`date +%Y%m%d_%H%M%S`.tgz --directory=/ --exclude=sys --exclude=proc --exclude=dev --exclude=run  --exclude=mbackup .
+  761  exit
+  762  lsof
+  763  lsof | grep nxadminer
+  764  cd /var/www/html/
+  765  ls
+  766  cd ..
+  767  cd nationxp/
+  768  ls
+  769  mv nxadminer.php nxadminer.php.bak031219
+  770  ls -lart
+  771  cat uploaddocresp*
+  772  ls
+  773  cat test_1.dat
+  774  ls -lart
+  775  cat export_hcopy.php 
+  776  ls
+  777  ls -1
+  778  ls
+  779  cd ..
+  780  ls
+  781  cd support/
+  782  ls
+  783  ls -lart
+  784  cd ..
+  785  ls
+  786  mysql -u root -p
+  787  dmesg
+  788  dmesg
+  789  mount
+  790  umount /mbackup
+  791  mount
+  792  history
+  793  ps -aux 
+  794  screen -ls
+  795  screen -r
+  796  ls
+  797  lsof
+  798  mount
+  799  mount -f /mbackup
+  800  crontab -e
+  801  top
+  802  df -kh
+  803  umount -f /mbackup
+  804  lsof | grep mbackup
+  805  mount
+  806  cd /var/www/html/
+  807  ls
+  808  cd ..
+  809  ls
+  810  cd nationxp/
+  811  ls
+  812  grep -r -H "nx123@19" ./
+  813  yum update
+  814  crontab -e
+  815  df -kh
+  816  reboot
+  817  history 
+  818  cd /var/www/nationxp/user/upload_pic/thumb/
+  819  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  820  screen
+  821  df -kh
+  822  history
+  823  cd /var/www/nationxp/user/upload_pic/thumb/
+  824  screen
+  825  cd /mbackup/
+  826  cd panfiles/
+  827  ls
+  828  cat /var/log/messages | grep failed
+  829  cat /var/log/messages | grep success
+  830  df -kh
+  831  top
+  832  cd /mbackup/
+  833  ls
+  834  ls -lart
+  835  cd /mscript/
+  836  ls
+  837  ./mysqlbackup.sh 
+  838  ls /mbackup/
+  839  history
+  840  nano mount.sh
+  841  ls
+  842  mv mount.sh mount.txt
+  843  cat backup.sh 
+  844  cat mysqlbackup.sh 
+  845  nano mysqlbackup.sh 
+  846  ls
+  847  mount
+  848  ./mysqlbackup.sh 
+  849  nano mysqlbackup.sh 
+  850  ./mysqlbackup.sh 
+  851  nano mysqlbackup.sh 
+  852  ./mysqlbackup.sh 
+  853  nano mysqlbackup.sh 
+  854  ./mysqlbackup.sh 
+  855  nano mysqlbackup.sh 
+  856  ./mysqlbackup.sh 
+  857  nano mysqlbackup.sh 
+  858  ./mysqlbackup.sh 
+  859  cat /var/log/messages
+  860  ls /mbackup/
+  861  rm /mbackup/07pan_10_37_2019-12-07.sql 
+  862  rm /mbackup/07panserver_10_37_071219.tgz 
+  863  l
+  864  ls
+  865  top
+  866  apt update
+  867  yum update
+  868  top
+  869  nano /etc/rsyslog.conf 
+  870  top
+  871  df -kh
+  872  cd /mbackup/
+  873  ls
+  874  cd /mscript/
+  875  ls
+  876  nano backup.sh 
+  877  cat mysqlbackup.sh 
+  878  nano mysqlbackup.sh 
+  879  nano backup.sh 
+  880  nano mysqlbackup.sh 
+  881  nano backup.sh 
+  882  df -kh
+  883  ./backup.sh 
+  884  cat backup.sh 
+  885  nano backup.sh 
+  886  ./backup.sh 
+  887  id apache
+  888  cat /etc/group
+  889  cat /etc/group | grep www
+  890  cd /var/www/nationxp/
+  891  ls
+  892  ls -lart
+  893  crontab -e
+  894  cat /etc/webmin/mysql/backup.pl 
+  895  crontab -e
+  896  history
+  897  cd /mscript/
+  898  nano mount.txt
+  899  cd /mbackup/
+  900  ls
+  901  zfs list
+  902  cat /etc/.my.cnf 
+  903  nano /etc/.my.cnf
+  904  ls
+  905  nano /etc/rsyslog.conf 
+  906  crontab -l
+  907  ls
+  908  nfsstat 
+  909   while read name; do mv -v ./$name.pdf /mbackup/panfiles/ ; done < ~/list8.txt
+  910  while read name; do mv -v ./$name.pic /mbackup/panfiles/ ; done < ~/list8.txt
+  911  top
+  912  nslookup myutiitsl.com
+  913  elinks https://myutiitsl.com/utiitsl_panapi_services
+  914  yum install elinks
+  915  ps -aux | grep yum
+  916  yum update
+  917  reboot
+  918  date
+  919  ntpq -p
+  920  ping google.com
+  921  yum update
+  922  wget https://myutiitsl.com/utiitsl_panapi_services
+  923  yum update
+  924  netstat -tuna
+  925  clear
+  926  yum install elinks
+  927  kill -9 9882
+  928  yum install elinks
+  929  kill -9 11633
+  930  yum install elinks
+  931  link  https://myutiitsl.com/utiitsl_panapi_services
+  932  link  http://myutiitsl.com/utiitsl_panapi_services
+  933  yum install elinks
+  934  elinks https://myutiitsl.com/utiitsl_panapi_services
+  935  cd /var/www/nationxp/
+  936  ls
+  937  mysql -u root -p
+  938  mysql -u nationxp_pan -p
+  939  mysql -u pandbuser  -p
+  940  tailf /var/lib/mysql/mysqld.log 
+  941  cat /var/lib/mysql/mysqld.log 
+  942  tailf /var/log/messages
+  943  cd /mscript/
+  944  ls
+  945  cat mount.txt 
+  946  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  947  mysql -u root -p
+  948  cd /var/www/nationxp/
+  949  ls
+  950  mv nxadminer.php nxadminer.php.bak031219 ~/
+  951  ls
+  952  cd
+  953  ls
+  954  history
+  955  elinks https://myutiitsl.com/utiitsl_panapi_services
+  956  cd /var/log/httpd/
+  957  ls
+  958  cat ssl_error_log
+  959  ls
+  960  cat error_log
+  961  grep -r -H "FATAL" ./
+  962  grep -r -H "Tech" ./
+  963  tailf ./ssl_request_log
+  964  mount
+  965  umount /mbackup
+  966  mount 192.168.10.251:/export/backup /mbackup
+  967  service mysql status
+  968  dmesg
+  969  df -kh
+  970  du -sh /var/www/nationxp/
+  971  cd /var/www/nationxp/
+  972  ls
+  973  cd ..
+  974  cd nationxp
+  975  ls -a
+  976  scp -rv * root@192.168.10.15:/var/www/pandev.mynetwork.co.in/web
+  977  scp -rv * root@192.168.10.73:/home/pantest/public_html/
+  978  scp -P 5022 -rv * root@192.168.10.73:/home/pantest/public_html/
+  979  ls -lart
+  980  scp -P 5022 -rv .htaccess .user.ini root@192.168.10.73:/home/pantest/public_html/
+  981  apt update
+  982  yum update
+  983  top
+  984  cd /var/www/nationxp/
+  985  ls
+  986  tail -10  test_cron.dat 
+  987  mysql -u root
+  988  mysql -u root -p
+  989  mailq
+  990  cd /var/log/maillog
+  991  cat /var/log/maillog
+  992  cd /mscript/
+  993  ls
+  994  cat mount.txt 
+  995  mount
+  996  nano mount.txt 
+  997  cat backup.sh 
+  998  cat mysqlbackup.sh 
+  999  crontab -l
+ 1000  apt update
+ 1001  yum update
+ 1002  echo 'unset HISTFILE' >> /etc/profile.d/disable.history.sh
+ 1003  . /etc/profile.d/disable.history.sh
+ 1004  cat .bash_history 
+ 1005  history > ~/mun_pan_37_history.txt

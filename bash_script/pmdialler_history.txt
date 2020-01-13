@@ -1,0 +1,506 @@
+    1  2019-12-27 13:38:00 screen -L -S asterisk
+    2  2019-10-10 14:24:05 asterisk -vvvvvvvvr
+    3  2019-10-10 14:38:36 reboot
+    4  2019-10-10 14:21:28 lsmod
+    5  2019-10-10 14:22:01 asterisk -vvvvvvvvvvvvvvvvr
+    6  2019-10-10 14:22:32 history
+    7  2019-10-10 14:22:51 dahdi_scan
+    8  2019-10-10 14:23:36 dahdi_genconf -v
+    9  2019-10-10 14:23:48 dahdi_cfg -v 
+   10  2019-12-27 13:38:00 ulimit -n 65536
+   11  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+   12  2019-12-27 13:38:00 cd /var/log/astguiclient
+   13  2019-12-27 13:38:00 screen -L -S asterisk
+   14  2019-10-10 16:13:28 grep -r -H "channels" /etc
+   15  2019-10-10 16:14:43 cat /etc/dahdi/system.conf
+   16  2019-10-10 16:16:09 nano /etc/dahdi/system.conf
+   17  2019-10-10 16:16:27 reboot
+   18  2019-10-10 16:02:31 lsmod
+   19  2019-10-10 16:02:47 dahdi_scan 
+   20  2019-10-10 16:10:28 asterisk -vvvvvvvvvvvvvvr
+   21  2019-10-10 16:02:31 lsmod
+   22  2019-10-10 16:02:47 dahdi_scan 
+   23  2019-10-10 16:10:28 asterisk -vvvvvvvvvvvvvvr
+   24  2019-12-27 13:38:00 ulimit -n 65536
+   25  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+   26  2019-12-27 13:38:00 cd /var/log/astguiclient
+   27  2019-12-27 13:38:00 screen -L -S asterisk
+   28  2019-10-10 16:25:37 nano /etc/dahdi/system.conf
+   29  2019-10-10 16:26:02 asterisk -vvvvvvvvr
+   30  2019-10-10 16:26:14 reboot
+   31  2019-12-27 13:38:00 ulimit -n 65536
+   32  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+   33  2019-12-27 13:38:00 cd /var/log/astguiclient
+   34  2019-12-27 13:38:00 screen -L -S asterisk
+   35  2019-10-10 16:27:29 asterisk -vvvvvvvvr
+   36  2019-10-10 16:27:48 dahdi_scan 
+   37  2019-10-10 16:29:19 nano /etc/dahdi/system.conf
+   38  2019-10-10 17:06:54 asterisk -vvvvvvvvr
+   39  2019-10-11 10:51:21 asterisk -rx "sip show peers"
+   40  2019-10-11 10:54:42 nano /etc/asterisk/sip.conf 
+   41  2019-10-11 11:13:39 asterisk -vvvvvvvvvvvr
+   42  2019-10-11 11:14:08 asterisk -rx "sip show peers"
+   43  2019-10-11 11:14:16 reboot
+   44  2019-10-10 18:08:10 dahdi_scan 
+   45  2019-12-27 13:38:00 ulimit -n 65536
+   46  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+   47  2019-12-27 13:38:00 cd /var/log/astguiclient
+   48  2019-12-27 13:38:00 screen -L -S asterisk
+   49  2019-10-11 11:15:18 asterisk -rx "sip show peers"
+   50  2019-10-11 11:16:16 asterisk -rn
+   51  2019-10-11 11:17:09 ping 192.168.1.12
+   52  2019-10-11 11:18:21 asterisk -rx "sip show peers"
+   53  2019-10-11 11:18:34 asterisk -rx "sip reload"
+   54  2019-10-11 11:18:36 asterisk -rx "sip show peers"
+   55  2019-10-11 11:18:50 asterisk -rn
+   56  2019-10-11 11:24:27 vi /etc/asterisk/extensions-vicidial.conf
+   57  2019-10-11 11:27:54 asterisk -rn
+   58  2019-10-11 15:21:12 netstat -tuna
+   59  2019-10-11 15:23:38 asterisk -rn
+   60  2019-10-11 15:26:05 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   61  2019-10-11 17:11:41 nano   /etc/asterisk/chan_dahdi.conf
+   62  2019-10-11 17:18:52 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   63  2019-10-11 17:20:11 nano /etc/asterisk/chan_dahdi.conf
+   64  2019-10-11 17:27:33 cd /etc/asterisk/
+   65  2019-10-11 17:27:35 ls
+   66  2019-10-11 17:28:45 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   67  2019-10-11 17:31:17 dahdi_cfg -vv
+   68  2019-10-11 17:32:21 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   69  2019-10-11 17:34:45 reboot
+   70  2019-10-11 11:15:18 asterisk -rx "sip show peers"
+   71  2019-10-11 11:16:16 asterisk -rn
+   72  2019-10-11 11:17:09 ping 192.168.1.12
+   73  2019-10-11 11:18:21 asterisk -rx "sip show peers"
+   74  2019-10-11 11:18:34 asterisk -rx "sip reload"
+   75  2019-10-11 11:18:36 asterisk -rx "sip show peers"
+   76  2019-10-11 11:18:50 asterisk -rn
+   77  2019-10-11 11:24:27 vi /etc/asterisk/extensions-vicidial.conf
+   78  2019-10-11 11:27:54 asterisk -rn
+   79  2019-10-11 15:21:12 netstat -tuna
+   80  2019-10-11 15:23:38 asterisk -rn
+   81  2019-10-11 15:26:05 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   82  2019-10-11 17:11:41 nano   /etc/asterisk/chan_dahdi.conf
+   83  2019-10-11 17:18:52 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   84  2019-10-11 17:20:11 nano /etc/asterisk/chan_dahdi.conf
+   85  2019-10-11 17:27:33 cd /etc/asterisk/
+   86  2019-10-11 17:27:35 ls
+   87  2019-10-11 17:28:45 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   88  2019-10-11 17:31:17 dahdi_cfg -vv
+   89  2019-10-11 17:32:21 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   90  2019-10-11 17:34:45 reboot
+   91  2019-12-27 13:38:00 ulimit -n 65536
+   92  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+   93  2019-12-27 13:38:00 cd /var/log/astguiclient
+   94  2019-12-27 13:38:00 screen -L -S asterisk
+   95  2019-10-11 17:35:48 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   96  2019-10-11 17:35:52 top
+   97  2019-10-11 17:36:25 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+   98  2019-10-11 17:45:51 nano /etc/dahdi/system.conf
+   99  2019-10-11 17:46:04 reboot
+  100  2019-12-27 13:38:00 ulimit -n 65536
+  101  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  102  2019-12-27 13:38:00 cd /var/log/astguiclient
+  103  2019-12-27 13:38:00 screen -L -S asterisk
+  104  2019-10-11 17:49:10 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  105  2019-10-11 17:53:34 dahdi_cfg -vvvv 
+  106  2019-10-11 17:56:31 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  107  2019-10-11 18:08:58 nano /etc/asterisk/dahdi-channels.conf 
+  108  2019-10-11 18:10:17 reboot
+  109  2019-12-27 13:38:00 ulimit -n 65536
+  110  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  111  2019-12-27 13:38:00 cd /var/log/astguiclient
+  112  2019-12-27 13:38:00 screen -L -S asterisk
+  113  2019-10-11 18:11:18 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  114  2019-10-11 18:30:39 zypper ref
+  115  2019-10-11 18:33:49 zypper up
+  116  2019-10-11 18:41:09 reboot
+  117  2019-12-27 13:38:00 ulimit -n 65536
+  118  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  119  2019-12-27 13:38:00 cd /var/log/astguiclient
+  120  2019-12-27 13:38:00 screen -L -S asterisk
+  121  2019-10-12 10:42:36 nano /etc/dahdi/assigned-spans.conf
+  122  2019-10-12 10:42:52 nano /etc/dahdi/system.conf
+  123  2019-10-12 10:50:49 reboot
+  124  2019-10-11 18:42:31 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  125  2019-10-11 18:42:31 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  126  2019-12-27 13:38:00 ulimit -n 65536
+  127  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  128  2019-12-27 13:38:00 cd /var/log/astguiclient
+  129  2019-12-27 13:38:00 screen -L -S asterisk
+  130  2019-10-12 10:51:48 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  131  2019-10-12 11:46:14 nano /etc/dahdi/system.conf
+  132  2019-10-12 11:46:30 nano /etc/asterisk/dahdi-channels.conf
+  133  2019-10-12 11:47:40 nano /etc/dahdi/system.conf
+  134  2019-10-12 11:47:49 nano /etc/asterisk/dahdi-channels.conf
+  135  2019-10-12 11:48:12 nano /etc/asterisk/extensions-vicidial.conf
+  136  2019-10-12 11:48:29 vi /etc/asterisk/extensions-vicidial.conf
+  137  2019-10-12 11:50:35 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  138  2019-10-12 11:52:13 reboot
+  139  2019-12-27 13:38:00 ulimit -n 65536
+  140  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  141  2019-12-27 13:38:00 cd /var/log/astguiclient
+  142  2019-12-27 13:38:00 screen -L -S asterisk
+  143  2019-10-12 11:53:24 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  144  2019-10-12 14:02:41 history
+  145  2019-10-12 14:02:47 nano /etc/dahdi/system.conf
+  146  2019-10-12 14:03:08 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  147  2019-10-12 15:32:46 iptables -L
+  148  2019-10-12 16:02:14 iptables -L -n
+  149  2019-10-12 16:04:39 yast firewall
+  150  2019-10-12 16:06:07 cat /etc/services | grep 8090
+  151  2019-10-12 16:06:36 cat /etc/services | grep 8089
+  152  2019-10-12 16:06:48 netstat -tuna
+  153  2019-10-12 16:07:07 netstat -tuna | grep 8089
+  154  2019-10-12 16:08:49 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  155  2019-10-12 16:10:36 ping vcbox.nationxpress.co
+  156  2019-10-12 16:10:57 netstat -tunap
+  157  2019-10-12 16:11:08 netstat -tunap| grep 8089
+  158  2019-10-12 16:14:52 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  159  2019-10-14 10:52:19 zypp ref
+  160  2019-10-14 10:52:27 zypper ref
+  161  2019-10-14 10:54:52 zypper update
+  162  2019-10-14 11:05:21 zypper ps -s
+  163  2019-10-14 11:05:31 who
+  164  2019-10-14 11:05:37 netstat -tuna
+  165  2019-10-14 11:05:53 reboot
+  166  2019-12-27 13:38:00 cd /var/log/astguiclient
+  167  2019-12-27 13:38:00 screen -L -S asterisk
+  168  2019-12-27 13:38:00 ulimit -n 65536
+  169  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  170  2019-10-14 11:07:42 top
+  171  2019-10-16 11:32:02 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  172  2019-10-16 11:44:51 zypper ref
+  173  2019-10-16 11:46:52 zypper update
+  174  2019-10-16 11:48:36 cat /var/log/lastlog 
+  175  2019-10-16 11:48:53 ls -lart  /var/log/lastlog 
+  176  2019-10-16 11:49:19 cat /etc/group
+  177  2019-10-16 11:50:41 chown root:utmp /var/log/lastlog 
+  178  2019-10-16 11:50:46 ls -lart  /var/log/lastlog 
+  179  2019-10-16 11:51:24 man permission
+  180  2019-10-16 11:53:28 chkstat
+  181  2019-10-16 11:53:45 chkstat --system
+  182  2019-10-16 12:21:37 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  183  2019-10-16 16:25:08 find / -name "html"
+  184  2019-10-16 16:25:52 locate vicidial_admin_web_logo.gif
+  185  2019-10-16 16:26:13 cd /usr/src/astguiclient/trunk/www/vicidial
+  186  2019-10-16 16:26:14 ls
+  187  2019-10-16 16:26:21 ls -lart *.gif
+  188  2019-10-16 16:33:37 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  189  2019-10-19 13:54:52 zypper refresh
+  190  2019-10-19 14:00:31 zypper up
+  191  2019-10-19 14:48:34 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  192  2019-10-22 14:21:17 zypper refresh
+  193  2019-10-22 14:23:09 zypper up
+  194  2019-10-22 14:25:32 asterisk -vvvvvvvvvvvvvvvvvvvvvr
+  195  2019-10-22 14:26:03 reboot
+  196  2019-12-27 13:38:00 cd /var/log/astguiclient
+  197  2019-12-27 13:38:00 screen -L -S asterisk
+  198  2019-12-27 13:38:00 ulimit -n 65536
+  199  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  200  2019-10-22 14:42:11 asterisk -vvvvvvvvvvvvvvvvvvvvvr
+  201  2019-10-30 17:11:00 halt -p
+  202  2019-12-27 13:38:00 ulimit -n 65536
+  203  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  204  2019-12-27 13:38:00 cd /var/log/astguiclient
+  205  2019-12-27 13:38:00 screen -L -S asterisk
+  206  2019-11-02 16:39:35 zypper refesh
+  207  2019-11-02 16:39:53 zypper re
+  208  2019-11-02 16:39:57 zypper refresh
+  209  2019-11-02 16:44:40 zypper update
+  210  2019-11-02 17:01:21 reboot
+  211  2019-12-27 13:38:00 ulimit -n 65536
+  212  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  213  2019-12-27 13:38:00 cd /var/log/astguiclient
+  214  2019-12-27 13:38:00 screen -L -S asterisk
+  215  2019-11-02 17:10:52 netstat -tuna
+  216  2019-11-02 18:28:56 asterisk -vvvvvvvvvvvvvvvvvvvr
+  217  2019-11-06 11:00:51 zypper refresh
+  218  2019-11-06 11:22:00 zypper update
+  219  2019-11-11 12:56:15 top
+  220  2019-11-11 13:07:04 htop
+  221  2019-11-11 13:07:28 dmesg
+  222  2019-11-11 13:07:56 df -kh
+  223  2019-11-11 12:48:25 zypper refresh
+  224  2019-11-11 12:50:03 zypper update
+  225  2019-11-11 13:16:19 zypper ps -a
+  226  2019-11-11 13:16:24 zypper ps -s
+  227  2019-11-11 13:16:49 halt -p
+  228  2019-12-27 13:38:00 ulimit -n 65536
+  229  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  230  2019-12-27 13:38:00 cd /var/log/astguiclient
+  231  2019-12-27 13:38:00 screen -L -S asterisk
+  232  2019-11-11 13:23:36 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  233  2019-11-11 13:22:25 top
+  234  2019-11-11 14:35:08 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  235  2019-11-11 17:32:45 find / -name "*.wav"
+  236  2019-11-11 17:33:09 find / -name "*.wav" | grep ring
+  237  2019-11-11 17:36:40 cd /usr/share/asterisk/sounds/
+  238  2019-11-11 17:36:43 ls -lart
+  239  2019-11-11 17:37:16 cp ~/Phone\ Ringing01.wav  ./phone_ring01.wav
+  240  2019-11-11 17:37:18 ls
+  241  2019-11-11 17:37:28 ls -lart pho*
+  242  2019-11-11 17:49:32 asterisk -vvvvvvvvvvvvvvvvvvvr
+  243  2019-11-12 12:43:44 cd /etc/asterisk/
+  244  2019-11-12 12:43:45 ls
+  245  2019-11-12 12:43:57 nano extensions.conf 
+  246  2019-11-12 13:07:38 asterisk -vvvvvvvvvvvvvvvvvvvvvvr
+  247  2019-11-13 15:55:36 history
+  248  2019-11-13 16:00:43 nano /etc/asterisk/dahdi-channels.conf
+  249  2019-11-14 13:30:34 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  250  2019-11-14 16:24:14 ping google.com
+  251  2019-11-14 16:24:36 halt -p
+  252  2019-12-27 13:38:00 ulimit -n 65536
+  253  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  254  2019-12-27 13:38:00 cd /var/log/astguiclient
+  255  2019-12-27 13:38:00 screen -L -S asterisk
+  256  2019-11-14 16:27:30 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  257  2019-11-15 11:47:39 zypper refresh
+  258  2019-11-15 11:50:13 zypper update
+  259  2019-11-15 17:43:27 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  260  2019-11-21 18:07:56 rpm -qa
+  261  2019-11-21 18:12:16 zypper refresh
+  262  2019-11-21 18:22:28 zypper update
+  263  2019-11-21 18:43:19 zypper install mutt
+  264  2019-11-21 18:52:31 reboot
+  265  2019-11-21 18:07:56 rpm -qa
+  266  2019-11-21 18:12:16 zypper refresh
+  267  2019-11-21 18:22:28 zypper update
+  268  2019-11-21 18:43:19 zypper install mutt
+  269  2019-11-21 18:52:31 reboot
+  270  2019-12-27 13:38:00 ulimit -n 65536
+  271  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  272  2019-12-27 13:38:00 cd /var/log/astguiclient
+  273  2019-12-27 13:38:00 screen -L -S asterisk
+  274  2019-11-21 18:56:01 netstat -tuna
+  275  2019-11-21 18:56:44 systemctl apache2 status
+  276  2019-11-21 18:56:51 systemctl httpd  status
+  277  2019-11-21 18:57:03 systemctl apache status
+  278  2019-11-21 18:57:11 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  279  2019-11-21 18:57:40 systemctl
+  280  2019-11-21 18:57:55 systemctl apache2 status
+  281  2019-11-21 18:58:03 systemctl status apache2
+  282  2019-11-21 18:58:17 systemctl restart apache2
+  283  2019-11-21 18:58:23 systemctl status apache2
+  284  2019-11-21 18:58:59 cd /var/log/
+  285  2019-11-21 18:59:00 ls
+  286  2019-11-21 18:59:03 cd apache2/
+  287  2019-11-21 18:59:04 ls
+  288  2019-11-21 18:59:09 cat error_log 
+  289  2019-11-21 19:03:08 reboot
+  290  2019-12-27 13:38:00 ulimit -n 65536
+  291  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  292  2019-12-27 13:38:00 cd /var/log/astguiclient
+  293  2019-12-27 13:38:00 screen -L -S asterisk
+  294  2019-11-22 05:55:46 cat /var/log/zypper.log
+  295  2019-11-22 05:56:44 cat /var/log/zypp/history 
+  296  2019-11-22 06:02:11 cut -d "|" -f 1-4 -s --output-delimiter " | " /var/log/zypp/history | grep -v " radd "
+  297  2019-11-22 06:04:21 rpm -qa  | grep php7
+  298  2019-11-22 06:14:26 rpm -e php7-mysql-7.4.0RC6-lp151.232.1.x86_64 php7-ftp-7.4.0RC6-lp151.232.1.x86_64 php7-json-7.4.0RC6-lp151.232.1.x86_64 php7-pear-7.4.0RC6-lp151.232.1.noarch php7-opcache-7.4.0RC6-lp151.232.1.x86_64 php7-7.4.0RC6-lp151.232.1.x86_64 php7-tokenizer-7.4.0RC6-lp151.232.1.x86_64 php7-gd-7.4.0RC6-lp151.232.1.x86_64 php7-sqlite-7.4.0RC6-lp151.232.1.x86_64 php7-xmlrpc-7.4.0RC6-lp151.232.1.x86_64 php7-curl-7.4.0RC6-lp151.232.1.x86_64 php7-dom-7.4.0RC6-lp151.232.1.x86_64 php7-mbstring-7.4.0RC6-lp151.232.1.x86_64 php7-gettext-7.4.0RC6-lp151.232.1.x86_64 php7-pdo-7.4.0RC6-lp151.232.1.x86_64 php7-soap-7.4.0RC6-lp151.232.1.x86_64 php7-bz2-7.4.0RC6-lp151.232.1.x86_64 php7-ctype-7.4.0RC6-lp151.232.1.x86_64 php7-xmlwriter-7.4.0RC6-lp151.232.1.x86_64 php7-zlib-7.4.0RC6-lp151.232.1.x86_64 php7-openssl-7.4.0RC6-lp151.232.1.x86_64 apache2-mod_php7-7.4.0RC6-lp151.232.1.x86_64 php7-xmlreader-7.4.0RC6-lp151.232.1.x86_64 php7-zip-7.4.0RC6-lp151.232.1.x86_64 php7-iconv-7.4.0RC6-lp151.232.1.x86_64
+  299  2019-11-22 06:15:10 rpm -e php7-mysql-7.4.0RC6-lp151.232.1.x86_64 php7-ftp-7.4.0RC6-lp151.232.1.x86_64 php7-json-7.4.0RC6-lp151.232.1.x86_64 php7-pear-7.4.0RC6-lp151.232.1.noarch php7-opcache-7.4.0RC6-lp151.232.1.x86_64 php7-7.4.0RC6-lp151.232.1.x86_64 php7-tokenizer-7.4.0RC6-lp151.232.1.x86_64 php7-gd-7.4.0RC6-lp151.232.1.x86_64 php7-sqlite-7.4.0RC6-lp151.232.1.x86_64 php7-xmlrpc-7.4.0RC6-lp151.232.1.x86_64 php7-curl-7.4.0RC6-lp151.232.1.x86_64 php7-dom-7.4.0RC6-lp151.232.1.x86_64 php7-mbstring-7.4.0RC6-lp151.232.1.x86_64 php7-gettext-7.4.0RC6-lp151.232.1.x86_64 php7-pdo-7.4.0RC6-lp151.232.1.x86_64 php7-soap-7.4.0RC6-lp151.232.1.x86_64 php7-bz2-7.4.0RC6-lp151.232.1.x86_64 php7-ctype-7.4.0RC6-lp151.232.1.x86_64 php7-xmlwriter-7.4.0RC6-lp151.232.1.x86_64 php7-zlib-7.4.0RC6-lp151.232.1.x86_64 php7-openssl-7.4.0RC6-lp151.232.1.x86_64 apache2-mod_php7-7.4.0RC6-lp151.232.1.x86_64 php7-xmlreader-7.4.0RC6-lp151.232.1.x86_64 php7-zip-7.4.0RC6-lp151.232.1.x86_64 php7-iconv-7.4.0RC6-lp151.232.1.x86_64 phpMyAdmin-4.9.1-lp151.344.2.noarch
+  300  2019-11-22 06:15:57 rpm -e php7-mysql-7.4.0RC6-lp151.232.1.x86_64 php7-ftp-7.4.0RC6-lp151.232.1.x86_64 php7-json-7.4.0RC6-lp151.232.1.x86_64 php7-pear-7.4.0RC6-lp151.232.1.noarch php7-opcache-7.4.0RC6-lp151.232.1.x86_64 php7-7.4.0RC6-lp151.232.1.x86_64 php7-tokenizer-7.4.0RC6-lp151.232.1.x86_64 php7-gd-7.4.0RC6-lp151.232.1.x86_64 php7-sqlite-7.4.0RC6-lp151.232.1.x86_64 php7-xmlrpc-7.4.0RC6-lp151.232.1.x86_64 php7-curl-7.4.0RC6-lp151.232.1.x86_64 php7-dom-7.4.0RC6-lp151.232.1.x86_64 php7-mbstring-7.4.0RC6-lp151.232.1.x86_64 php7-gettext-7.4.0RC6-lp151.232.1.x86_64 php7-pdo-7.4.0RC6-lp151.232.1.x86_64 php7-soap-7.4.0RC6-lp151.232.1.x86_64 php7-bz2-7.4.0RC6-lp151.232.1.x86_64 php7-ctype-7.4.0RC6-lp151.232.1.x86_64 php7-xmlwriter-7.4.0RC6-lp151.232.1.x86_64 php7-zlib-7.4.0RC6-lp151.232.1.x86_64 php7-openssl-7.4.0RC6-lp151.232.1.x86_64 apache2-mod_php7-7.4.0RC6-lp151.232.1.x86_64 php7-xmlreader-7.4.0RC6-lp151.232.1.x86_64 php7-zip-7.4.0RC6-lp151.232.1.x86_64 php7-iconv-7.4.0RC6-lp151.232.1.x86_64 phpMyAdmin-4.9.1-lp151.344.2.noarch php7-pear-XML_RPC-1.5.5-lp151.1.1.noarch
+  301  2019-11-22 06:17:31 cd /var/spool
+  302  2019-11-22 06:17:33 ls
+  303  2019-11-22 06:18:34 cd ..
+  304  2019-11-22 06:18:53 find  ./ -name "*.rpm"
+  305  2019-11-22 06:19:31 cd /var/cache/zypp/
+  306  2019-11-22 06:19:42 cd packages/
+  307  2019-11-22 06:20:05 find ./ -name "php7*"
+  308  2019-11-22 06:21:52 find ./ -name "php7*" | grep 7.3
+  309  2019-11-22 06:23:02 find ./ -name "php7*" | grep 7.3 > ~/php.txt
+  310  2019-11-22 06:24:53 rpm -qa | grep php7 | sort
+  311  2019-11-22 06:27:45 find ./ -name "php7*" | grep 7.3 | sort > ~/php.txt
+  312  2019-11-22 06:34:51 find ./ -name "apache-mod*" | grep 7.3 | sort > ~/php.txt
+  313  2019-11-22 06:35:03 find ./ -name "apache-mod*" 
+  314  2019-11-22 06:35:08 find ./ -name "apache-*" 
+  315  2019-11-22 06:35:13 find ./ -name "apache*" 
+  316  2019-11-22 06:36:06 find ./ -name "phpMy*" 
+  317  2019-11-22 06:37:39 zypper install php7-pear-7.3.11-lp151.224.1.noarch.rpm php7-7.3.11-lp151.224.1.x86_64.rpm php7-bz2-7.3.11-lp151.224.1.x86_64.rpm php7-ctype-7.3.11-lp151.224.1.x86_64.rpm php7-curl-7.3.11-lp151.224.1.x86_64.rpm php7-dom-7.3.11-lp151.224.1.x86_64.rpm php7-ftp-7.3.11-lp151.224.1.x86_64.rpm php7-gd-7.3.11-lp151.224.1.x86_64.rpm php7-gettext-7.3.11-lp151.224.1.x86_64.rpm php7-iconv-7.3.11-lp151.224.1.x86_64.rpm php7-json-7.3.11-lp151.224.1.x86_64.rpm php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm php7-mysql-7.3.11-lp151.224.1.x86_64.rpm php7-opcache-7.3.11-lp151.224.1.x86_64.rpm php7-openssl-7.3.11-lp151.224.1.x86_64.rpm php7-pdo-7.3.11-lp151.224.1.x86_64.rpm php7-soap-7.3.11-lp151.224.1.x86_64.rpm php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm php7-zip-7.3.11-lp151.224.1.x86_64.rpm php7-zlib-7.3.11-lp151.224.1.x86_64.rpm apache2-mod_php7-7.3.11-lp151.224.1.x86_64.rpm phpMyAdmin-4.9.1-lp151.344.2.noarch.rpm
+  318  2019-11-22 06:38:47 zypper install php7-pear-7.3.11-lp151.224.1.noarch  php7-7.3.11-lp151.224.1.x86_64  php7-bz2-7.3.11-lp151.224.1.x86_64  php7-ctype-7.3.11-lp151.224.1.x86_64  php7-curl-7.3.11-lp151.224.1.x86_64  php7-dom-7.3.11-lp151.224.1.x86_64  php7-ftp-7.3.11-lp151.224.1.x86_64  php7-gd-7.3.11-lp151.224.1.x86_64  php7-gettext-7.3.11-lp151.224.1.x86_64  php7-iconv-7.3.11-lp151.224.1.x86_64  php7-json-7.3.11-lp151.224.1.x86_64  php7-mbstring-7.3.11-lp151.224.1.x86_64  php7-mysql-7.3.11-lp151.224.1.x86_64  php7-opcache-7.3.11-lp151.224.1.x86_64  php7-openssl-7.3.11-lp151.224.1.x86_64  php7-pdo-7.3.11-lp151.224.1.x86_64  php7-soap-7.3.11-lp151.224.1.x86_64  php7-sqlite-7.3.11-lp151.224.1.x86_64  php7-tokenizer-7.3.11-lp151.224.1.x86_64  php7-xmlreader-7.3.11-lp151.224.1.x86_64  php7-xmlrpc-7.3.11-lp151.224.1.x86_64  php7-xmlwriter-7.3.11-lp151.224.1.x86_64  php7-zip-7.3.11-lp151.224.1.x86_64  php7-zlib-7.3.11-lp151.224.1.x86_64  apache2-mod_php7-7.3.11-lp151.224.1.x86_64  phpMyAdmin-4.9.1-lp151.344.2.noarch 
+  319  2019-11-22 06:41:09 ls
+  320  2019-11-22 06:41:31 find ./ -name "php7*" 
+  321  2019-11-22 06:41:57 ls
+  322  2019-11-22 06:42:15 cd openSUSE-Leap-15.1-Apache-Modules/x86_64/
+  323  2019-11-22 06:43:07 rpm -Uvh php7-pear-7.3.11-lp151.224.1.noarch.rpm php7-7.3.11-lp151.224.1.x86_64.rpm php7-bz2-7.3.11-lp151.224.1.x86_64.rpm php7-ctype-7.3.11-lp151.224.1.x86_64.rpm php7-curl-7.3.11-lp151.224.1.x86_64.rpm php7-dom-7.3.11-lp151.224.1.x86_64.rpm php7-ftp-7.3.11-lp151.224.1.x86_64.rpm php7-gd-7.3.11-lp151.224.1.x86_64.rpm php7-gettext-7.3.11-lp151.224.1.x86_64.rpm php7-iconv-7.3.11-lp151.224.1.x86_64.rpm php7-json-7.3.11-lp151.224.1.x86_64.rpm php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm php7-mysql-7.3.11-lp151.224.1.x86_64.rpm php7-opcache-7.3.11-lp151.224.1.x86_64.rpm php7-openssl-7.3.11-lp151.224.1.x86_64.rpm php7-pdo-7.3.11-lp151.224.1.x86_64.rpm php7-soap-7.3.11-lp151.224.1.x86_64.rpm php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm php7-zip-7.3.11-lp151.224.1.x86_64.rpm php7-zlib-7.3.11-lp151.224.1.x86_64.rpm
+  324  2019-11-22 06:45:02 rpm -Uvh ./php7-pear-7.3.11-lp151.224.1.noarch.rpm ./php7-7.3.11-lp151.224.1.x86_64.rpm ./php7-bz2-7.3.11-lp151.224.1.x86_64.rpm ./php7-ctype-7.3.11-lp151.224.1.x86_64.rpm ./php7-curl-7.3.11-lp151.224.1.x86_64.rpm ./php7-dom-7.3.11-lp151.224.1.x86_64.rpm ./php7-ftp-7.3.11-lp151.224.1.x86_64.rpm ./php7-gd-7.3.11-lp151.224.1.x86_64.rpm ./php7-gettext-7.3.11-lp151.224.1.x86_64.rpm ./php7-iconv-7.3.11-lp151.224.1.x86_64.rpm ./php7-json-7.3.11-lp151.224.1.x86_64.rpm ./php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm ./php7-mysql-7.3.11-lp151.224.1.x86_64.rpm ./php7-opcache-7.3.11-lp151.224.1.x86_64.rpm ./php7-openssl-7.3.11-lp151.224.1.x86_64.rpm ./php7-pdo-7.3.11-lp151.224.1.x86_64.rpm ./php7-soap-7.3.11-lp151.224.1.x86_64.rpm ./php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm ./php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm ./php7-zip-7.3.11-lp151.224.1.x86_64.rpm ./php7-zlib-7.3.11-lp151.224.1.x86_64.rpm
+  325  2019-11-22 06:45:22 find ./ -name "php7*" 
+  326  2019-11-22 06:45:59 find ./ -name "php7*" rpm -Uvh ./php7-7.3.11-lp151.224.1.x86_64.rpm ./php7-bz2-7.3.11-lp151.224.1.x86_64.rpm ./php7-ctype-7.3.11-lp151.224.1.x86_64.rpm ./php7-curl-7.3.11-lp151.224.1.x86_64.rpm ./php7-dom-7.3.11-lp151.224.1.x86_64.rpm ./php7-ftp-7.3.11-lp151.224.1.x86_64.rpm ./php7-gd-7.3.11-lp151.224.1.x86_64.rpm ./php7-gettext-7.3.11-lp151.224.1.x86_64.rpm ./php7-iconv-7.3.11-lp151.224.1.x86_64.rpm ./php7-json-7.3.11-lp151.224.1.x86_64.rpm ./php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm ./php7-mysql-7.3.11-lp151.224.1.x86_64.rpm ./php7-opcache-7.3.11-lp151.224.1.x86_64.rpm ./php7-openssl-7.3.11-lp151.224.1.x86_64.rpm ./php7-pdo-7.3.11-lp151.224.1.x86_64.rpm ./php7-soap-7.3.11-lp151.224.1.x86_64.rpm ./php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm ./php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm ./php7-zip-7.3.11-lp151.224.1.x86_64.rpm ./php7-zlib-7.3.11-lp151.224.1.x86_64.rpm
+  327  2019-11-22 06:46:19 rpm -Uvh ./php7-7.3.11-lp151.224.1.x86_64.rpm ./php7-bz2-7.3.11-lp151.224.1.x86_64.rpm ./php7-ctype-7.3.11-lp151.224.1.x86_64.rpm ./php7-curl-7.3.11-lp151.224.1.x86_64.rpm ./php7-dom-7.3.11-lp151.224.1.x86_64.rpm ./php7-ftp-7.3.11-lp151.224.1.x86_64.rpm ./php7-gd-7.3.11-lp151.224.1.x86_64.rpm ./php7-gettext-7.3.11-lp151.224.1.x86_64.rpm ./php7-iconv-7.3.11-lp151.224.1.x86_64.rpm ./php7-json-7.3.11-lp151.224.1.x86_64.rpm ./php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm ./php7-mysql-7.3.11-lp151.224.1.x86_64.rpm ./php7-opcache-7.3.11-lp151.224.1.x86_64.rpm ./php7-openssl-7.3.11-lp151.224.1.x86_64.rpm ./php7-pdo-7.3.11-lp151.224.1.x86_64.rpm ./php7-soap-7.3.11-lp151.224.1.x86_64.rpm ./php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm ./php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm ./php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm ./php7-zip-7.3.11-lp151.224.1.x86_64.rpm ./php7-zlib-7.3.11-lp151.224.1.x86_64.rpm
+  328  2019-11-22 06:46:49 cd ..
+  329  2019-11-22 06:47:41 find ./ -name "php7-pear-7.3.11-lp151.224.1.noarch.rpm"
+  330  2019-11-22 06:48:06 rpm -Uvh ./openSUSE-Leap-15.1-Apache-Modules/noarch/php7-pear-7.3.11-lp151.224.1.noarch.rpm
+  331  2019-11-22 06:48:48 find ./ -name "apache2-mod_php7-7.3.11-lp151.224.1.x86_64.rpm"
+  332  2019-11-22 06:49:04 rpm -Uvh ./openSUSE-Leap-15.1-Apache-Modules/x86_64/apache2-mod_php7-7.3.11-lp151.224.1.x86_64.rpm
+  333  2019-11-22 06:49:47 find ./ -name "phpMyAdmin-4.9.1-lp151.344.2.noarch.rpm"
+  334  2019-11-22 06:50:02 rpm -Uvh "./openSUSE-Leap-15.1-PHP-Applications/noarch/phpMyAdmin-4.9.1-lp151.344.2.noarch.rpm"
+  335  2019-11-22 06:50:34 reboot
+  336  2019-12-27 13:38:00 ulimit -n 65536
+  337  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  338  2019-12-27 13:38:00 cd /var/log/astguiclient
+  339  2019-12-27 13:38:00 screen -L -S asterisk
+  340  2019-11-22 06:59:16 cd /var/cache/zypp/packages
+  341  2019-11-22 07:02:39 rpm -Uvh ./openSUSE-Leap-15.1-PERL/noarch/perl-RPC-XML-0.80-lp151.43.1.noarch.rpm
+  342  2019-11-22 07:05:13 reboot
+  343  2019-12-27 13:38:00 ulimit -n 65536
+  344  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  345  2019-12-27 13:38:00 cd /var/log/astguiclient
+  346  2019-12-27 13:38:00 screen -L -S asterisk
+  347  2019-11-22 07:19:14 cd /etc/apache2/
+  348  2019-11-22 07:19:15 ;s
+  349  2019-11-22 07:19:17 ls
+  350  2019-11-22 07:19:37 cd /etc/php7/apache2/
+  351  2019-11-22 07:19:39 ls
+  352  2019-11-22 07:19:51 mv php.ini php.ini.221119
+  353  2019-11-22 07:20:08 cp php.ini.rpmsave php.ini
+  354  2019-11-22 07:34:59 cd ../cli
+  355  2019-11-22 07:35:02 ls
+  356  2019-11-22 07:35:25 mv php.ini php.ini.221119
+  357  2019-11-22 07:35:39 cp php.ini.rpmsave  php.ini
+  358  2019-11-22 07:36:33 cd /etc/apache2/conf.d/
+  359  2019-11-22 07:36:35 ls
+  360  2019-11-22 07:37:12 diff phpMyAdmin.conf phpMyAdmin.conf.rpmsave 
+  361  2019-11-22 07:37:36 ls
+  362  2019-11-22 07:38:04 mv phpMyAdmin.conf phpMyAdmin.conf.221119
+  363  2019-11-22 07:38:07 pwd
+  364  2019-11-22 07:39:00 cp phpMyAdmin.conf.rpmsave phpMyAdmin.conf
+  365  2019-11-22 07:39:24 reboot
+  366  2019-12-27 13:38:00 ulimit -n 65536
+  367  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  368  2019-12-27 13:38:00 cd /var/log/astguiclient
+  369  2019-12-27 13:38:00 screen -L -S asterisk
+  370  2019-11-22 15:06:40 nano /etc/asterisk/extensions.conf 
+  371  2019-11-22 15:09:11 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvr
+  372  2019-11-22 15:12:52 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  373  2019-11-22 15:13:55 nano /etc/asterisk/extensions.conf 
+  374  2019-11-22 15:16:56 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  375  2019-11-22 16:04:10 ls
+  376  2019-11-22 16:04:39 zypper search check
+  377  2019-11-22 16:18:47 rpm -ivh check-mk-agent-1.6.0p5-1.noarch.rpm 
+  378  2019-11-22 16:19:00 nano /etc/xinetd.d/check_mk 
+  379  2019-11-22 16:21:03 check_mk_agent 
+  380  2019-11-22 16:22:52 telnet 192.168.10.245 6556
+  381  2019-11-22 16:22:59 netstat -tuna
+  382  2019-11-22 16:24:19 iptable -L
+  383  2019-11-22 16:24:22 iptable -l
+  384  2019-11-22 16:24:38 yast firewall
+  385  2019-11-22 16:59:28 nano /etc/sysconfig/SuSEfirewall2
+  386  2019-11-22 17:00:45 cd /etc/sysconfig/scripts/
+  387  2019-11-22 17:00:47 ls
+  388  2019-11-22 17:01:14 /usr/local/bin/VB-firewall.pl --debug
+  389  2019-11-22 17:02:36 /usr/local/bin/VB-firewall.pl --help
+  390  2019-11-22 17:03:46 yast
+  391  2019-11-22 17:05:19 ip add show
+  392  2019-11-22 17:05:39 netstat -tuna
+  393  2019-11-22 17:06:19 telnet 127.0.0.1 6556
+  394  2019-11-22 17:46:46 yast
+  395  2019-11-22 17:49:05 firewall-cmd --zone=public --add-port=6556/tcp
+  396  2019-11-22 17:49:11 firewall-cmd --zone=public --add-port=6556/udp
+  397  2019-11-22 17:50:03 firewall-cmd --runtime-to-permanent
+  398  2019-11-23 12:40:35 nano /etc/asterisk/extensions.conf 
+  399  2019-11-23 12:40:59 asterisk -vvvvvvvvvvvvvvvvvvvvvvr
+  400  2019-11-23 12:41:22 ping 192.168.10.12
+  401  2019-11-23 12:41:28 ping 192.168.10.13
+  402  2019-11-23 12:42:08 asterisk  -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  403  2019-11-23 12:43:02 ping 192.168.1.12
+  404  2019-11-23 12:45:31 asterisk  -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  405  2019-11-23 16:09:24 zypper addlock php7-pear-7.3.11-lp151.224.1.noarch.rpm php7-7.3.11-lp151.224.1.x86_64.rpm php7-bz2-7.3.11-lp151.224.1.x86_64.rpm php7-ctype-7.3.11-lp151.224.1.x86_64.rpm php7-curl-7.3.11-lp151.224.1.x86_64.rpm php7-dom-7.3.11-lp151.224.1.x86_64.rpm php7-ftp-7.3.11-lp151.224.1.x86_64.rpm php7-gd-7.3.11-lp151.224.1.x86_64.rpm php7-gettext-7.3.11-lp151.224.1.x86_64.rpm php7-iconv-7.3.11-lp151.224.1.x86_64.rpm php7-json-7.3.11-lp151.224.1.x86_64.rpm php7-mbstring-7.3.11-lp151.224.1.x86_64.rpm php7-mysql-7.3.11-lp151.224.1.x86_64.rpm php7-opcache-7.3.11-lp151.224.1.x86_64.rpm php7-openssl-7.3.11-lp151.224.1.x86_64.rpm php7-pdo-7.3.11-lp151.224.1.x86_64.rpm php7-soap-7.3.11-lp151.224.1.x86_64.rpm php7-sqlite-7.3.11-lp151.224.1.x86_64.rpm php7-tokenizer-7.3.11-lp151.224.1.x86_64.rpm php7-xmlreader-7.3.11-lp151.224.1.x86_64.rpm php7-xmlrpc-7.3.11-lp151.224.1.x86_64.rpm php7-xmlwriter-7.3.11-lp151.224.1.x86_64.rpm php7-zip-7.3.11-lp151.224.1.x86_64.rpm php7-zlib-7.3.11-lp151.224.1.x86_64.rpm apache2-mod_php7-7.3.11-lp151.224.1.x86_64.rpm phpMyAdmin-4.9.1-lp151.344.2.noarch.rpm
+  406  2019-11-23 16:09:54 zypper refresh
+  407  2019-11-23 16:11:05 zypper install
+  408  2019-11-23 16:11:40 zypper update
+  409  2019-11-23 16:13:08 zypper install  asterisk asterisk-dahdi asterisk-moh-base asterisk-snmp asterisk-sounds-base libasteriskssl1 perl-HTTP-Date perl-libwww-perl
+  410  2019-11-23 16:15:43 netstat -tuna
+  411  2019-12-02 17:52:15 nano /etc/ssh/sshd_config 
+  412  2019-12-02 17:52:41 zypper update
+  413  2019-12-02 14:42:30 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  414  2019-12-02 14:45:14 history
+  415  2019-12-02 14:45:29 history | grep extension
+  416  2019-12-02 14:45:35 nano /etc/asterisk/extensions.conf 
+  417  2019-12-02 14:48:23 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  418  2019-12-02 14:58:00 nano /etc/asterisk/extensions.conf 
+  419  2019-12-02 15:00:28 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  420  2019-12-02 15:45:56 cd ..
+  421  2019-12-02 15:46:25 chmod 775 asterisk
+  422  2019-12-02 16:08:45 asterisk -vvvvvvvvvvvvvvvvvvvvr
+  423  2019-12-04 17:14:21 ls
+  424  2019-12-04 17:14:49 cd /
+  425  2019-12-04 17:14:53 ls
+  426  2019-12-04 17:15:02 cd srv/www/
+  427  2019-12-04 17:15:04 ls
+  428  2019-12-04 17:15:07 cd htdocs/
+  429  2019-12-04 17:15:08 ls
+  430  2019-12-04 17:15:27 mv ~/Asttecs_Click2Call ./
+  431  2019-12-04 17:15:30 ls -lart
+  432  2019-12-04 17:15:45 cd Asttecs_Click2Call/
+  433  2019-12-04 17:15:46 ls
+  434  2019-12-04 17:16:10 cd ..
+  435  2019-12-04 17:16:27 mv Asttecs_Click2Call pmclick2call
+  436  2019-12-04 17:18:01 mv pmclick2call Asttecs_Click2Call
+  437  2019-12-04 17:18:03 ls
+  438  2019-12-04 17:18:08 cd Asttecs_Click2Call/
+  439  2019-12-04 17:18:10 ls
+  440  2019-12-04 17:19:04 nano Click2Call.php 
+  441  2019-12-04 17:21:48 tailf /var/log/apache2/error_log
+  442  2019-12-04 17:21:54 tail -f /var/log/apache2/error_log
+  443  2019-12-04 17:24:53 mysql -u root -p
+  444  2019-12-04 17:26:17 nano Click2Call.php 
+  445  2019-12-04 17:29:09 pwd
+  446  2019-12-04 17:31:12 mysql -u cron -p
+  447  2019-12-04 17:35:33 tail -f /var/log/apache2/error_log
+  448  2019-12-04 18:07:54 php -v
+  449  2019-12-04 18:21:54 pwd
+  450  2019-12-04 18:50:59 mysql -u root -p
+  451  2019-12-04 18:51:04 mysql -u root 
+  452  2019-12-04 18:53:49 cd
+  453  2019-12-04 18:54:12 mysqldump -u root --all-databases > mysqlall.sql
+  454  2019-12-04 18:54:17 mysql -u root 
+  455  2019-12-05 12:29:12 asterisk -rx "sip show peers"
+  456  2019-12-05 14:32:21 history
+  457  2019-12-05 14:32:40 exit
+  458  2019-12-05 13:47:47 cd /srv/www
+  459  2019-12-05 13:47:48 ls
+  460  2019-12-05 13:47:51 cd htdocs/
+  461  2019-12-05 13:47:52 ls
+  462  2019-12-05 13:48:09 mv Asttecs_Click2Call Click2Call/
+  463  2019-12-05 13:48:11 ls
+  464  2019-12-12 16:44:08 iptables -L
+  465  2019-12-12 16:44:52 zypper refresh
+  466  2019-12-12 16:49:44 zypper update
+  467  2019-12-12 17:59:55 asterisk -rx "sip show peers"
+  468  2019-12-12 18:00:32 asterisk -vvvvvvvvvvvvvvvvvvvvvvr
+  469  2019-12-12 18:01:03 ip add show
+  470  2019-12-12 18:01:50 asterisk -rx "sip show peers"
+  471  2019-12-12 18:05:10 nano /etc/asterisk/
+  472  2019-12-12 18:05:19 cd /etc/asterisk/
+  473  2019-12-12 18:05:30 grep -r -H "123" ./
+  474  2019-12-12 18:07:30 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvt
+  475  2019-12-12 18:07:34 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  476  2019-12-12 18:08:44 zypper update
+  477  2019-12-12 18:41:14 history | grep chmod
+  478  2019-12-12 18:41:30 history
+  479  2019-12-12 18:46:02 cd /var/spool/asterisk/
+  480  2019-12-12 18:46:04 cd ..
+  481  2019-12-12 18:46:11 chmod 775 asterisk/
+  482  2019-12-12 18:46:36 ip add show
+  483  2019-12-12 18:46:39 reboot
+  484  2019-12-27 13:38:00 ulimit -n 65536
+  485  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  486  2019-12-27 13:38:00 cd /var/log/astguiclient
+  487  2019-12-27 13:38:00 screen -L -S asterisk
+  488  2019-12-27 13:38:00 ulimit -n 65536
+  489  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  490  2019-12-27 13:38:00 cd /var/log/astguiclient
+  491  2019-12-27 13:38:00 screen -L -S asterisk
+  492  2019-12-16 19:09:13 ip add show
+  493  2019-12-16 19:09:23 history
+  494  2019-12-16 19:09:34 netstat -tuna
+  495  2019-12-16 19:09:48 nano /etc/ssh/sshd_config 
+  496  2019-12-16 19:10:01 halt -p
+  497  2019-12-27 13:38:00 ulimit -n 65536
+  498  2019-12-27 13:38:00 /usr/sbin/asterisk -vvvvvvvvvvvvvvvvvvvvvgcT
+  499  2019-12-27 13:38:00 cd /var/log/astguiclient
+  500  2019-12-27 13:38:00 screen -L -S asterisk
+  501  2019-12-17 10:46:19 asterisk -vvvvvvvvvvvvvvvvvvvvvvvvvvvvr
+  502  2019-12-18 12:48:43 asterisk -vvvvvvvvvvvvvvvvvvvvvvvr
+  503  2019-12-21 18:49:32 nano /etc/asterisk/extensions.conf 
+  504  2019-12-21 18:51:51 grep -r -H "1234"  /etc/asterisk/
+  505  2019-12-27 13:38:05 history
+  506  2019-12-27 13:38:58 history > pmdialler_history.txt

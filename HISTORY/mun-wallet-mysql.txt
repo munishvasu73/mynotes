@@ -1,0 +1,14 @@
+create database digiindi_wallet;
+GRANT ALL PRIVILEGES ON digiindi_wallet.* TO 'nxwallet'@'%' IDENTIFIED BY 'wallet123' WITH GRANT OPTION;
+flush privileges;
+show databases;
+show processlist;
+show databases;
+GRANT ALL PRIVILEGES ON 'digiindi_wallet'.* TO 'digiindidbuser'@'localhost'  IDENTIFIED BY '122019@@##digiindi';
+GRANT ALL PRIVILEGES ON `digiindi_wallet`.* TO 'digiindidbuser'@'localhost'  IDENTIFIED BY '122019@@##digiindi';
+flush privileges;
+show databases;
+GRANT ALL PRIVILEGES ON `nationxp_pan`.* TO 'digiindi_wallet'@'192.168.10.214'  IDENTIFIED BY 'TBuszPRz';
+GRANT ALL PRIVILEGES ON `digiindi_wallet`.* TO 'niteshk'@'192.168.10.214'  IDENTIFIED BY 'TBuszPRz';
+GRANT ALL PRIVILEGES ON `digiindi_wallet`.* TO 'ashutoshk'@'192.168.10.214'  IDENTIFIED BY 'J7597KVg';
+FLUSH PRIVILEGES;

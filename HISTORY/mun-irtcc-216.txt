@@ -1,0 +1,1000 @@
+    4  vim /etc/ssh/sshd_config 
+    5  service sshd restart
+    6  service tomcat restart
+    7  lsblk 
+    8  df -h
+    9  cd /home/
+   10  ls
+   11  ls -la
+   12  cd ..
+   13  cd
+   14  cd /home/
+   15  cd
+   16  cd /home/
+   17  cd
+   18  umount /home/
+   19  lsblk 
+   20  vim /etc/fstab 
+   21  cat /etc/fstab 
+   22  lvremove /dev/mapper/centos-home 
+   23  lvs
+   24  vgs
+   25  vgdisplay 
+   26  lvextend -l +85442 /dev/mapper/centos-root 
+   27  xfs_growfs /dev/centos/root 
+   28  df -h
+   29  service tomcat restart
+   30  lsblk 
+   31  df -h
+   32  cd /opt/tomcat/
+   33  ls
+   34  cd logs/
+   35  ls
+   36  rm -rf *
+   37  ls
+   38  cd
+   39  service  tomcat restart
+   40  df -h
+   41  cd /opt/tomcat/logs/
+   42  ls
+   43  cd
+   44  df -h
+   45  service sshd status
+   46  df -h
+   47  service tomcat restart
+   48  free -m
+   49  df -h
+   50  service tomcat restart
+   51  vim /etc/ssh/sshd_config 
+   52  useradd jaiadmin
+   53  passwd jaiadmin
+   54  service sshd restart
+   55  vim /etc/ssh/sshd_config 
+   56  mailq
+   57  cat /etc/passwd
+   58  service postfix status
+   59  tail -f /var/log/maillog
+   60  tail -f /var/log/messages
+   61  tail -f /var/log/maillog
+   62  service postfix status
+   63  service postfix restart
+   64  service postfix status
+   65  service postfix stop
+   66  service postfix status
+   67  service postfix restart
+   68  service postfix status
+   69  service postfix stop
+   70  service postfix status
+   71  chkconfig postfix off
+   72  service postfix status
+   73  chkconfig postfix --list
+   74  chkconfig postfix on
+   75  service postfix status
+   76  cd /opt
+   77  cd tomcat/logs/
+   78  ls -all
+   79  rm *.log
+   80  ls -all
+   81  rm *.out
+   82  rm *.txt
+   83  ls -all
+   84  service tomcat restart
+   85  ls -all
+   86  ls -h
+   87  ls -all
+   88  ls -l --block-size=M
+   89  ls -all
+   90  ls -l --block-size=M
+   91  login as: jaiadmin
+   92  su
+   93  df -h
+   94  lsblk 
+   95  df -h
+   96  cd /opt/tomcat/logs/
+   97  ls
+   98  rm -rf *
+   99  service tomcat restart
+  100  ls
+  101  cd
+  102  df -h
+  103  lsblk 
+  104  df -h
+  105  tail -f /var/log/messages
+  106  tail -f /var/log/maillog
+  107  service postfix status
+  108  exit
+  109  vim /etc/ssh/sshd_config 
+  110  service sshd restart
+  111  lsblk 
+  112  df -h
+  113  service tomcat restart
+  114  vim /opt/tomcat/webapps/manager/META-INF/context.xml
+  115  vim /opt/tomcat/conf/tomcat-users.xml
+  116  df -h
+  117  vim /opt/tomcat/conf/server.xml
+  118  history
+  119  service tomcat restart
+  120  service tomcat status
+  121  service tomcat restart
+  122  service tomcat status
+  123  service tomcat restart
+  124  init 6
+  125  hostname
+  126  ifconfig 
+  127  df -h
+  128  cd /opt/tomcat
+  129  df -h
+  130  service tomcat restart
+  131  exit
+  132  service tomcat restart
+  133  df -h
+  134  service tomcat restart
+  135  cd /opt/tomcat/logs
+  136  ls -all
+  137  sudo zip -r abc.zip catalina.out 
+  138  sudo rar abc.zip catalina.out 
+  139  service tomcat restart
+  140  mail.host=mail.nationxpress.in
+  141  mail.smtp.port=25
+  142  mail.username=noreply@nationxpress.in
+  143  mail.password=Jai00445^##@@&& mail.transport.protocol=smtp
+  144  mail.smtp.auth=true
+  145  mail.smtp.starttls.enable=true
+  146  mail.smtp.starttls.required=true
+  147  mail.default-encoding=UTF-8
+  148  mail.test-connection=false
+  149  mail.debug=true
+  150  service tomcat restart
+  151  ls
+  152  date
+  153  cat /etc/redhat-release 
+  154  yum install ntp ntpdate
+  155  date
+  156  timedatectl 
+  157  timedatectl set-ntp true
+  158  service ntp start
+  159  service ntpd start
+  160  service ntpd status
+  161  date
+  162  yum update
+  163  ip add show
+  164  netstat -tuna
+  165  service --status-all
+  166  systemctl | less
+  167  exit
+  168  service tomcat restart
+  169  ls
+  170  top
+  171  yum install htop
+  172  htop
+  173  cd /opt/tomcat/logs/
+  174  ls
+  175  du -sh *
+  176  > catalina.out 
+  177  du -sh *
+  178  yum install xinetd
+  179  cd
+  180  ls
+  181  rpm -ivh check-mk-agent-1.2.8p20-1.noarch.rpm 
+  182  nano /etc/xinetd.d/check_mk 
+  183  top
+  184  df -kh
+  185  free
+  186  service xinetd restart
+  187  iptables -L
+  188  service tomcat restart
+  189  exit
+  190  cd /opt/tomcat/logs/
+  191  ls
+  192  ls -lart
+  193  ls
+  194  ls -lart
+  195  ls
+  196  cd /opt/tomcat/logs/
+  197  ls -lart
+  198  > localhost.2019-01-27.log 
+  199  df -kh
+  200  > localhost_access_log.2019-01-27.txt 
+  201  df -kh
+  202  ls -lart
+  203  > catalina.out 
+  204  df -kh
+  205  history 
+  206  tailf catalina.out 
+  207  tailf /var/log/messages
+  208  tailf /var/log/maillog
+  209  pwd
+  210  tailf catalina.out 
+  211  ip add show
+  212  which logrotate
+  213  ls -lart
+  214  cd ..
+  215  ls -lart
+  216  cd log
+  217  pwd
+  218  cd logs
+  219  ls
+  220  nano /etc/logrotate.d/tomcat.conf
+  221  ls -lart
+  222  nano /etc/logrotate.d/tomcat.conf
+  223  logrotate --force /etc/logrotate.d/tomcat.conf 
+  224  nano /etc/logrotate.d/tomcat.conf
+  225  logrotate --force /etc/logrotate.d/tomcat.conf 
+  226  ls -lart
+  227  rm catalina.out.1.gz 
+  228  df -kh
+  229  ls
+  230  ls -lart
+  231  yum update
+  232  nano /etc/logrotate.d/tomcat.conf
+  233  ls
+  234  rm catalina.out.1 
+  235  logrotate --force /etc/logrotate.d/tomcat.conf 
+  236  ls
+  237  nano /etc/logrotate.d/tomcat.conf
+  238  cd /etc/cron.daily/
+  239  ls
+  240  mv logrotate ../cron.hourly/
+  241  cd ..
+  242  cd cron.hourly/
+  243  ls
+  244  cd /opt/tomcat/logs/
+  245  ls
+  246  df -kh
+  247  ls
+  248  service tomcat restart
+  249  yum install xientd
+  250  yum install xinetd
+  251  rpm -Uvh check-mk-agent-1.5.0p11-1.noarch.rpm 
+  252  ip add show
+  253  exit
+  254  nano /usr/bin/check_mk_agent 
+  255  exit
+  256  netstat -tuna
+  257  top
+  258  exit
+  259  cat /etc/redhat-release 
+  260  systemctl status httpd
+  261  systemctl status apache
+  262  netstat -tuna
+  263  df -kh
+  264  cd /opt/tomcat/logs/
+  265  tailf catalina.out
+  266  cat catalina.out
+  267  history
+  268  service tomcat status
+  269  ps -aux | grep tomcat
+  270  service tomcat restart
+  271  service tomcat status
+  272  netstat -tuna
+  273  service tomcat status
+  274  tailf catalina.out
+  275  top
+  276  netstat -tuna
+  277  service tomcat restart
+  278  cd /opt/tomcat/webapps/
+  279  ls
+  280  cd ROOT/
+  281  ls
+  282  nano index.jsp
+  283  ls -lart
+  284  mv index.html index.html.bak
+  285  ip add show
+  286  cd ..
+  287  cd logs/
+  288  ls
+  289  cat catalina.out | grep nationxpress01@gmail.com
+  290  cat catalina.out | grep 550
+  291  mailq
+  292  ip add show
+  293  netstat -tuna
+  294  netstat -tuna | grep 25
+  295  nano /etc/hosts
+  296  netstat -tuna | grep 25
+  297  ls
+  298  tailf catalina.
+  299  tailf catalina.out
+  300  cd ..
+  301  ls
+  302  grep -rH "nationxpress.in" ./
+  303  cd ./webapps/B2B/WEB-INF/classes/resources/application.properties 
+  304  cd ./webapps/B2B/WEB-INF/classes/resources/
+  305  nano application.properties 
+  306  top
+  307  ls
+  308  cd ..
+  309  ls
+  310  cd logs/
+  311  ls
+  312  tailf catalina.out
+  313  ls
+  314  tailf catalina.out
+  315  netstat -tuna
+  316  top
+  317  ip add show
+  318  htop
+  319  netstat -tuna
+  320  pwd
+  321  tailf catalina.out
+  322  netstat -tuna
+  323  netstat -tuna | grep 222
+  324  tailf catalina.out
+  325  top
+  326  tailf catalina.out
+  327  top
+  328  tailf catalina.out
+  329  history
+  330  cat  catalina.out | grep divya
+  331  tailf   catalina.out 
+  332  cd /opt/tomcat/webapps/B2B/
+  333  grep -rH "nationxpress" ./
+  334  nano ./WEB-INF/classes/resources/application.properties 
+  335  history
+  336  service tomcat status
+  337  service tomcat restart
+  338  cd ..
+  339  cd logs/
+  340  tailf catalina.out
+  341  netstat -tuna
+  342  netstat -tuna | grep 25
+  343  service tomcat restart
+  344  cd ..
+  345  cd /opt/tomcat/webapps/B2B
+  346  grep -rH "nationxpress" ./
+  347  cat ./WEB-INF/classes/resources/application.properties
+  348  exit
+  349  history
+  350  cat /opt/tomcat/webapps/B2B/WEB-INF/classes/resources/application.properties 
+  351  exit
+  352  service tomcat restart
+  353  history
+  354  cat /opt/tomcat/webapps/B2B/WEB-INF/classes/resources/application.properties 
+  355  cat /etc/postfix/main.cf 
+  356  cat /etc/postfix/master.cf 
+  357  ls
+  358  nano /etc/postfix/main.cf 
+  359  mailq
+  360  tailf /var/log/messages
+  361  nano /etc/hosts
+  362  tailf /var/log/maillog
+  363  tailf /var/log/messages
+  364  who
+  365  netstat -tuna
+  366  service tomcat restart
+  367  top
+  368  mailq
+  369  top
+  370  tailf /var/log/maillog
+  371  service postfix status
+  372  df -kh
+  373  cd /opt/tomcat/logs/
+  374  ls
+  375  dmesg
+  376  netstat -tuna
+  377  cat /var/log/messages
+  378  netstat -tuna
+  379  top
+  380  dmesg
+  381  yum update
+  382  yum update yum
+  383  yum update
+  384  top
+  385  service postfix status
+  386  cd /var/spool/mail/tomcat 
+  387  cat /var/spool/mail/tomcat 
+  388  cat /var/spool/mail/jaiadmin 
+  389  cd /var/spool/postfix/
+  390  du -sh *
+  391  cd pid/
+  392  ls
+  393  cat unix.showq 
+  394  service postfix status
+  395  service postfix start
+  396  service postfix status
+  397  yum install mutt
+  398  mutt
+  399  tailf /var/log/maillog
+  400  tailf /var/log/messages
+  401  dmesg
+  402  top
+  403  dmesg
+  404  dmesg | grep microcode
+  405  netstat -tuna
+  406  tailf /var/log/messages
+  407  cat /var/log/messages
+  408  cat /var/log/audit/audit.log 
+  409  top
+  410  netstat -tuna
+  411  top
+  412  cd /opt/tomcat/logs/
+  413  ls
+  414  history
+  415  history | grep tomcat
+  416  service tomcat status
+  417  service tomcat restart
+  418  top
+  419  df -kh
+  420  netstat -tuna
+  421  ls
+  422  ls -lart
+  423  less  catalina.2019-03-06.log
+  424  cat  catalina.2019-03-06.log
+  425  nano /etc/hosts
+  426  ls
+  427  tailf catalina.out 
+  428  top
+  429  cat /etc/hosts
+  430  nano /etc/hosts
+  431  cat /opt/tomcat/webapps/B2B/WEB-INF/classes/resources/application.properties 
+  432  ip add show
+  433  nano /etc/hosts
+  434  netstat -tuna
+  435  netstat -tuna | grep 25
+  436  ls
+  437  cd /opt/tomcat/
+  438  ls
+  439  cd logs/
+  440  ls
+  441  top
+  442  ls
+  443  tailf host-manager.2019-03-06.log 
+  444  tailf localhost_access_log.2019-03-07.txt 
+  445  tailf catalina.out
+  446  whois  141.98.80.15
+  447  top
+  448  history
+  449  service tomcat restart
+  450  tailf /opt/tomcat/logs/catalina.out
+  451  cat /opt/tomcat/logs/catalina.out | grep error
+  452  service tomcat restart
+  453  halt -p
+  454  top
+  455  service tomcat status
+  456  ps -aux | grep java
+  457  service tomcat start
+  458  service tomcat status
+  459  mnt
+  460  cd /mnt
+  461  ls
+  462  ls -lart
+  463  mount
+  464   yum install nfs-utils nfs-utils-lib
+  465  cd ..
+  466  showmount -e 192.168.10.218
+  467  mount 192.168.10.218:/export/serverbackup /mnt
+  468  mount
+  469  tar -zcvpf /mnt/10_213_irctc_tomcat.tgz /opt/tomcat/
+  470  cd /mnt
+  471  ls
+  472  mount
+  473  touch text
+  474  cd 
+  475  tar -zcvpf /mnt/10_213_irctc_tomcat.tgz /opt/tomcat/
+  476  umount /mnt
+  477  exit
+  478  history
+  479  ip add show
+  480  cd /opt/tomcat/logs/
+  481  ls
+  482  tailf catalina.out
+  483  service tomcat status
+  484  service tomcat restart
+  485  tailf catalina.out
+  486  df -kh
+  487  tailf catalina.out
+  488  cat catalina.out
+  489  tail  catalina.out
+  490  tailf catalina.out
+  491  ls
+  492  service tomcat status
+  493  ps -aux | grep java
+  494  top
+  495  tailf catalina.out
+  496  dmesg
+  497  top
+  498  tailf catalina.out
+  499  cat catalina.out
+  500  top
+  501  htop 
+  502  top
+  503  reboot
+  504  service tomcat restart
+  505  service tomcat start
+  506  tailf /opt/tomcat/logs/catalina.out 
+  507  tailf /opt/tomcat/logs/localhost.2019-03-19.log 
+  508  cat /opt/tomcat/logs/localhost.2019-03-19.log 
+  509  tailf /opt/tomcat/logs/catalina.out 
+  510  cd /opt/tomcat/webapps/B2B/static/qrCode/
+  511  ls -lart
+  512  ls null*
+  513  ls -lart null*
+  514  ls -all null*
+  515  top
+  516  tailf /opt/tomcat/logs/catalina.
+  517  tailf /opt/tomcat/logs/catalina.out
+  518  service tomcat restart
+  519  tailf /opt/tomcat/logs/catalina.out
+  520  cp /opt/tomcat/logs/catalina.out ./log.txt
+  521  ls
+  522  cat log.txt 
+  523  top
+  524  cat /opt/tomcat/conf/logging.properties 
+  525  ls
+  526  tar -zcvpf /mnt/full-backup-10-213-`date '+%d-%B-%Y'`.tar.gz --directory / --exclude=mnt --exclude=proc --exclude=tmp --exclude=dev  --exclude=run --exclude=sys   .
+  527  exit
+  528  top
+  529  yum update
+  530  java -V
+  531  java -v
+  532  java -version
+  533  tailf /opt/tomcat/logs/catalina.out
+  534  cat /opt/tomcat/logs/catalina.out
+  535  tail /opt/tomcat/logs/catalina.out
+  536  tailf /opt/tomcat/logs/catalina.out
+  537  tailf /var/log/messages
+  538  netstat -tuna
+  539  netstat -tuna | grep 443
+  540  yum update
+  541  yum update dbus dbus-libs
+  542  yum install libgcc
+  543  yum install NetworkManager
+  544  yum install gnutls
+  545  yum install atk
+  546  yum install cario
+  547  yum install cairo
+  548  yum install gtk2
+  549  yum install polkit
+  550  yum install util-linux
+  551  top
+  552  yum update
+  553  yum install xfsprogs
+  554  yum update
+  555  yum install show-utils
+  556  yum install shadow-utils
+  557  yum update
+  558  yum install tuned
+  559  yum update
+  560  yum install python-perf pcsc-lite-libs libgomp
+  561  yum update
+  562  yum install libgcc*
+  563  top
+  564  history
+  565  history | grep tar
+  566  history | grep mount
+  567  yum --help
+  568  yum clean all
+  569  yum update
+  570  iptables -L
+  571  top
+  572  yum update
+  573  cd /mnt
+  574  ls
+  575  history | grep mount
+  576  showmount -e 192.168.10.218
+  577  mount 192.168.10.218:/export/serverbackup /mnt
+  578  mount
+  579  cd /
+  580  ls -lart
+  581  top
+  582  cat /opt/tomcat/logs/catalina.out
+  583  mount
+  584  yum install screen
+  585  screen
+  586  screen -ls
+  587  screen --help
+  588  screen -r
+  589  top
+  590  df -kh
+  591  screen -r
+  592  mount
+  593  umount /mnt
+  594  exit
+  595  wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
+  596  cat /etc/redhat-release 
+  597   yum install ossec-hids-agent
+  598  /var/ossec/bin/manage_agent 
+  599  nano /var/ossec/etc/ossec.conf
+  600  serivce ossec-hids start
+  601  /etc/init.d/ossec-hids start
+  602  chkconfig ossec-hids enable
+  603  chkconfig enable ossec-hids 
+  604  systemctl enable  ossec-hids 
+  605  tailf /var/ossec/logs/ossec.log 
+  606  netstat -tuna
+  607  tailf /var/ossec/logs/ossec.log 
+  608  systemctl stop  ossec-hids 
+  609  /var/ossec/bin/manage_agent 
+  610  systemctl restart  ossec-hids 
+  611  tailf /var/ossec/logs/ossec.log 
+  612  yum install python
+  613  wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+  614  chmod +x speedtest-cli 
+  615  ./speedtest-cli 
+  616  ip add show
+  617  ./speedtest-cli 
+  618  service tomcat restart
+  619  tailf /opt/tomcat/logs/catalina.out
+  620  history
+  621  service tomcat restart
+  622  tailf /opt/tomcat/logs/catalina.out
+  623  nestat -tuna
+  624  netstat -tuna
+  625  iptables -L
+  626  iptables -t nat -L
+  627  tailf /opt/tomcat/logs/catalina.out
+  628  service tomcat restart
+  629  tailf /opt/tomcat/logs/catalina.out
+  630  cat /opt/tomcat/logs/catalina.out
+  631  tail -100  /opt/tomcat/logs/catalina.out
+  632  tailf  /opt/tomcat/logs/catalina.out
+  633  service tomcat restart
+  634  tailf  /opt/tomcat/logs/catalina.out
+  635  cat /var/log/audit/audit.log 
+  636  cat /var/log/messages
+  637  ls
+  638  cd /var/log
+  639  ls
+  640  cat /var/log/messages
+  641  cat /var/log/maillog
+  642  ls
+  643  cat yum.log
+  644  cd /opt/tomcat/
+  645  cd logs/
+  646  ls
+  647  cat localhost_access_log.2019-04-15.txt 
+  648  cat localhost_access_log.2019-04-15.txt  | grep 192.168.
+  649  cat localhost_access_log.2019-04-15.txt  | grep 192.168. | grep 2019:16
+  650  cat localhost_access_log.2019-04-15.txt  | grep 192.168. | grep 2019:16:3
+  651  cat localhost_access_log.2019-04-15.txt  | grep 192.168. | grep 2019:16:39
+  652  cat localhost_access_log.2019-04-15.txt  | grep 192.168. | grep rejectWalletRequestToBank.html
+  653   grep -r -H rejectWalletRequestToBank.html ./host-manager.2019-04-0*
+  654   grep -r -H "rejectWalletRequestToBank.html" ./host-manager.2019-04-0*
+  655   grep -r -H "rejectWallet" ./host-manager.2019-04-0*
+  656   grep -r -H "reject" ./host-manager.2019-04-0*
+  657   grep -r -H "rejectWallet" ./localhost*
+  658   grep -r -H "rejectWallet" ./localhost_access_log.2019-04-*
+  659   grep -r -H "rejectWalletToB" ./localhost_access_log.2019-04-*
+  660   grep -r -H "rejectWalletRequestToBank.html" ./localhost_access_log.2019-04*
+  661  ls
+  662  service tomcat restart
+  663  cd /opt/tomcat/logs/
+  664  ls
+  665  cat catalina.out
+  666  service tomcat restart
+  667  tail -f /opt/tomcat/logs/
+  668  tail -f /opt/tomcat/logs/catalina.out
+  669  service tommcat restart
+  670  service tomcat restart
+  671  tail -f /opt/tomcat/logs/catalina.out
+  672  service tomcat restart
+  673  yum update
+  674  yum install systemd
+  675  yum install tzdata
+  676  yum install GeoIP
+  677  yum install openssl
+  678  yum install pango python
+  679  yum install microcode-cti
+  680  yum search  microcode
+  681  yum install microcode-ctl
+  682  yum install microcode_ctl
+  683  yum install kernel-tools
+  684  yum install device-mapper
+  685  yum update
+  686  java -version
+  687  netstat -tuna
+  688  reboot
+  689  service tomcat start
+  690  tailf /opt/tomcat/logs/catalina.out
+  691  df -kh
+  692  cd /opt/tomcat/logs/
+  693  ls
+  694  rm catalina.out-2019053123.gz 
+  695  df -kh
+  696  rm catalina.out-2019053122.gz 
+  697  df -kh
+  698  rm catalina.out-2019053121.gz 
+  699  rm catalina.out-2019053120.gz 
+  700  df -kh
+  701  du -sh *
+  702  tailf catalina.2019-06-01.log 
+  703  cat catalina.2019-06-01.log 
+  704  du -sh  catalina.*
+  705  df -kh
+  706  tailf catalina.out
+  707  cat catalina.out
+  708  ls
+  709  du -sh catalina.*
+  710  df -kh
+  711  [root@pc1 logs]# df -kh
+  712  Filesystem               Size  Used Avail Use% Mounted on
+  713  /dev/mapper/centos-root  384G  384G   20K 100% /
+  714  devtmpfs                  32G     0   32G   0% /dev
+  715  tmpfs                     32G     0   32G   0% /dev/shm
+  716  tmpfs                     32G  8.9M   32G   1% /run
+  717  tmpfs                     32G     0   32G   0% /sys/fs/cgroup
+  718  /dev/sda1                497M  204M  294M  41% /boot
+  719  tmpfs                    6.3G     0  6.3G   0% /run/user/0
+  720  clear
+  721  [root@pc1 logs]# df -kh
+  722  Filesystem               Size  Used Avail Use% Mounted on
+  723  /dev/mapper/centos-root  384G  384G   20K 100% /
+  724  devtmpfs                  32G     0   32G   0% /dev
+  725  tmpfs                     32G     0   32G   0% /dev/shm
+  726  tmpfs                     32G  8.9M   32G   1% /run
+  727  tmpfs                     32G     0   32G   0% /sys/fs/cgroup
+  728  /dev/sda1                497M  204M  294M  41% /boot
+  729  tmpfs                    6.3G     0  6.3G   0% /run/user/0
+  730  clear
+  731   df -kh
+  732  hisory
+  733  history
+  734  clear
+  735  du -sh catalina.*
+  736  cat catalina.2019-06-01.log 
+  737  cat catalina.2019-06-01.log  | grep error
+  738  tailf  catalina.2019-06-01.log 
+  739  tail -100   catalina.2019-06-01.log 
+  740  less   catalina.2019-05-31.log 
+  741  >  catalina.2019-06-01.log 
+  742  df -kh
+  743  tailf catalina.out
+  744  service tomcat restart
+  745  tailf catalina.out
+  746  tailf  catalina.2019-06-01.log 
+  747  tailf catalina.out
+  748  cd /var/log/
+  749  ls
+  750  cd /opt/tomcat/logs/
+  751  ls
+  752  tailf catalina.out
+  753  ls
+  754  tailf catalina.2019-06-02.log 
+  755  cat catalina.2019-06-02.log 
+  756  cat catalina.2019-06-01.log 
+  757  ls
+  758  cat host-manager.2019-06-01.log 
+  759  ls -lart
+  760  cat localhost.2019-06-03.log 
+  761  ls -lart
+  762  grep -r -H "Error" ./
+  763  top
+  764  service tomcat restart
+  765  top
+  766  tailf /opt/tomcat/logs/catalina.out
+  767  service tomcat restart
+  768  yum update
+  769  yum install kernel bind-libs-lite bind-license glib2 glibc-common kernel-tools kernel-tools-libs  kexec-tools
+  770  yum update
+  771  yum install iproute libgcc libssh2 nss-pem wget tzdata-java pcre2
+  772  yum install iproute  libssh2 nss-pem wget tzdata-java pcre2
+  773  yum update
+  774  top
+  775  ip add show
+  776  passwd
+  777  nano /etc/ssh/sshd_config 
+  778  service sshd restart
+  779  cd /var/log/
+  780  cd audit/
+  781  ls
+  782  cat audit.log 
+  783  cat audit.log | grep 10.40
+  784  cat audit.log | grep "addr="
+  785  cat audit.log | grep "addr=192.168.10"
+  786  who
+  787  netstat -tuna
+  788  netstat -tuna | grep 22
+  789  cat audit.log | grep "addr=192.168.10"
+  790  cat audit.log 
+  791  ls
+  792  yum install audir
+  793  yum install audit
+  794  cat /var/log/secure
+  795  cat /var/log/secure-20190623
+  796  cat /var/log/secure
+  797  cd/var/log/secure
+  798  cd/var/log/
+  799  cd /var/log/
+  800  ls
+  801  grep -r -H "192.168.10" ./secure*
+  802  service tomcat restart
+  803  rpm -qa
+  804  rpm -qa | grep tocat
+  805  rpm -qa | grep tomcat
+  806  rpm -qa | grep java
+  807  yum update
+  808  yum install device-mapper
+  809  yum install systemd
+  810  yum install tzdata
+  811  yum install vim
+  812  htop
+  813  cd /var/log/audit/
+  814  ls
+  815  cat audit.log 
+  816  cat audit.log | grep ssh
+  817  cat audit.log | grep ssh | grep 22
+  818  cd ..
+  819  cat audit.log | grep sshd
+  820  cat ./audit/audit.log | grep sshd
+  821  cd /var/log
+  822  cat messages
+  823  cat /opt/tomcat/
+  824  ls
+  825  cd /opt/tomcat/
+  826  ls
+  827  cd logs
+  828  ls
+  829  cat catalina.out
+  830  ls -lart
+  831  ls -lart | grep cat
+  832  top
+  833  netstat -tuna
+  834  netstat -tuna | grep 8
+  835  netstat -tuna | grep 8443
+  836  netstat -tuna | grep 8080
+  837  cat cat /opt/tomcat/conf/server.xml
+  838  cat /opt/tomcat/conf/server.xml
+  839  clear
+  840  cat /opt/tomcat/conf/server.xml
+  841  netstat -tuna
+  842  netstat -tuna | grep 3306
+  843  netstat -tuna | grep 3306 | wc -l
+  844  service tomcat restart
+  845  tailf /opt/tomcat/logs/catalina.out
+  846  service tomcat restart
+  847  tailf /opt/tomcat/logs/catalina.out
+  848  service tomcat restart
+  849  tailf /opt/tomcat/logs/catalina.out
+  850  passwd 
+  851  clear
+  852  yum update
+  853  nano /etc/yum.conf 
+  854  yum clean all
+  855  yum update
+  856  top
+  857  htop
+  858  ip  add show
+  859  passwd
+  860  cat /etc/passwd
+  861  exit
+  862  passwd jaiadmin
+  863  history
+  864  history | grep crt
+  865  history
+  866  keytool -list  -keystore /etc/pki/keystore -storepass Jai@@##2017
+  867  history
+  868  cd /etc/pki
+  869  ls
+  870  cd
+  871  find / -name "*.crt"
+  872  cd
+  873  ls
+  874  cat 424a5b17518a33c1.crt 
+  875  keytool -list  
+  876  keytool -list  -keystore /etc/pki/keystore 
+  877  keytool -list  -keystore /etc/pki/keystore -storepass Jai@@##2017
+  878  cd /opt/tomcat/
+  879  find ./ -name "server.xml"
+  880  cd ./conf/
+  881  nano server.xml 
+  882  history
+  883  cat /etc/redhat-release 
+  884  java -version
+  885  yum install java-1.8.0-openjdk
+  886  java -version
+  887  service tomcat restart
+  888  cd /opt/tomcat/logs/
+  889  tailf catalina.out
+  890  service tomcat status
+  891  tailf catalina.out
+  892  tailf - 1000 catalina.out
+  893  tailf -1000 catalina.out
+  894  tail -1000 catalina.out
+  895  tailf -1000 catalina.out
+  896  cd /etc
+  897  cd /pki
+  898  cd pki
+  899  keytool -keysize 2048 -genkey -alias tomcat -keyalg RSA -keystore tomcat.keystore
+  900  keytool -certreq -keyalg RSA -alias tomcat -file myFQDN.csr -keystore tomcat.keystore
+  901  keytool -certreq -keyalg RSA -alias tomcat -file nationxpress.com.csr -keystore tomcat.keystore
+  902  ls
+  903  cat nationxpress.com.csr
+  904  -----BEGIN NEW CERTIFICATE REQUEST-----
+  905  MIIC7TCCAdUCAQAweDELMAkGA1UEBhMCSU4xDjAMBgNVBAgTBURlbGhpMQ4wDAYD
+  906  VQQHEwVEZWxoaTEWMBQGA1UEChMNTmF0aW9uIFhwcmVzczEWMBQGA1UECxMNTmF0
+  907  aW9uIFhwcmVzczEZMBcGA1UEAxMQbmF0aW9ueHByZXNzLmNvbTCCASIwDQYJKoZI
+  908  hvcNAQEBBQADggEPADCCAQoCggEBAOk2mKOMSRiu7AjuxcHR1o3RDgdqL9q9yfR2
+  909  O5SWk2f6D7iCWflLT8+tiOsbk/nhr2hl1+PW+5P3QSQgiZZ7oNy2cRtCoXnr4u3B
+  910  DF+sr2HDr0L5MHZlm3zwlRa+qPTwkEH/HK/ql7uSz8zx7hf717iV+Qv87JtOCjHB
+  911  8kHrPTcsLBWzDVDmNEy8kekX5T7j7gDG/k1SOKTOW0h7hCfPgWPsY0MzbKDdsN0c
+  912  0P4qbOpspCnJJUMDUbIFBtdp/zqxGv+BxWk3xryYO4KdXX5N370N8oEXIt2y/ruw
+  913  UuVr2TYB/aeKo2A8hq8zZSam84a2yptwD4nEQP9MWQt4+C0VX0MCAwEAAaAwMC4G
+  914  CSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFLsGvedSAzVPehy79pQaTAK+7P8BMA0G
+  915  CSqGSIb3DQEBCwUAA4IBAQAfB7IyhJNayaeJJ/NekscUp3SiKK6nvIc3KabCExUw
+  916  UMFZVAAfdfYo7SKm2fjms5Sq5cdBKxJy2cHTOjcXfXB4SVPZ5jlb2SWjYkvQocll
+  917  CNJs4JsibITT0qe8/vUAuaLyQZ1Vhrvx/vq4EFcsbZn4BozIESAuEBPqqjOoW4cA
+  918  StSYws4d/uhLZJYiXx1Cu50v82Sb4ZFJT4KfFjCycVGRMPMrR3LV0y3qBmdzp0x5
+  919  r7puhIpGwI4zj6GV91MPTE2JojjH/AuaVhEAI8iZN7SMNHSAI7tO5DEJJW+2wPps
+  920  e8zTcUdrb+w82rI0p/7N04fjlG85IrHBRAnd4gqxkWbF
+  921  -----END NEW CERTIFICATE REQUEST-----
+  922  cls
+  923  claer
+  924  clear
+  925  nano gd_bundle.crt
+  926  keytool -import -alias intermed -keystore tomcat.keystore -trustcacerts -file gd_bundle.crt
+  927  nano myFQDN.crt
+  928  keytool -import -alias tomcat -keystore tomcat.keystore -trustcacerts -file myFQDN.crt
+  929  nano /opt/tomcat/conf/server.xml 
+  930  exit
+  931  service tomcat restart
+  932  tailf /opt/tomcat/logs/catalina.out
+  933  service tomcat restart
+  934  mailq
+  935  tailf /opt/tomcat/logs/catalina.out
+  936  yum update
+  937  exit
+  938  service tomcat restart
+  939  tailf /opt/tomcat/logs/catalina.out
+  940  service tomcat restart
+  941  tailf /opt/tomcat/logs/catalina.out
+  942  less /opt/tomcat/logs/catalina.out
+  943  tailf  /opt/tomcat/logs/catalina.out
+  944  service tomcat restart
+  945  tailf /opt/tomcat/logs/catalina.out
+  946  service tomcat restart
+  947  cd /opt/tomcat/logs/
+  948  ls
+  949  tailf catalina.out
+  950  cat /var/log/messages
+  951  echo 'if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Starting User Slice of" or $msg contains "Removed session" or $msg contains "Removed slice User Slice of" or $msg contains "Stopping User Slice of") then stop' >/etc/rsyslog.d/ignore-systemd-session-slice.conf
+  952  systemctl restart syslog
+  953  systemctl restart rsyslog
+  954  yum update
+  955  nano /etc/rsyslog.conf 
+  956  systemctl restart rsyslog
+  957  logger "irctc 213 logging ..........."
+  958  yum update
+  959  cat /var/log/message
+  960  cat /var/log/messages
+  961  hostname
+  962  cat /etc/redhat-release 
+  963  hostnamectl 
+  964  hostnamectl  set-hostname oldirctc.webserver.local
+  965  hostnamectl 
+  966  nano /etc/hosts
+  967  cat /var/log/messages
+  968  exit
+  969  cd /opt/tomcat/
+  970  ls
+  971  cd logs/
+  972  ls
+  973  tailf catalina.out
+  974  netstat -tuna
+  975  systemctl restart rsyslog
+  976  logger "oldirctc 213 logging ..........."
+  977  df -kh
+  978  cd
+  979  ls
+  980  cat /etc/hosts
+  981  mount
+  982  dmesg
+  983  top
+  984  service tomcat restart
+  985  cd /opt/tomcat/logs/
+  986  tail -f catalina.out
+  987  service tomcat restart
+  988  exit
+  989  ls
+  990  cd /opt/tomcat/logs/
+  991  ls
+  992  less localhost_access_log.2019-12-12.txt
+  993  cat localhost_access_log.2019-12-12.txt
+  994  tail -1000  localhost_access_log.2019-12-12.txt
+  995  tail -2000  localhost_access_log.2019-12-12.txt
+  996  service tomcat restart
+  997  service tomcat restart
+  998  history
+  999  exit
+ 1000  yum update
+ 1001  passwd
+ 1002  history 
+ 1003  history > ~/mun-irtcc-216.txt

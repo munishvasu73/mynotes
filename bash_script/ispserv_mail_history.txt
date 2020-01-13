@@ -1,0 +1,500 @@
+    5  tail -f /var/log/syslog 
+    6  nano /etc/postfix/main.cf
+    7  nano /etc/postfix/main.cf
+    8  postconf -n | grep mailbox
+    9  postconf -d | grep message_size_limit
+   10  postconf -e 'message_size_limit = 104857600'
+   11  service postfix restart
+   12  postconf -e 'message_size_limit = 104857600'
+   13  service postfix restart
+   14  postconf -d | grep message_size_limit
+   15  nano /etc/postfix/main.cf
+   16  systemctl restart postfix
+   17  postconf -d | grep message_size_limit
+   18  postconf -n | grep message_size_limit
+   19  systemctl restart postfix
+   20  apt-get install build-essential nano
+   21  apt-get install libfcgi-dev libfcgi0ldbl libjpeg62-turbo-dev libmcrypt-dev libssl-dev libc-client2007e libc-client2007e-dev libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpng-dev libfreetype6-dev libkrb5-dev libpq-dev libxml2-dev libxslt1-dev
+   22  tail -f /var/log/syslog 
+   23  dig +short myip.opendns.com @resolver1.opendns.com
+   24  dig +short myip.opendns.com @resolver1.opendns.com
+   25  apt-get install libfcgi-dev libfcgi0ldbl libjpeg62-turbo-dev libmcrypt-dev libssl-dev libc-client2007e libc-client2007e-dev libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpng-dev libfreetype6-dev libkrb5-dev libpq-dev libxml2-dev libxslt1-dev
+   26  ln -s /usr/lib/libc-client.a /usr/lib/x86_64-linux-gnu/libc-client.a
+   27  cd /usr/include
+   28  ln -s x86_64-linux-gnu/curl
+   29  mkdir -p /opt/php-5.6
+   30  mkdir /usr/local/src/php5.6-build
+   31  cd /usr/local/src/php5.6-build
+   32  wget https://www.php.net/distributions/php-5.6.40.tar.gz
+   33  ls
+   34  tar -zxvpf php-5.6.40.tar.gz 
+   35  cd /tmp
+   36  wget "https://www.openssl.org/source/old/1.0.1/openssl-1.0.1t.tar.gz"
+   37  tar xzf openssl-1.0.1t.tar.gz 
+   38  cd openssl-1.0.1t
+   39  ./config shared --prefix=/opt/openssl
+   40  make -j $(nproc) && make install
+   41  ln -s /opt/openssl/lib /opt/openssl/lib/x86_64-linux-gnu
+   42  wget -O /opt/openssl/ssl/cert.pem "http://curl.haxx.se/ca/cacert.pem"
+   43  mkdir /usr/include/freetype2/freetype
+   44  ln -s /usr/include/freetype2/freetype.h /usr/include/freetype2/freetype/freetype.h
+   45  ln -s /opt/openssl/lib/libcrypto.so.1.0.0 /usr/lib/x86_64-linux-gnu/
+   46  ln -s /opt/openssl/lib/libssl.so.1.0.0 /usr/lib/x86_64-linux-gnu/
+   47  ln -fs /opt/openssl /usr/local/ssl
+   48  cd /usr/local/src/
+   49  cd php5.6-build/php-5.6.40/
+   50  ./configure --prefix=/opt/php-5.6 --with-pdo-pgsql --with-zlib-dir --with-freetype-dir --enable-mbstring --with-libxml-dir=/usr --enable-soap --enable-calendar --with-curl --with-mcrypt --with-zlib --with-pgsql --disable-rpath --enable-inline-optimization --with-bz2 --with-zlib --enable-sockets --enable-sysvsem --enable-sysvshm --enable-pcntl --enable-mbregex --enable-exif --enable-bcmath --with-mhash --enable-zip --with-pcre-regex --with-pdo-mysql --with-mysqli --with-mysql-sock=/var/run/mysqld/mysqld.sock --with-jpeg-dir=/usr --with-png-dir=/usr --enable-gd-native-ttf --with-openssl=/opt/openssl --with-fpm-user=www-data --with-fpm-group=www-data --with-libdir=/lib/x86_64-linux-gnu --enable-ftp --with-kerberos --with-gettext --with-xmlrpc --with-xsl --enable-opcache --enable-fpm
+   51  make
+   52  make
+   53  make install
+   54  cp /usr/local/src/php5.6-build/php-5.6.40/php.ini-production /opt/php-5.6/lib/php.ini
+   55  find / -name "etc"
+   56  cp /opt/php-5.6/etc/php-fpm.conf.default /opt/php-5.6/etc/php-fpm.conf
+   57  mkdir -p /opt/php-5.6/etc/php-fpm.d
+   58  nano /opt/php-5.6/etc/php-fpm.conf
+   59  nano /lib/systemd/system/php-5.6-fpm.service
+   60  systemctl enable php-5.6-fpm.service
+   61  systemctl daemon-reload
+   62  systemctl start php-5.6-fpm.service
+   63  nano /opt/php-5.6/lib/php.ini
+   64  apt-get install libmemcached-dev
+   65  cd /opt/php-5.6/etc
+   66  pecl -C ./pear.conf update-channels
+   67  pecl -C ./pear.conf install memcache
+   68  nano /opt/php-5.6/lib/php.ini
+   69  systemctl start php-5.6-fpm.service
+   70  cd /opt/php-5.6/bin
+   71  ./php --version
+   72  reboot
+   73  cat /var/log/syslog
+   74  tailf /var/log/syslog
+   75  tail -ff /var/log/syslog
+   76  tail -f /var/log/syslog
+   77  tail -f /var/log/syslog
+   78  apt upgarde
+   79  apt upgrade
+   80  tail -f /var/log/syslog
+   81  su - getmail
+   82  apt update
+   83  cd /var/www/jaisteelfacilitation.com/
+   84  ls
+   85  cd web
+   86  ls
+   87  ls
+   88  mkdir old
+   89  ls
+   90  mv error favicon.ico index.html robots.txt ./old/
+   91  ls
+   92  ls
+   93  ls -lart
+   94  chown -R web1:client1 ../web
+   95  ls -lart
+   96  ls
+   97  cd ..
+   98  cd ..
+   99  cd brandbizz.co
+  100  ls
+  101  cd web
+  102  ls
+  103  mkdir old
+  104  mv error favicon.ico index.html robots.txt ./old
+  105  ls
+  106  ls -lart
+  107  chown -R web2:client2 ../web
+  108  cd ..
+  109  cd ..
+  110  cd jaisteelfacilitation.in
+  111  cd wen
+  112  cd web
+  113  ls
+  114  mkdir old
+  115  mv error/ favicon.ico index.html robots.txt ./old/
+  116  ls
+  117  cd /var/vmail/
+  118  ls
+  119  cd jaisteelfacilitation.com/
+  120  ls
+  121  ls -lart
+  122  ls
+  123  cd irctclimit/
+  124  ls
+  125  cd Maildir/
+  126  ls
+  127  ls -lart
+  128  cd .Sent/
+  129  ls
+  130  cd ..
+  131  ls
+  132  ls -lart
+  133  cd ..
+  134  ls
+  135  ls -lart
+  136  ls
+  137  ls -lart
+  138  chown vmail:vmail Maildir
+  139  chown -R vmail:vmail Maildir
+  140  cd ..
+  141  ls -lart
+  142  ls
+  143  ls -lart
+  144  cd tdr/
+  145  ls
+  146  du -sh Maildir/
+  147  cd Maildir/
+  148  ls
+  149  cd ..
+  150  ls
+  151  chown -R vmail:vmail Maildir
+  152  cd ..
+  153  ls
+  154  ls -lart
+  155  cd wso
+  156  ls
+  157  chown -R vmail:vmail Maildir
+  158  cd ..
+  159  ls
+  160  ls -lart
+  161  cd irctcsupport/
+  162  chown -R vmail:vmail Maildir
+  163  cd ..
+  164  ls -lart
+  165  cd irctcsupport/
+  166  chown -R vmail:vmail Maildir
+  167  ls
+  168  cd Maildir
+  169  ls -lart
+  170  cd ..
+  171  cd ..
+  172  cd irctctraining/
+  173  chown -R vmail:vmail Maildir
+  174  chown -vR vmail:vmail Maildir
+  175  cd ..
+  176  ls
+  177  ls -lart
+  178  ls -lart
+  179  cd operations/
+  180  ls
+  181  ls -lart
+  182  chown -vR vmail:vmail Maildir
+  183  cd ,,
+  184  cd ..
+  185  ls -lart
+  186  cd support_irctc/
+  187  ls
+  188  cd Maildir/
+  189  du -sh ./*
+  190  cd ..
+  191  ls
+  192  chown -vR vmail:vmail Maildir
+  193  cd Maildir.old/
+  194  ls
+  195  cp -rv cur/* ../Maildir/cur/
+  196  ls
+  197  ls -lart
+  198  cd ..
+  199  cd Maildir
+  200  ls
+  201  ls -lart
+  202  cd cur/
+  203  ls
+  204  ls -lart
+  205  cd ..
+  206  chown -R vmail:vmail ./cur
+  207  cd ..
+  208  cd ..
+  209  ls -lart
+  210  cd irctclimit/
+  211  ls
+  212  cd ..
+  213  cd irctcregistration/
+  214  ls
+  215  cd Maildir
+  216  ls
+  217  cd cur/
+  218  ls
+  219  cd ..
+  220  cd ..
+  221  cd Maildir.old/cur/
+  222  ls
+  223  ls -lart
+  224  cd /var/www/jaisteelfacilitation.com
+  225  ls
+  226  cd web
+  227  ls -lart
+  228  nano xphpinfo.php
+  229  ls
+  230  ls -lart
+  231  chown web1:client1 xphpinfo.php 
+  232  cd
+  233  tailf /var/log/mail.log 
+  234  tail -ff /var/log/mail.log 
+  235  cat /var/log/mail.log 
+  236  cat /var/log/mail.log | grep postfix
+  237  cat /var/log/mail.log | grep postfix
+  238  tail -f  /var/log/mail.log
+  239  apt install  rrdtool mailgraph
+  240  dpkg-reconfigure mailgraph
+  241  mkdir /etc/mailgraph
+  242  nano /etc/apache2/conf-available/mailgraph.conf
+  243  a2enconf mailgraph
+  244  service apache2 reload
+  245  htpasswd -c /etc/mailgraph/mailgraph-htpasswd admin
+  246  tail -f /var/log/syslog
+  247  top
+  248  tail -f /var/log/syslog
+  249  tail -f /var/log/mail.log 
+  250  mailq
+  251  tail -f /var/log/mail.log 
+  252  cd
+  253  ls
+  254  mysql -u root -p
+  255  mysql -u root -p 
+  256  mysql -u root -p c1facilitatijai_url < ~/facilitatijai_url.sql 
+  257  nano /etc/phpmyadmin/config.inc.php
+  258  apt install pflogsumm
+  259  nano /etc/logrotate.conf 
+  260  nano /etc/logrotate.conf
+  261  tail -f /var/log/syslog
+  262  tail -f /var/log/mail.err 
+  263  cd /var/vmail/jaisteelfacilitation.com/support_irctc/
+  264  chown -R vmail:vmail ./Maildir
+  265  chown -vR vmail:vmail ./Maildir
+  266  tail -f /var/log/mail.err 
+  267  cd ..
+  268  date
+  269  cd irctcregistration/
+  270  chown -vR vmail:vmail ./Maildir
+  271  tail -f /var/log/mail.err 
+  272  tail -f /var/log/mail.log
+  273  tail -f /var/log/mail.err 
+  274  cd /var/www/brandbizz.co
+  275  ls
+  276  cd web
+  277  ls
+  278  ls -lart
+  279  tail -f /var/log/mail.err 
+  280  tail -f /var/log/mail.log 
+  281  cd ..
+  282  cd ..
+  283  cd jaisteel.co
+  284  ls
+  285  cd web
+  286  ls
+  287  mkdir old
+  288  mv error/ favicon.ico  index.html robots.txt ./old/
+  289  ls
+  290  ls
+  291  ls
+  292  ls -lart
+  293  cat index.php 
+  294  s
+  295  ls
+  296  ls -lart
+  297  chown web4.client4 .htaccess 
+  298  nano .htaccess 
+  299  cd /var/vmail/
+  300  ls
+  301  apt update
+  302  apt upgrade
+  303  history | grep postfix
+  304  nano /etc/postfix/header_checks 
+  305  postmap /etc/postfix/header_checks
+  306  service postfix reload
+  307  nano /etc/postfix/main.cf
+  308  systemctl restart postfix
+  309  tail -f /var/log/mail.log
+  310  nano /etc/logrotate.conf
+  311  vi /usr/local/sbin/postfix_report.sh
+  312  nano /usr/local/sbin/postfix_report.sh
+  313  apt install mutt
+  314  mutt
+  315  chmod 755 /usr/local/sbin/postfix_report.sh
+  316  /usr/local/sbin/postfix_report.sh
+  317  nano /usr/local/sbin/postfix_report.sh
+  318  nano /usr/local/sbin/postfix_report.sh
+  319  /usr/local/sbin/postfix_report.sh
+  320  nano /usr/local/sbin/postfix_report.sh
+  321  nano /usr/local/sbin/postfix_report.sh
+  322  perl /usr/sbin/pflogsumm -d yesterday /var/log/mail.log
+  323  perl /usr/sbin/pflogsumm -d yesterday /var/log/mail.log 
+  324  cd /var/log/
+  325  ls
+  326  ls -lart
+  327  cat mail.log 
+  328  perl /usr/sbin/pflogsumm  /var/log/mail.log 
+  329  perl /usr/sbin/pflogsumm  /var/log/mail.log 
+  330  tail -f /var/log/mail.log 
+  331  tail -f /var/log/mail.log 
+  332  cat /var/log/mail.log 
+  333  cat /var/log/mail.log  | grep postfix
+  334  cat /var/log/mail.log  | grep postfix
+  335  cat /var/log/mail.log  | grep postfix
+  336  cat /var/log/mail.log  | grep postfix
+  337  ping mail.nationxpress.in
+  338  nano /etc/hosts
+  339  ping mail.nationxpress.in
+  340  tailf /var/log/mail.log  
+  341  tail -f /var/log/mail.log  
+  342  dig mail.nationxpress.in
+  343  tail -f /var/log/mail.log  
+  344  cat /var/log/mail.log
+  345  apt update
+  346  apt update
+  347  nano /etc/apt/sources.list
+  348  apt update
+  349  apt upgrade
+  350  cat /var/log/mail.log | grep jaisteel.in
+  351  cat /var/log/mail.log | grep support9@jaisteel.in
+  352  cat /var/log/mail.log | grep "<support9@jaisteel.in> ->"
+  353  cat /var/log/mail.log | grep "<support9@jaisteel.in> -> <support_irctc@jaisteelfacilitation.com>"
+  354  reboot
+  355  mailq
+  356  tail -f /var/log/mail.log  
+  357  cat /var/log/mail.log  | grep jaisteel.in 
+  358  cat /var/log/mail.log  | grep 203.90.82
+  359  tailf /var/log/mail.log  
+  360  tail -ff /var/log/mail.log  
+  361  tail -f /var/log/mail.log  
+  362  tail -f /var/log/mail.log  | grep postfix
+  363  nano /etc/postfix/main.cf
+  364  service postfix reload
+  365  tail -f /var/log/mail.log  | grep postfix
+  366  nano /etc/postfix/main.cf
+  367  service postfix restart
+  368  tail -f /var/log/mail.log  | grep postfix
+  369  iptables -L
+  370  cd /etc/fail2ban/
+  371  ls
+  372  nano jail.local 
+  373  service fail2ban restart
+  374  service postfix restart
+  375  tail -f /var/log/mail.log
+  376  tail -f /var/log/mail.log | grep postfix
+  377  hostname -f
+  378  tail -f /var/log/mail.log | grep postfix
+  379  tail -f /var/log/mail.log | grep postfix
+  380  tail -f /var/log/mail.log
+  381  tail -f /var/log/mail.log | grep smtp
+  382  exit
+  383  tail -f /var/log/mail.log
+  384  cat /var/log/mail.log | grep yesbank.in
+  385  tail -f /var/log/mail.log* | grep yesbank
+  386  cat  /var/log/mail.log* | grep yesbank
+  387  tail -f /var/log/mail.log
+  388  cat  /var/log/mail.log* | grep operations
+  389  cat  /var/log/mail.log* | grep operations | grep irctc.co.in
+  390  cat  /var/log/mail.log* | grep o
+  391  mailq
+  392  tail -f /var/log/mail.log
+  393  apt update
+  394  apt upgrade
+  395  top
+  396  hostname -f
+  397  tail -f /var/log/mail
+  398  tail -f /var/log/mail.log
+  399  tail -f /var/log/mail.log
+  400  mailq
+  401  tail -f /var/log/mail.log
+  402  cat /var/log/mail.log
+  403  tailf /var/log/mail.log
+  404  tail -ff /var/log/mail.log
+  405  tail -1000 /var/log/mail.log | grep 45
+  406  tail -1000 /var/log/mail.log | grep vikrantchauhan88
+  407  cat  /var/log/mail.log | grep vikrantchauhan88
+  408  cat  /var/log/mail.log | grep nationxpress01@gmail.com
+  409  cat  /var/log/mail.log* | grep nationxpress01@gmail.com
+  410  cat  /var/log/mail.log* | grep 465
+  411  cat /var/log/mail.log
+  412  cat /var/log/mail.log | grep 10.45
+  413  cat /var/log/mail.log | grep 10.45
+  414  mailq
+  415  cat /var/log/mail.log | grep 10.45
+  416  mailq
+  417  mailq
+  418  postcat -vq 65736201A50 
+  419  cat /var/log/mail.log 
+  420  cat /var/log/mail.log  | grep nationxpress01
+  421  postcat -vq 766B8201A46
+  422  cat /var/log/mail.log  | grep nationxpress01
+  423  cat /var/log/mail.log  | grep nationxpress01
+  424  cat /var/log/mail.log  | grep nationxpress01
+  425  cat /var/log/mail.log
+  426  cat /var/log/mail.log | grep smtp
+  427  cat /var/log/mail.log | grep smtp
+  428  mailq
+  429  cat /var/log/mail.log | grep iamrakhiarora@gmail.com
+  430  cat /var/log/mail.log | grep nationxpress01@gmail.com
+  431  mailq
+  432  cat /var/log/mail.log 
+  433  tail -1000 /var/log/mail.log
+  434  cat /var/log/mail.log 
+  435  cat /var/log/mail.log | grep nationxpress01@gmail.com
+  436  mailq
+  437  exit
+  438  apt update
+  439  apt upgrade
+  440  mailq
+  441  history
+  442  postsuper -d ALL
+  443  tailf /var/log/mail.log
+  444  tail -ff /var/log/mail.log
+  445  tail -f /var/log/mail.log
+  446  reboot
+  447  dmesg
+  448  tail -f /var/log/mail.log
+  449  nano /etc/clamav/clamd.conf
+  450  service clamav-daemon restart
+  451  service clamav-daemon status
+  452  service clamav-daemon stop
+  453  nano /etc/clamav/clamd.conf
+  454  service clamav-daemon restart
+  455  service clamav-daemon status
+  456  tail -f /var/log/mail.log
+  457  service clamav-daemon restart
+  458  tail -f /var/log/mail.log
+  459  cat /var/run/clamav/clamd.ctl
+  460  cat /var/run/clamav/
+  461  cd /var/run/clamav/
+  462  ls
+  463  tail -f /var/log/mail.log
+  464  mailq
+  465  apt update
+  466  apt upgrade
+  467  apt install xinetd
+  468  wget http://192.168.10.42/nxsite/check_mk/agents/check-mk-agent_1.6.0p5-1_all.deb
+  469  apt install ./check-mk-agent_1.6.0p5-1_all.deb 
+  470  hostname -f
+  471  netstat -tuna
+  472  netstat -tuna | grep 587
+  473  netstat -tuna | grep 25
+  474  tailf /var/log/mail.log
+  475  tail -f /var/log/mail.log
+  476  history
+  477  tail -f /var/log/mail.log
+  478  df -kh
+  479  apt update
+  480  nano /etc/apt/sources.list
+  481  apt update
+  482  top
+  483  history
+  484  mailq
+  485  postsuper -d ALL
+  486  service ntpd status
+  487  service ntp status
+  488  service ntp restart
+  489  service ntp status
+  490  ntpq -p
+  491  service restart logrotate
+  492  systemctl status logrotate
+  493  systemctl restart logrotate
+  494  systemctl status logrotate
+  495  nano /etc/logrotate.conf 
+  496  systemctl restart logrotate
+  497  nano /etc/logrotate.conf 
+  498  systemctl status logrotate
+  499  dmesg
+  500  reboot
+  501  top
+  502  dmesg
+  503  apt update
+  504  history > ispserv_mail_history.txt

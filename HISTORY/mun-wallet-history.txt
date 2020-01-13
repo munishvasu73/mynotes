@@ -1,0 +1,728 @@
+    1  apt update
+    2  apt upgrade
+    3  clear
+    4  wget -qO- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
+    5  wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+    6  add-apt-repository "deb [arch=amd64] http://download.webmin.com/download/repository sarge contrib"
+    7  apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+    8  apt install webmin
+    9  sudo apt-get install python-software-properties
+   10  sudo apt-get install software-properties-common 
+   11  sudo add-apt-repository ppa:ondrej/php
+   12  sudo apt-get update
+   13  sudo apt-get install -y php5.6
+   14  apt install apache2
+   15  apt install mariadb-server mariadb-client
+   16  mysql_secure_installation
+   17  apt install php5.6 libapache2-mod-php5.6 php5.6-mysql
+   18  apt-get install -y php5.6 php5.6-mcrypt php5.6-mbstring php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl php5.6-zip libapache2-mod-php5.6
+   19  ufw status
+   20  reboot
+   21  apt upgrade
+   22  netstat -tuna
+   23  ufw status
+   24  ufw disable
+   25  passwd
+   26  systemctl enable mariadb
+   27  systemctl start mariadb
+   28  systemctl status mariadb
+   29  cd /var/www/
+   30  nano /etc/ssh/sshd_config 
+   31  systemctl restart sshd
+   32  systemctl status sshd
+   33  yum install xineted
+   34  yum install xinetd
+   35  apt install xinetd
+   36  cd
+   37  dpkg -i check-mk-agent_1.2.8p20-1_all.deb 
+   38  nano /etc/xinetd.d/check_mk 
+   39  service xinetd restart
+   40  dig wwww.nationxpress.co
+   41  dig www.nationxpress.co
+   42  dig www.digiindiya.co
+   43  dig digiindiya.co
+   44  dig nationxpress.co
+   45  dig nationxpress.co @8.8.8.8
+   46  dig digiindiya.co @8.8.8.8
+   47  dig digiindiya.co @192.168.10.254
+   48  dig digiindiya.co @192.168.1.254
+   49  ping 192.168.1.254
+   50  dig digiindiya.co @192.168.1.254
+   51  htop
+   52  cd /tmp
+   53  ls
+   54  mysql -u root -p digiindi_wallet < digiindi_wallet-backup-2019-01-21.sql
+   55  mysql -u root -p 
+   56  mysql -u root -p digiindi_wallet < digiindi_wallet-backup-2019-01-21.sql
+   57  reboot
+   58  cd /var/www/
+   59  ls -l
+   60  du -h
+   61  df -h
+   62  df -lh
+   63  cd /var/www/
+   64  ls -all
+   65  cd digiindi/
+   66  ls -all
+   67  ip add show
+   68  nano /etc/netplan/50-cloud-init.yaml 
+   69  reboot
+   70  find / -name "mysql*cn"
+   71  find / -name "mysql*"
+   72  find / -name "*.log"
+   73  tail -f /var/log/mysql/error.log
+   74  tailf /var/log/mysql/error.log
+   75  tail f /var/log/mysql/error.log
+   76  lynx http://localhost/server-status 
+   77  exit
+   78  ip add show
+   79  systemctl status apache
+   80  systemctl status apache2
+   81  vi  /etc/apache2/sites-enabled/digiindiya.co.conf
+   82  systemctl start apache2
+   83  systemctl status apache2
+   84  systemctl restart  apache2
+   85  systemctl status apache2
+   86  vi  /etc/apache2/sites-enabled/digiindiya.co.conf
+   87  systemctl status apache2
+   88  systemctl restart apache2
+   89  systemctl status apache2
+   90  systemctl restart apache2
+   91  systemctl status apache2
+   92  ls
+   93  cd /var/www/
+   94  ls
+   95  ls -lart
+   96  cd html/
+   97  ls
+   98  ls -lart
+   99  ps -aux | grep apache
+  100  cd ..
+  101  chown -R root:www-data ../www
+  102  php -v
+  103  apt install php5.6-fpm
+  104  apt install apache2 apache2-doc apache2-utils libapache2-mod-php5.6 php5.6 php5.6-common php5.6-gd php5.6-mysql php5.6-imap
+  105  apt install php5.6-cli php5.6-cgi libapache2-mod-fcgid 
+  106  apt install php5.6-pear mcrypt  imagemagick libruby libapache2-mod-python php5.6-curl php5.6-intl php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy php5.6-xmlrpc 
+  107  apt install mcrypt  imagemagick libruby libapache2-mod-python php5.6-curl php5.6-intl php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy php5.6-xmlrpc 
+  108  a2enmod suexec rewrite ssl actions include cgi
+  109  systemctl restart apache2
+  110  nano /etc/apache2/conf-available/httpoxy.conf
+  111  a2enconf httpoxy
+  112  service apache2 restart
+  113  apt install php5.6-mysqli
+  114  apt search php5.6-mysql
+  115  apt install php5.6-opcache php5.6-apcu
+  116  apt install php5.6-opcache 
+  117  a2enmod actions proxy_fcgi alias 
+  118  systemctl restart apache2
+  119  service apache2 restart
+  120  php -m
+  121  php -m | grep sql
+  122  mysql -V
+  123  apt install phpmyadmin
+  124  mysql -u root -p
+  125  cd /etc/mysql/conf.d/
+  126  ls
+  127  cd ..
+  128  cd mariadb.conf.d/
+  129  ls
+  130  mysql -u root -p
+  131  ls
+  132  cat 50-server.cnf 
+  133  service xinetd restart
+  134  a2enmod 
+  135  top
+  136  yum install htop
+  137  apt install htop
+  138  htop
+  139  apt install lynx
+  140  lynx http://localhost/server-status
+  141  cd
+  142  a2dismod mpm_prefork
+  143  apache2ctl -M
+  144  top
+  145  apache2ctl -M
+  146  a2dismod 
+  147  a2enmod proxy_fcgi
+  148  a2dismod mpm_prefork
+  149  a2enmod mpm_event
+  150  systemctl restart apache2
+  151  systemctl status apache2
+  152  lynx http://localhost/server-status
+  153  a2enmod php5.6
+  154  a2dismod mpm_event
+  155  a2enmod mpm_prefork
+  156  a2enmod php5.6
+  157  systemctl restart apache2
+  158  lynx http://localhost/server-status
+  159  cd
+  160  mkdir xtest
+  161  lynx http://localhost/server-status
+  162  cat /etc/hosts
+  163  nano /etc/hosts
+  164  lynx http://localhost/server-status
+  165  htop
+  166  date
+  167  timedatectl 
+  168  a2query -m
+  169  apt update
+  170  cat /etc/webmin/firewall/iptables.save
+  171  cd /var/www
+  172  ls
+  173  ls -lart
+  174  find ./digiindi -type d -exec chmod 775 {} \;
+  175  ls -lart
+  176  chmod g+s digiindi
+  177  cd digiindi/
+  178  ls
+  179  cd assets/
+  180  ls
+  181  cd deposit_slip/
+  182  ls
+  183  ls -lart
+  184  echo “/bin/false” >> /etc/shells
+  185  cat /etc/passwd
+  186  passwd digweb
+  187  cat /etc/shell
+  188  cat /etc/shells 
+  189  nano /etc/shells 
+  190  apt-get install fail2ban
+  191  apt install rkhunter
+  192  khunter --update
+  193  rkhunter --update
+  194  cd /etc/
+  195  nano rkhunter.conf 
+  196  rkhunter --update
+  197  rkhunter --propup
+  198  find /var/www/digiindi/ -type f -exec chmod 664 {} \;
+  199  rkhunter --help
+  200  rkhunter -c --sk
+  201  cd /var/www/digiindi/
+  202  ls
+  203  cd assets/
+  204  ls
+  205  cd images/
+  206  ls
+  207  ls -lart
+  208  chown root:www-data nx.png 
+  209  apt update
+  210  apt list --upgradable
+  211  cd /var/www/digiindi/
+  212  ls
+  213  cd
+  214  ls
+  215  tar -zxvpf phpMyAdmin-4.8.4-english.tar.gz 
+  216  ls
+  217  cd phpMyAdmin-4.8.4-english/
+  218  ls
+  219  cd ..
+  220  mv phpMyAdmin-4.8.4-english mysqladmin
+  221  ls
+  222  cp -rv mysqladmin /tmp/
+  223  cd /tmp
+  224  ls
+  225  cp -rv mysqladmin /var/www/digiindi/
+  226  cd /var/www/webalizer/
+  227  cd ..
+  228  cd digiindi/
+  229  ls
+  230  chown -R root:www-data ./mysqladmin/
+  231  who
+  232  iptables -L
+  233  ufw status
+  234  netstat -tuna
+  235  ip add show
+  236  ufw status
+  237  ufw enable
+  238  cd
+  239  pwd
+  240  nano firewall.sh
+  241  ufw allow 22/tcp 
+  242  ufw allow 21/tcp
+  243  ufw allow 80/tcp
+  244  ufw allow 443/tcp
+  245  ufw status
+  246  iptables -L
+  247  cd /var/www/
+  248  ls -all
+  249  nano digiindi/test.php 
+  250  nano /usr/bin/check_mk_agent 
+  251  yum update
+  252  apt update
+  253  apt list --upgradable
+  254  apt upgrade
+  255  dpkg -L | grep check
+  256  dpkg -L 
+  257  dpkg -l | grep check
+  258  apt install ./check-mk-agent_1.5.0p11-1_all.deb 
+  259  dpkg -i  ./check-mk-agent_1.5.0p11-1_all.deb 
+  260  check_mk_agent 
+  261  netstat -tuna
+  262  nano /etc/netplan/50-cloud-init.yaml 
+  263  apt install nfs-common
+  264  mount | grep mnt
+  265  mount 192.168.10.218:/export/serverbackup /mnt
+  266  mysqldump --all-databases -u root -p > /mnt/38_digiwallet_mysql.sql
+  267  cd /var/www/
+  268  cd digiindi/
+  269  ls
+  270  cd ..
+  271  tar -zcvpf /mnt/38_digi_web.tgz /var/www/digiindi/
+  272  apt update
+  273  apt upgrade
+  274  ip add show
+  275  exit
+  276  netstat -tuna
+  277  ip add show
+  278  apt update
+  279  apt upgrade
+  280  nano /etc/netplan/50-cloud-init.yaml 
+  281  cd /etc/netplan/
+  282  cp 50-cloud-init.yaml ~
+  283  nano 50-cloud-init.yaml 
+  284  netplan try
+  285  ip add show
+  286  reboot
+  287  ip add show
+  288  netstat -tuna
+  289  ip add show
+  290  netstat -tuna
+  291  ip add show
+  292  php -q /var/www/digiindi/assets/ws/balance-socket.php
+  293  php -q /var/www/digiindi/assets/phpwebsocket/server.php
+  294  php -q /var/www/digiindi/assets/ws/php-socket.php
+  295  systemctl mariadb status
+  296  systemctl mysqld  status
+  297  systemctl mysql  status
+  298  service mysql status
+  299  service mysql reload
+  300  netstat -tuna
+  301  exit
+  302  passwd
+  303  exit
+  304  apt update
+  305  apt list --upgradable
+  306  apt upgrade
+  307  apt update
+  308  apt upgrade
+  309  apt update
+  310  apt upgarde
+  311  apt upgrade
+  312  apt-get install rkhunter
+  313  rkhunter --update
+  314  nano /etc/default/rkhunter
+  315  rkhunter --check --sk
+  316  rkhunter --propupd
+  317  ip add show
+  318  passwd
+  319  cat /etc/passwd
+  320  passwd nimda
+  321  history
+  322  cd /etc/apt/sources.list.d/
+  323  ls
+  324  mysql -V
+  325  apt install mariadb-server mariadb-client
+  326  cat /etc/passwd
+  327  apt upgrade
+  328  history
+  329  cd /var/www/digiindi/
+  330  ls
+  331  scp -rv * root@192.168.10.247:/var/www/walletirctc/
+  332  cd
+  333  mysql -u root -p
+  334  mysqldump -u root -p digiindi_wallet --single-transaction --quick --lock-tables=false > digi-backup-$(date +%F).sql
+  335  ls
+  336  cd /var/www/digiindi/
+  337  ls
+  338  ls -lart
+  339  scp -rv .htaccess  root@192.168.10.247:/var/www/walletirctc/
+  340  scp /root/digi-backup-2019-08-07.sql   root@192.168.10.247:~
+  341  apt update
+  342  apt upgrade
+  343  passwd
+  344  passwd nimda
+  345  netstat -tuna
+  346  cat /etc/passwd
+  347  exit
+  348  passwd 
+  349  apt upgrade
+  350  who
+  351  passwd
+  352  cd /var/www/digiindi/cron/
+  353  ls
+  354  ls -lart
+  355  find / -name ".htpass*"
+  356  apt upgrade
+  357  netstat -tuna
+  358  cd /etc/webmin/
+  359  ls
+  360  ls -lart
+  361  netstat -tuna
+  362  ip add show
+  363  cd /var/log/apache2/
+  364  ls
+  365  cat error.log
+  366  cd /var/www/digiindi/assets/
+  367  ls
+  368  cd ..
+  369  ls -lart
+  370  cd assets/
+  371  ls
+  372  cd deposit_slip/
+  373  ls
+  374  ls -lart
+  375  cd /var/log/apache2/
+  376  ls
+  377  cat access.log
+  378  yum history
+  379  cat access.log.1
+  380  cat access.log.2
+  381  zcat access.log.2.gz 
+  382  ls
+  383  cat other_vhosts_access.log
+  384  ls
+  385  cat error.log
+  386  cat /var/log/apt/history.log
+  387  apt update
+  388  apt upgrade
+  389  reboot
+  390  ip add show
+  391  cd /var/www/html
+  392  ls -l
+  393  cd ..
+  394  ls -l
+  395  cd digiindi/
+  396  ls -l
+  397  cd websocket/
+  398  ls -l
+  399  php -q balance-8090.php 
+  400  nohup php -q balance-8090.php 
+  401  ls
+  402  tailf nohup.out 
+  403  tail -f  nohup.out 
+  404  netstat -tuna
+  405  tail -f nohup.out 
+  406  ps -aux | grep nohup
+  407  ps -aux 
+  408  ps -aux  | grep php
+  409  netstat -tuna
+  410  netstat -tunap
+  411  jobs
+  412  exit
+  413  ps -aux | grep php
+  414  cd /var/www/digiindi/websocket/
+  415  ls
+  416  rm nohup.out 
+  417  screen php -q balance-8090.php 
+  418  screen
+  419  screen 
+  420  exit
+  421  php -q /var/www/digiindi/websocket/balance.php 
+  422  exit
+  423  php -q balance-8090.php 
+  424  exit
+  425  php -q balance.php 
+  426  exit
+  427  screen
+  428  ps -aux | grep screen
+  429  netstat -tuna
+  430  netstat -tunap 
+  431  netstat -tunap  | grep 8081
+  432  kill -9 29642
+  433  netstat -tunap  | grep 8081
+  434  screen
+  435  cd /etc/apache2/sites-enabled/
+  436  ls
+  437  nano digiindiya.co.conf 
+  438  systemctl reload httpd
+  439  systemctl reload apache2
+  440  netstat -tunap  | grep 8081
+  441  ping localhost
+  442  netstat -tunap  | grep 8081
+  443  nano digiindiya.co.conf 
+  444  screen -r
+  445  screen -r 7405
+  446  screen -r 
+  447  systemctl reload apache2
+  448  nano digiindiya.co.conf 
+  449  systemctl reload apache2
+  450  nano digiindiya.co.conf 
+  451  systemctl reload apache2
+  452  screen -r
+  453  top
+  454  mysql -u root -p
+  455  cd /etc/apache2/sites-enabled/
+  456  ls
+  457  nano digiindiya.co.conf 
+  458  service httpd restart
+  459  service apache2 restart
+  460  service mysqld restart
+  461  top
+  462  reboot
+  463  cd ..
+  464  cd
+  465  php -q /var/www/digiindi/wss/balance.php 
+  466  php -q ./balance-8090.php 
+  467  php -q balance-8090.php 
+  468  screen
+  469  screen ls
+  470  netstat -tuna
+  471  netstat
+  472  netstat -tuna
+  473  netstat -tuna | grep 8081
+  474  netstat -tunpa | grep 8081
+  475  kill -9 28809
+  476  netstat -tunpa | grep 8081
+  477  netstat -tunpa | grep 8090
+  478  netstat -tunpa | grep apache
+  479  kill -9 15985
+  480  netstat -tunpa | grep apache
+  481  netstat -tunpa | grep 8090
+  482  screen
+  483  cd /etc/apache2/sites-available/digiindiya.co.conf 
+  484  nano /etc/apache2/sites-available/digiindiya.co.conf 
+  485  systemctl apache2 reload
+  486  systemctl apache reload
+  487  systemctl httpd reload
+  488  history | grep "reload"
+  489  history
+  490  service apache2 reload
+  491  php -q balance.php 
+  492  nano /etc/apache2/sites-available/digiindiya.co.conf 
+  493  service apache2 reload
+  494  php -q balance.php 
+  495  nano /etc/apache2/sites-available/digiindiya.co.conf 
+  496  service apache2 reload
+  497  php -q balance.php 
+  498  cd ..
+  499  cd wss
+  500  php -q balance.php 
+  501  history
+  502  nano /etc/apache2/sites-available/digiindiya.co.conf 
+  503  service apache2 reload
+  504  php -q balance.php 
+  505  cd /var/log
+  506  cd apache2/
+  507  ls -l
+  508  ls
+  509  cd ..
+  510  cd apache2/
+  511  history
+  512  history |grep log
+  513  find / -name "*.log"
+  514  php -q /var/www/digiindi/wss/balance.php 
+  515  nano /etc/apache2/sites-available/digiindiya.co.conf 
+  516  service apache2 reload
+  517  php -q /var/www/digiindi/wss/balance.php 
+  518  cd /etc
+  519  ls -l
+  520  cd apache2/
+  521  ls -l
+  522  cd apache2.conf 
+  523  nano apache2.conf 
+  524  ls -l
+  525  cd mods-available/
+  526  ls -l
+  527  ls -l|grep proxy
+  528  service a2enmod proxy_wstunnel.load 
+  529  cd ..
+  530  cd mods-enabled/
+  531  ls -l|grep proxy
+  532  service a2enmod proxy_wstunnel
+  533  a2enmod proxy_wstunnel
+  534  systemctl reload apache2
+  535  php -q /var/www/digiindi/wss/balance.php 
+  536  screen
+  537  cd /etc/apache2/sites-available/
+  538  ls
+  539  nano digiindiya.co.conf 
+  540  service apache2 reload
+  541  service apache2 status
+  542  nano digiindiya.co.conf 
+  543  service apache2 reload
+  544  nano digiindiya.co.conf 
+  545  service apache2 status
+  546  service mysqld restart
+  547  apt upgrade
+  548  top
+  549  mysql -u root -p
+  550  top
+  551  mysql -u root -p
+  552  netstat -tunaop
+  553  top
+  554  cat /etc/pam.d/common-session
+  555  nano /etc/rsyslog.conf 
+  556  systemctl restart rsyslog
+  557  logger "test from 38"
+  558  cat /var/log/syslog
+  559  crontab -l
+  560  history
+  561  apt update
+  562  apt upgrade
+  563  systemctl reload apache2
+  564  mount
+  565  cd /
+  566  ls
+  567  mkdir /mbackup
+  568  mkdir /mscript
+  569  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  570  ip add show
+  571  screen
+  572  mount
+  573  screen -list
+  574  top
+  575  cat /etc/rsyslog.conf 
+  576  mount
+  577  apt update
+  578  apt upgrade
+  579  cd /mbackup/
+  580  ls
+  581  cd /mscript/
+  582  ls
+  583  nano backup.sh
+  584  chmod +x backup.sh 
+  585  mount
+  586  nano backup.sh
+  587  crontab -e
+  588  nano backup.sh
+  589  mount
+  590  cd /mbackup/
+  591  ls
+  592  nano mysqlbackup.sh
+  593  nano /etc/.my.cnf
+  594  chmod +x mysqlbackup.sh 
+  595  ./mysqlbackup.sh 
+  596  nano ./mysqlbackup.sh 
+  597  which bash
+  598  nano ./mysqlbackup.sh 
+  599  ls
+  600  my mysqlbackup.sh /mscript/
+  601  mv mysqlbackup.sh /mscript/
+  602  cd
+  603  cd /mscript/
+  604  ls
+  605  which bash
+  606  nano ./mysqlbackup.sh 
+  607  nano backup.sh 
+  608  ./mysqlbackup.sh 
+  609  crontab -e
+  610  history | grep mount
+  611  nano mysqlbackup.sh 
+  612  ls
+  613  rm -rf 30digiindya_10_37_2019-11-30.sql 
+  614  nano /mscript/mysqlbackup.sh 
+  615  exit
+  616  apt update
+  617  apt upgrade
+  618  cd /var/www/
+  619  ls
+  620  cd digiindi/
+  621  ls
+  622  mv adminer.php adminer.php.bak
+  623  cd mysqladmin/
+  624  ls
+  625  cd ..
+  626  mv mysqladmin mysqladmin.bak031219
+  627  ls
+  628  mv adminer.php.bak adminer.php.bak031219
+  629  ls
+  630  mysql -u root -p
+  631  grep -r -H "nx123@19" ./
+  632  dmesg
+  633  exit
+  634  /bin/tar   -zcvpf /mbackup/pansupportdb_10_38_`date +%Y%m%d_%H%M%S`.tgz --directory=/ --exclude=sys --exclude=proc --exclude=dev --exclude=run  --exclude=mbackup .
+  635  exit
+  636  mount
+  637  umount -f /mbackup
+  638  mount
+  639  showmount -e 192.168.10.251
+  640  mount 192.168.10.251:/export/backup /mbackup
+  641  dmesg
+  642  mount
+  643  cd /mscript/
+  644  ls
+  645  cat backup.sh 
+  646  mkdir /mbackup/mountok
+  647  umount /mbackup
+  648  mount 192.168.10.251:/export/backup /mbackup
+  649  mkdir /mbackup/mountok
+  650  showmount -e 192.168.10.251
+  651  umount /mbackup
+  652  mount 192.168.10.251:/export/backup /mbackup
+  653  mkdir /mbackup/mountok
+  654  screen
+  655  ./mysqlbackup.sh 
+  656  cd /mbackup/
+  657  ls
+  658  screen
+  659  screen -ls
+  660  screen -r 113
+  661  screen -ls
+  662  screen -r 7119
+  663  screen -r
+  664  apt update
+  665  apt upgrade
+  666  mount
+  667  cd /mscript/
+  668  ls
+  669  nano backup.sh 
+  670  nano mysqlbackup.sh 
+  671  mount
+  672  history
+  673  nano mount.txt
+  674  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  675  mount
+  676  ls
+  677  ./mysqlbackup.sh 
+  678  ls
+  679  crontab -e
+  680  ls
+  681  mount
+  682  ls
+  683  ./backup.sh 
+  684  yum update
+  685  apt update
+  686  apt upgrade
+  687  mysql -u root -p
+  688  cd /var/www/html/
+  689  ls
+  690  cd /etc/apache2/sites-enabled/
+  691  ls
+  692  cd ..
+  693  ls
+  694  find ./ -name php
+  695  find ./ -name php*
+  696  cd /var/www/
+  697  cd digiindi/
+  698  ls
+  699  mutt
+  700  service mysql status
+  701  mount
+  702  umount /mbackup
+  703  mount 192.168.10.251:/export/backup /mbackup
+  704  mount
+  705  exit
+  706  cd /var/www/html/
+  707  ls
+  708  cd ..
+  709  cd digiindi/
+  710  ls
+  711  scp -P 5022 -rv * root@192.168.10.72:/home/erptest/public_html/wallet/
+  712  ls -lart
+  713  scp -P 5022 -rv .htaccess  root@192.168.10.72:/home/erptest/public_html/wallet/
+  714  ls -lart
+  715  hsitory
+  716  history
+  717  history | grep grep
+  718  ls
+  719  grep -r -H "nx123@19" ./
+  720  apt update
+  721  apt upgrade
+  722  cd /var/www/digiindi/
+  723  ls
+  724  apt update
+  725  apt upgrade
+  726  passwd
+  727  history
+  728  history > ~/mun-wallet-history.txt

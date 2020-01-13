@@ -1,0 +1,976 @@
+    1  ip add show
+    2  nmcli
+    3  nmtui
+    4  reboot
+    5   yum install -y epel-release
+    6  cd /etc/yum.repos.d && wget https://repo.codeit.guru/codeit.el`rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release)`.repo
+    7  yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+    8  yum install yum-utils
+    9  yum-config-manager --enable remi-php56 
+   10  curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
+   11  yum install mariadb mariadb-server
+   12  nano /etc/selinux/config 
+   13  yum install nano
+   14  nano /etc/selinux/config 
+   15  reboot
+   16  yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty perl-Encode-Detect
+   17  wget http://prdownloads.sourceforge.net/webadmin/webmin-1.920-1.noarch.rpm
+   18  yum install wget
+   19  wget http://prdownloads.sourceforge.net/webadmin/webmin-1.920-1.noarch.rpm
+   20  rpm -ivh webmin-1.920-1.noarch.rpm 
+   21  yum install webmin-1.920-1.noarch.rpm 
+   22  yum install httpd
+   23  systemctl start httpd
+   24  systemctl enable httpd
+   25  yum install php php-gd php-mysql php-mcrypt
+   26  iptables -l
+   27  iptables -L
+   28  service iptables stop
+   29  firewall-cmd --zone=public --add-port=10000/tcp --permanent
+   30  firewall-cmd --reload
+   31  yum update
+   32  firewall-cmd --zone=public --add-port=80/tcp --permanent
+   33  firewall-cmd --zone=public --add-port=443/tcp --permanent
+   34  firewall-cmd reload
+   35  firewall-cmd --reload
+   36  systemctl start mariadb
+   37  mysql_secure_installation 
+   38  yum --enablerepo=remi,remi-php56 install php-cli php-pear php-pdo php-mysql php-mysqlnd php-pgsql php-sqlite php-gd php-mbstring php-mcrypt php-xml php-simplexml php-curl php-zip
+   39  systemctl enable mariadb.service
+   40  yum install php php-mysql
+   41  yum install php php-mysqlnd
+   42  yum install phpMyAdmin
+   43  systemctl restart httpd
+   44  vim /etc/httpd/conf.d/phpMyAdmin.conf
+   45  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+   46  systemctl restart httpd
+   47  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+   48  systemctl restart httpd
+   49  cd /var/www/html/
+   50  ls
+   51  ls -lart
+   52  mkdir irctc
+   53  chown irctcftp:www-data ./irctc
+   54  chown irctcftp:apache ./irctc
+   55  yum install proftpd proftpd-utils
+   56  nano /etc/shells 
+   57  yum update
+   58  yum install webmin
+   59  netstat -tuna
+   60  yum update
+   61  dmesg
+   62  cd /var/log/
+   63  ls
+   64  tailf messages 
+   65  cd audit/
+   66  ls
+   67  cat audit.log 
+   68  cat /etc/shells 
+   69  ftp 127.0.0.1
+   70  yum install ftp
+   71  ftp 127.0.0.1
+   72  cd /var/www/html/
+   73  ls -lart
+   74  passwd irctcftp
+   75  ftp 127.0.0.1
+   76  passwd irctcftp
+   77  ftp 127.0.0.1
+   78  cat /var/log/messages 
+   79  nano /etc/shells 
+   80  ftp 127.0.0.1
+   81  passwd irctcftp
+   82  nano /etc/shells 
+   83  systemctl status proftpd
+   84  systemctl restart  proftpd
+   85  systemctl status proftpd
+   86  ls
+   87  ls -lart
+   88  yum install openssl
+   89  yum install mod_ssl openssl
+   90  systemctl restart apache
+   91  systemctl restart httpd
+   92  cd
+   93  openssl genrsa -out nxca.key 2048
+   94  openssl req -new -key nxca.key -out nxca.csr
+   95  openssl x509 -req -days 365 -in nxca.csr -signkey nxca.key -out nxca.crt
+   96   cp nxca.crt /etc/pki/tls/certs
+   97  cp nxca.key /etc/pki/tls/private/nxca.key
+   98  cp nxca.csr /etc/pki/tls/private/nxca.csr
+   99  systemctl restart httpd
+  100  systemctl status httpd
+  101  systemctl restart httpd
+  102  systemctl status httpd
+  103  cd /etc/httpd/conf.d/
+  104  cat ssl.conf 
+  105  s
+  106  ls
+  107  mv ssl.conf ssl.conf.bak
+  108  systemctl restart httpd
+  109  who
+  110  nano /etc/ssh/sshd_config 
+  111  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  112  systemctl restart sshd
+  113  systemctl restart httpd
+  114  yum update
+  115  who
+  116  cd /var/log
+  117  ls
+  118  cd proftpd/
+  119  ls
+  120  cat controls.log 
+  121  cd ..
+  122  cat xferlog 
+  123  nano /etc/php.ini 
+  124  systemctl restart httpd
+  125  cd /var/www/html/
+  126  ls
+  127  cd irctc/
+  128  ls
+  129  ls -lart
+  130  nano .htaccess 
+  131  cd
+  132  ls
+  133  yum install htop
+  134  htop
+  135  apachectl 
+  136  apachectl  -M
+  137  mysql -u root -p
+  138  mysqldump -u root -p irctc > irctcnew.sql
+  139  cd /var/lib/
+  140  ls
+  141  cp -vr mysql ~/
+  142  yum purge mariadb mariadb-server
+  143  yum erase  mariadb mariadb-server
+  144  nano /etc/yum.repos.d/mariadb.repo 
+  145  cd /etc/yum.repos.d/
+  146  ls
+  147  mv mariadb.repo ~/
+  148  cat <<EOF | sudo tee -a /etc/yum.repos.d/MariaDB.repo[mariadb]
+  149  name = MariaDB
+  150  baseurl = http://yum.mariadb.org/10.1/centos7-amd64
+  151  gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+  152  gpgcheck=1
+  153  EOF
+  154  yum update
+  155  cd /var/lib/
+  156  ls
+  157  mv mysql mysql.old
+  158  yum install mariadb mariadb-server
+  159  yum earse galera
+  160  yum erase  galera
+  161  rpm -qa | grep galera
+  162  yum erase galera-4-26.4.2-1.rhel7.el7.centos.x86_64
+  163  yum install mariadb mariadb-server
+  164  mysql_secure_installation 
+  165  systemctl  start mariadb
+  166  mysql_secure_installation 
+  167  mysql -u root -p
+  168  mysql -u root -p irctc < ~/irctcnew.sql 
+  169  yum update
+  170  cd /var/log/
+  171  cd httpd/
+  172  cat error_log 
+  173  cat access_log 
+  174  cat error_log | grep 203.153.46.5
+  175  grep -r -H "203.153.46.5"
+  176  grep -r -H "203.153.46.5" ./
+  177  php -v
+  178  mysql --version
+  179  yum update
+  180  yum install etckeeper
+  181  top
+  182  yum install xinetd
+  183  ls
+  184  yum install check-mk-agent-1.5.0p11-1.noarch.rpm 
+  185  nano /etc/xinetd.d/check_mk 
+  186  ip add show
+  187  iptables -L
+  188  halt -p
+  189  htop
+  190  passwd
+  191  passwd nimda
+  192  who
+  193  systemctl enable mariadb
+  194  systemctl start  mariadb
+  195  top
+  196  yum update
+  197  yum install certbot
+  198  yum install certbot-apache
+  199  certbot-apache
+  200  certbot --apache
+  201  yum update
+  202  cd /usr/lib/check_mk_agent/plugins
+  203  ls
+  204  cd /usr/share/check-mk-agent/available-plugins/
+  205  cp ~/mk_mysql ./
+  206  cp ~/apache_status ./
+  207  ls
+  208  ls -lar
+  209  ls -lart
+  210  cd /etc/check_mk/
+  211  nano mysql.cfg
+  212  check_mk_agent 
+  213  ls
+  214  ls -lart
+  215  chmod 400 mysql.cfg 
+  216  ls -lart
+  217  cd /usr/lib/check_mk_agent/plugins/
+  218  ls -lart
+  219  chmod 700 mk_mysql apache_status 
+  220  ls -lart
+  221  check_mk_agent 
+  222  cd /var/log/httpd/
+  223  ls
+  224  cat access_log
+  225  cat error_log
+  226  cd /etc/httpd/
+  227  grep -r -H "IfModule mod_status.c" ./
+  228  grep -r -H "mod_status.c" ./
+  229  ls
+  230  nano /etc/httpd/conf/httpd.conf
+  231  systemctl restart httpd
+  232  tailf /var/log/httpd/error_log
+  233  tailf /var/log/httpd/access_log
+  234  curl -Is http://localhost
+  235  curl -fsS http://localhost
+  236  curl -fsS http://localhost/info.php
+  237  curl -fsS http://localhost/index.php
+  238  curl -fsS https://localhost/index.php
+  239  curl -fsS localhot
+  240  curl -fsS localhost
+  241  curl -fsS 127.0.0.1
+  242  mutt
+  243  yum install mutt
+  244  mutt
+  245  crontab -e
+  246  mutt
+  247  cd /var/spool/mail/
+  248  ls
+  249  > root
+  250  mutt
+  251  top
+  252  cat /etc/httpd/conf.modules.d/00-base.conf
+  253  cat /etc/httpd/conf.modules.d/00-base.conf | grep status
+  254  nano /etc/httpd/conf/httpd.conf
+  255  systemctl restart httpd
+  256  yum install lynx
+  257  lynx http://localhost/server-status 
+  258  nano /etc/httpd/conf/httpd.conf
+  259  systemctl restart httpd
+  260  lynx http://localhost/server-status 
+  261  lynx https://localhost/server-status 
+  262  lynx https://192.168.10.220/server-status 
+  263  nano /etc/httpd/conf/httpd.conf
+  264  systemctl restart httpd
+  265  lynx https://192.168.10.220/server-status 
+  266  lynx http://192.168.10.220/server-status 
+  267  nano /etc/httpd/conf/httpd.conf
+  268  systemctl restart httpd
+  269  lynx http://192.168.10.220/server-status 
+  270  lynx http://localhost/server-status 
+  271  lynx https://localhost/server-status 
+  272  lynx https://192.168.10.220/server-status 
+  273  check_mk_agent 
+  274  yum update
+  275  yum install rkhunter
+  276  rkhunter --update
+  277  rkhunter --propupd
+  278  rkhunter --check --sk
+  279  passwd
+  280  passwd nimda
+  281  ip add show
+  282  cat /etc/passwd
+  283  passwd ftpirctc
+  284  passwd
+  285  cd /etc/postfix/
+  286  ls
+  287  mailq
+  288  cat /var/log/maillog
+  289  yum install mutt
+  290  mutt
+  291  locate ca-bundle.crt
+  292   yum install cyrus-sasl-plain
+  293  locate ca-bundle.crt
+  294  locate ca-bundle
+  295  yum install mlocate
+  296  locate ca-bundle
+  297  locate ca-bundle.crt
+  298  updatedb
+  299  locate ca-bundle.crt
+  300  yum install mailx
+  301  nano /etc/postfix/main.cf 
+  302  nano /etc/postfix/master.cf 
+  303  nano /etc/postfix/main.cf 
+  304  yum install postfix
+  305  nano /etc/postfix/main.cf 
+  306  yum update
+  307  cat /etc/passwd
+  308  history
+  309  cat /etc/passwd
+  310  cd /etc
+  311  ls -lart pass*
+  312  cat passwd~
+  313  cat passwd-
+  314  yum history
+  315  yum history list
+  316  yum history list all
+  317  yum history info 16
+  318  yum history info 17
+  319  yum history info 18
+  320  yum history summary tcsd
+  321  yum update
+  322  cd /var/log/
+  323  ls
+  324  cat audit/audit.log
+  325  cat audit/audit.log | grep tcsd
+  326  cat /etc/passwd
+  327  cat audit/audit.log | grep tss
+  328  cat audit/audit.log* | grep tss
+  329  crontab -l
+  330  reboot
+  331  service httpd status
+  332  service httpd restart
+  333  journalctl -xe
+  334  reboot
+  335  service httpd status
+  336  telnet 127.0.0.1 443
+  337  yum install telnet
+  338  telnet 127.0.0.1 443
+  339  netstat -tuna
+  340  yum -y install net-tools
+  341  netstat -tuna
+  342  service httpd restart
+  343  systemctl status httpd.servic
+  344  journalctl -xe
+  345  getenforce
+  346  journalctl -xe
+  347  cd etc
+  348  cd /etc
+  349  cd httpd/
+  350  grep -r -H 443 ./
+  351  nano ./conf/httpd.conf 
+  352  service httpd restart
+  353  passwd
+  354  history
+  355  ip config
+  356  ip add show
+  357  who
+  358  crontab -l
+  359  time /usr/bin/php -q /var/www/html/irctc/cron/cron-auto-refund.php
+  360  cat /var/www/html/irctc/cron/cron-auto-refund.php
+  361  crontab -l
+  362  cd /var/www/html/irctc/cron/
+  363  ls
+  364  tailf /var/log/messages
+  365  yum update
+  366  tailf /var/log/messages
+  367  yum update
+  368  netstat -tuna
+  369  top
+  370  netstat -tuna
+  371  httpd -V
+  372  service httpd status
+  373  apachectl -V | grep -i mpm
+  374   httpd -l
+  375  rpm -qa | grep php
+  376  cd /var/www/html/irctc/
+  377  ls
+  378  echo "<?php phpinfo(); ?>" | sudo tee ./test.php
+  379  exit
+  380  mysqldump -u root -p irctc > irctc-dump.sql
+  381  scp irctc-dump.sql root@192.168.10.12:~
+  382  reboot
+  383  ls
+  384  mysql -u root -p
+  385  nano /etc/my.cnf
+  386  nano /etc/my.cnf.d/server.cnf 
+  387  cd /etv
+  388  cd /etc
+  389  grep -r -H "mysql" ./
+  390  nano /etc/my.cnf.d/server.cnf 
+  391  ip add show
+  392  netstat -tuna
+  393  systemctl mariadb restart
+  394  systemctl restart mariadb
+  395  netstat -tuna
+  396  nano /etc/my.cnf.d/server.cnf 
+  397  systemctl restart mariadb
+  398  systemctl status mariadb
+  399  mysql -u root -p
+  400  netstat -tuna
+  401  yum update
+  402  yum -y install php-fpm
+  403  vi /etc/httpd/conf.d/php.conf
+  404  systemctl start php-fpm
+  405  systemctl enable  php-fpm
+  406  systemctl restart httpd
+  407  vi /etc/httpd/conf.d/php.conf
+  408  netstat -tuna
+  409  netstat -tuna | grep 80
+  410  netstat -tuna
+  411  a2enmod http2
+  412  service httpd restart
+  413  netstat -tuna
+  414  netstat -tuna | grep 443
+  415  yum update
+  416  htop
+  417  nano test
+  418  ls
+  419  scp irctc-dump.sql root@192.168.10.13:~
+  420  cd /etc/my.cnf.d/server.cnf 
+  421  nano /etc/my.cnf.d/server.cnf 
+  422  crontab -e
+  423  ip add show
+  424  reboot
+  425  crontab -e
+  426  service httpd status
+  427  top
+  428  service mysqld status
+  429  reboot
+  430  top
+  431  service mysqld status
+  432  top
+  433  service mysql status
+  434  service mysqld status
+  435  service httpd status
+  436  tailf /var/log/httpd/access_log
+  437  tailf /var/log/httpd/error_log
+  438  tailf /var/log/httpd/access_log
+  439  cat /var/log/httpd/access_log
+  440  tailf /var/log/messages
+  441  cd /home/
+  442  ls
+  443  cd /var/www/html/irctc/
+  444  ls
+  445  cat test_1.php 
+  446  ls
+  447  nano xphpinfo.php
+  448  yum update
+  449  reboot
+  450  cd /var/www/html/
+  451  ls
+  452  ls -lart
+  453  mkdir irctc01
+  454  ssh root@192.168.10.230 -p 5022
+  455  ls
+  456  mv irctc01 irctc02
+  457  mv public_html irctc01
+  458  ls
+  459  cd irctc02
+  460  ls
+  461  cd ..
+  462  ls -lart
+  463  rm -rf irctc02
+  464  chown -Rv  ftpirctc:apache irctc01
+  465  cd irctc01
+  466  ls -lart
+  467  rm -rvf 2019-*
+  468  ls
+  469  mv MY_Controller.php /var/www/html/irctc/application/core/
+  470  cd  /var/www/html/irctc/application/core/
+  471  ls
+  472  ls -lart
+  473  chown ftpirctc:apache MY_Controller.php 
+  474  cd ..
+  475  cd models/
+  476  mv ~/m_user.php ./
+  477  chown ftpirctc:apache m
+  478  chown ftpirctc:apache m_user.php 
+  479  exit
+  480  cd /var/www/html
+  481  ls
+  482  ls -lart 
+  483  mv irctc irctc.old
+  484  mv irctc01 irctc
+  485  ls -lrt
+  486  ssh root@192.168.10.230 -p 5022
+  487  cd irctc
+  488  ls
+  489  cd assets/
+  490  ls
+  491  cd deposit_slip
+  492  ls
+  493  cd ..
+  494  mv deposit_slip deposit_slip.old
+  495  mv ~/deposit_slip ./
+  496  ls -lart
+  497  chown -Rv ftpirctc:apache deposit_slip
+  498  mysql -u root -p
+  499  ssh root@192.168.10.230 -p 5022
+  500  ip add show
+  501  ssh root@192.168.10.230 -p 5022
+  502  ls
+  503  mysql -u root -p
+  504  mysql -u root -p irctc01_irctc01 < ~/irctc01_irctc01.sql 
+  505  ip add show
+  506  ssh root@192.168.10.230 -p 5022
+  507  exit
+  508  crontab -l
+  509  cat /var/www/html/irctc/cron/cron-auto-refund.php
+  510  cd /var/www/html/irctc
+  511  ls
+  512  cd assets/
+  513  ls
+  514  ls -lart
+  515  chmod cd ..
+  516  cd ..
+  517  chmod -R 775 ./irctc
+  518  chmod -Rv 775 ./irctc
+  519  history
+  520  cd /var/www
+  521  ls -l
+  522  cd html
+  523  ls -l
+  524  cd irctc.old/
+  525  ls -l
+  526  cd application/
+  527  ls -l
+  528  cd views/
+  529  ls -l
+  530  cd includes/
+  531  ls -l
+  532  nano header.php
+  533  cd ..
+  534  ls -l
+  535  cd application/
+  536  ls -l
+  537  cd config
+  538  ls -l
+  539  cd route
+  540  ls -l
+  541  nano test.php
+  542  nano route2.php 
+  543  nano api.php
+  544  nano admin.php
+  545  cd ..
+  546  ls -l
+  547  cd controllers/
+  548  ls -l
+  549  nano cancellationPortal.php 
+  550  cp cancellationPortal.php /var/www/html/irctc/application/controllers/
+  551  ls -lart  /var/www/html/irctc/application/controllers/
+  552  chown ftpirctc:apache  /var/www/html/irctc/application/controllers/cancellationPortal.php 
+  553  cd /var/www/
+  554  ls -l
+  555  cd html
+  556  ls -l
+  557  cd irctc.old/application/view
+  558  cd irctc.old/application/views
+  559  ls -l
+  560  cp v_portal_cancellation.php /var/www/html/irctc/application/views
+  561  cd /var/www/html/irctc/application/views
+  562  ls -l
+  563  chown ftpirctc:apache v_portal_cancellation.php 
+  564  ls -l
+  565  cd /var/www/html/irctc.old/assets
+  566  ls -l
+  567  cd custom
+  568  ls -l
+  569  cd js
+  570  ls -l
+  571  cp v_portal_cancellation.js /var/www/html/irctc/assets/custom/js/
+  572  cd /var/www/html/irctc/assets/custom/js/
+  573  ls -l
+  574  chown ftpirctc:apache v_portal_cancellation.js 
+  575  ls -l
+  576  cd /var/www/html/irctc.old/application/views/
+  577  cp v_dashboard.php /var/www/html/irctc/application/views/
+  578  nano includes/header.php 
+  579  cd ..
+  580  cd config
+  581  ls -l
+  582  cd route
+  583  ls -l
+  584  nano admin.php
+  585  cd ..
+  586  cd controllers/
+  587  ls -l
+  588  nano account.php 
+  589  cd ..
+  590  cd views/
+  591  cp v_my_ac_details.php /var/www/html/irctc/application/views/
+  592  ls -l
+  593  cd ..
+  594  cd assets/images/
+  595  cp call.gif /var/www/html/irctc/assets/images/
+  596  cp mail.png /var/www/html/irctc/assets/images/
+  597  exit
+  598  history | grep cert
+  599  certbot --apache
+  600  certbot renew
+  601  ls
+  602  yum search imap
+  603  php -v
+  604  yum install php56-php-imap
+  605  nano /etc/php.ini
+  606  service httpd reload
+  607  nano /etc/php.ini
+  608  /etc/init.d/httpd graceful
+  609  netstat -tuna
+  610  service httpd reload
+  611  php --ri imap
+  612  rpm -qa | grep php
+  613  yum install php-imap
+  614  yum remove php56-php-imap
+  615  yum remove  php56-php-common 
+  616  yum remove  php56-runtime
+  617  yum remove  scl-utils  tcl
+  618  yum remove libc-client
+  619  yum install php-imap
+  620  yum update
+  621  yum install php-imap
+  622  service httpd reload
+  623  service php-fpm status
+  624  service php-fpm reload
+  625  cd /var/www/html/
+  626  ls
+  627  cd irctc
+  628  ls
+  629  ssh irctc01@192.168.10.230
+  630  ssh irctc01@192.168.10.230 -p 5022
+  631  scp -rv  -P 5022  * root@192.168.10.230:/home/irctc01/public_html/ 
+  632  scp -rv  -P 5022  .* root@192.168.10.230:/home/irctc01/public_html/ 
+  633  ls
+  634  cd /var/www/html/
+  635  ls
+  636  cd irctc
+  637  cd assets/
+  638  ls
+  639  cd logs
+  640  ls -lart
+  641  cd ..
+  642  chmod -R 777  logs
+  643  ls -lart
+  644  cd logs/
+  645  ls
+  646  ip add show
+  647  cd /var/log/httpd/
+  648  ls
+  649  cat error_log
+  650  cat access_log
+  651  cat access_log | grep 
+  652  ls
+  653  cd /etc/httpd/
+  654  ls
+  655  cd conf.d/
+  656  ls
+  657  cd ..
+  658  ls
+  659  cd conf
+  660  ls
+  661  cd ../conf.d/
+  662  ls
+  663  cat ssl.conf
+  664  cd ..
+  665  ls
+  666  cd conf
+  667  cat httpd.conf
+  668  cd /var/log/httpd/
+  669  cat ssl_error_log
+  670  cat ssl_error_log | grep 10.109
+  671  cd /var/log
+  672  ls
+  673  cd php-fpm/
+  674  ls
+  675  cat error.log
+  676  cat /etc/php-fpm.conf 
+  677  cat error.log
+  678  nano /etc/php-fpm.conf 
+  679  nano /etc/php-fpm.d/www.conf 
+  680  service php-fpm reload
+  681  tailf /var/log/php-fpm/error.log
+  682  apt install multitail
+  683  yum install multitail
+  684  multitail /var/log/php-fpm/error.log /var/log/httpd/ssl_error_log
+  685  cat  /var/log/php-fpm/error.log 
+  686  top
+  687  cat  /var/log/httpd/ssl_error_log
+  688  cd /etc/httpd/conf.d/
+  689  ls
+  690  cd ..
+  691  ls
+  692  grep -r -H "ProxyPassMatch" ./
+  693  grep -r -H "fcgi" ./
+  694  cd /etc/php-fpm.d/
+  695  ls
+  696  nano www.conf 
+  697  cd /etc/httpd/
+  698  grep -r -H "TimeOut" ./
+  699  find /etc -name "*fcgi*"
+  700  top
+  701  ps -aux | grep php
+  702  pstree
+  703  ps -aux | grep cron
+  704  ps -aux | grep cron-auto-refund.php > ~/mun1.txt
+  705   kill -9 559 560 634 635 948 949 2208 2209 2298 2300 2442 2468 2485 2486 3086 3211 3214 4495 4496 4725 4727 5044 5046 5121 5122 5763 5768 6418 6419 6838 6839 7417 7418 7539 7542 8055 8056 8581 8585 9086 9087 9748 9768 9904 9914 10397 10401 10554 10556 11514 11515 12039 12040 12133 12135 12610 12611 12673 12675 13822 13826 14199 14201 14353 14365 14769 14773 14975 14980 16101 16107 16405 16420 16465 16468 16889 16890 17264 17266 18125 18126 18344 18345 18365 18367 18648 18649 18699 18700 18722 18723 18734 18735 19002 19003 19451 19452 19675 19677 19920 19921 20537 20538 20743 20745 20833 20834 21064 21070 21183 21184 21233 21249 21840 21846 22037 22038 23048 23049 23089 23101 23199 23200 23397 23400 23767 23768 24070 24072 24421 24423 25093 25094 25446 25458 25661 25672 25840 25841 26099 26102 26132 26135 27037 27039 27655 27658 27755 27756 27957 27959 28352 28355 28394 28395 29182 29183 29427 29428 30095 30097 30270 30275 30535 30541 30718 30719 31141 31148 31266 31267 32225 32229 32411 32412 32728 32729
+  706  top
+  707  crontab -e
+  708  top
+  709  ip add show
+  710  cd /var/www/html/
+  711  ls
+  712  cd irctc
+  713  ls
+  714  find ./ -name "tmp"
+  715  find ./ -name "temp"
+  716  cd ./cron/
+  717  ls -lart
+  718  chmod 775 temp/
+  719  ls -lart
+  720  cd temp/
+  721  ls
+  722  ls -lart
+  723  ls
+  724  cd ..
+  725  chmod 777 temp/
+  726  ls
+  727  cd temp/
+  728  ls
+  729  ps -aux | grep cron-auto-refund.php 
+  730  ls
+  731  ls -lart
+  732  ps -aux | grep cron-auto-refund.php 
+  733  top
+  734  ls
+  735  ls -lart
+  736  ps -aux | grep cron-auto-refund.php 
+  737  ps -aux | grep php
+  738  crontab -l
+  739  ls /var/www/html/irctc/cron/cron-verify-pnr.php 
+  740  crontab -e
+  741  crontab -l
+  742  crontab -e
+  743  crontab -l
+  744  ps -aux | grep cron
+  745  ps -aux | grep php
+  746  kill -9 25321
+  747  ps -aux | grep php
+  748  kill -9 25322
+  749  top
+  750  crontab -l
+  751  ps -aux | grep php
+  752   /bin/sh -c /usr/bin/php -q /var/www/html/irctc/cron/cron-auto-refund.php
+  753   /bin/sh -x -c /usr/bin/php -q /var/www/html/irctc/cron/cron-auto-refund.php
+  754  ps -aux | grep php
+  755  top
+  756  tailf /var/log/php-fpm/error.log
+  757  tailf /var/log/php-fpm/www-error.log
+  758  cat  /var/www/html/irctc/application/models/m_booking.php
+  759  ls -lart  /var/www/html/irctc/application/models/m_booking.php
+  760  stat  /var/www/html/irctc/application/models/m_booking.php
+  761  tailf /var/log/php-fpm/www-error.log
+  762  ls
+  763  apt update
+  764  yum update
+  765  yum search php
+  766  rpm -qa | grep php5
+  767  rpm -qa | grep php
+  768  yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
+  769  yum install php php-gd php-mysql php-mcrypt
+  770  yum install  install php-pecl-apcu php-cli php-pear php-pdo php-mysql  php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml php-simplexml php-opcache php-curl
+  771  service httpd status
+  772  service httpd reload
+  773  top
+  774  cd /var/www/html/
+  775  ls
+  776  cd irctc
+  777  ls
+  778  nano /etc/php.ini
+  779  cd /var/log
+  780  ls
+  781  touch php_errors.log
+  782  service httpd reload
+  783  tailf  php_errors.log
+  784  tailf messages
+  785  cat messages
+  786  cat php_errors.log 
+  787  cat /etc/php.ini | grep log
+  788  cat php_errors.log 
+  789  cd php-fpm/
+  790  ls
+  791  cat error.log
+  792  cat www-error.log
+  793  cat error.log
+  794  cd ..
+  795  ls
+  796  cat php_errors.log 
+  797  tailf /var/log/messages
+  798  cat xferlog
+  799  nano /etc/proftpd.conf 
+  800  service proftpd restart
+  801  cat xferlog
+  802  service proftpd restart
+  803  cat xferlog
+  804  nano/etc/proftpd.conf
+  805  nano /etc/proftpd.conf
+  806  service proftpd restart
+  807  nano /etc/proftpd.conf
+  808  cat xferlog
+  809  service proftpd restart
+  810  nano /etc/proftpd.conf
+  811  service proftpd restart
+  812  cat xferlog
+  813  top
+  814  ps -aux | grep php
+  815  ls
+  816  cat php_errors.log 
+  817  chmod 777 php_errors.log 
+  818  service httpd reload
+  819  cat php_errors.log 
+  820  cd php-fpm/
+  821  ls
+  822  cat error.log
+  823  cat www-error.log
+  824  cat error.log
+  825  cat www-error.log
+  826  cat error.log
+  827  ip add show
+  828  nano /etc/rsyslog.conf
+  829  systemctl restart rsyslog
+  830  tailf /var/log/messages
+  831  cat /var/log/messages
+  832  nano /etc/rsyslog.conf
+  833  netstat -tuna
+  834  netstat -tuna | grep 228
+  835  nano /etc/rsyslog.conf
+  836  cat /var/log/messages
+  837  netstat -tuna | grep 228
+  838  netstat  | grep 228
+  839  netstat  | grep 1514
+  840  echo "Hello Graylog, let's be friends 220." | nc -w 1 -u 192.168.10.228 1514
+  841  nano /etc/rsyslog.conf
+  842  systemctl restart rsyslog
+  843  cat /var/log/messages
+  844  rsyslogd -dn 2>/dev/null | grep "action 7"
+  845  cat /var/log/messages
+  846  nano /etc/rsyslog.conf
+  847  telnet 192.168.10.228 1514
+  848  telnet 192.168.10.228 53
+  849  yum install nc
+  850  nano /etc/rsyslog.conf
+  851  y
+  852  cat /var/log/messages
+  853  tailf  /var/log/messages
+  854  nano /etc/rsyslog.conf
+  855  tailf  /var/log/messages
+  856  netstat -tuna
+  857  nano /etc/rsyslog.conf
+  858  systemctl restart rsyslog
+  859  tailf  /var/log/messages
+  860  nano /etc/rsyslog.conf
+  861  systemctl restart rsyslog
+  862  tailf  /var/log/messages
+  863  nano /etc/rsyslog.conf
+  864  systemctl restart rsyslog
+  865  logger "Test from logclient"
+  866  nano /etc/rsyslog.conf
+  867  systemctl restart rsyslog
+  868  logger "Test from logclient"
+  869  systemctl restart rsyslog
+  870  logger "Test from logclient"
+  871  systemctl restart rsyslog
+  872  nano /etc/rsyslog.conf
+  873  systemctl restart rsyslog
+  874  logger "Test from logclient"
+  875  ip add show
+  876  cd /var/log/
+  877  cat php_errors.log 
+  878  cd php-fpm/
+  879  ls
+  880  cat error.log
+  881  cat www-error.log
+  882  cat /var/log/cron
+  883  crontab -e
+  884  ps -aux | grep cron
+  885  tailf  /var/log/cron
+  886  cat /var/log/php_errors.log 
+  887  cat /var/log/php-fpm/error.log
+  888  cat /var/log/php-fpm/www-error.log
+  889  cat /var/log/messages
+  890  echo 'if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Starting User Slice of" or $msg contains "Removed session" or $msg contains "Removed slice User Slice of" or $msg contains "Stopping User Slice of") then stop' >/etc/rsyslog.d/ignore-systemd-session-slice.conf
+  891  systemctl restart rsyslog
+  892  cd /var/www/html/
+  893  ls
+  894  cd irctc
+  895  ls
+  896  less adminer.php
+  897  yum update
+  898  top
+  899  mkdir /mscript
+  900  mkdir /mbackup
+  901  mount
+  902  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  903  hostnamectl 
+  904  yum install nfs-utils
+  905  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  906  cd /mscript/
+  907  nano backup.sh
+  908  mysql -u root -p
+  909  nano /etc/.my.cnf
+  910  nano mysqlbackup.sh
+  911  nano backup.sh
+  912  ls
+  913  nano mount.txt
+  914  ls
+  915  mount
+  916  ls
+  917  chmod +x backup.sh mysqlbackup.sh 
+  918  ./mysqlbackup.sh 
+  919  ls
+  920  mount
+  921  crontab -e
+  922  ls
+  923  ./backup.sh 
+  924  tailf /var/log/php-fpm/error.log
+  925  crontab -l
+  926  ip add show
+  927  top
+  928  ps -aux | grep php
+  929  crontab -l
+  930  /usr/bin/php  /var/www/html/irctc/cron/cron-auto-refund.php
+  931  crontab -l
+  932  tailf /var/log/php-fpm/error.log
+  933  history
+  934  cd /var/www/html/
+  935  ls
+  936  cd irctc
+  937  ls
+  938  cd cron/
+  939  ls
+  940  ls -lart
+  941  stat cron-auto-refund.php 
+  942  cd /var/log
+  943  grep -r -H "cron-auto-refund.php" ./
+  944  ls
+  945  dmesg
+  946  service httpd status
+  947  service httpd restart
+  948  dmesg
+  949  service mysql status
+  950  mount
+  951  umount /mbackup
+  952  mount 192.168.10.251:/export/backup /mbackup
+  953  cd /mbackup/
+  954  ls
+  955  cd /var/www/html/
+  956  ls
+  957  cd irctc
+  958  ls
+  959  ip add show
+  960  scp -P 5022 -rv * root@192.168.10.230:/home/irctc01/public_html/
+  961  ls -lart
+  962  scp -P 5022 -rv .htaccess root@192.168.10.230:/home/irctc01/public_html/
+  963  yum update
+  964  clear
+  965  service httpd status
+  966  history
+  967  cd /var/www/html/
+  968  cd irctc
+  969  scp -P 5022 -rv * root@192.168.10.230:/home/irctc01/public_html/
+  970  history
+  971  scp -P 5022 -rv .htaccess root@192.168.10.230:/home/irctc01/public_html/
+  972  apt update
+  973  yum update
+  974  history
+  975  yum update
+  976  history > ~/mun-newirctc-220.txt

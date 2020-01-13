@@ -1,0 +1,890 @@
+    1  ip a
+    2  vi /etc/sysconfig/network-scripts/ifcfg-eno16780032 
+    3  systemctl restart network
+    4  ip a
+    5  ping google.com
+    6  ping 192.168.10.254
+    7  vi /etc/sysconfig/selinux 
+    8  vi /etc/resolv.conf 
+    9  init 6
+   10  ping google.com
+   11  exit
+   12  df -h
+   13  ping google.com
+   14  yum update -y
+   15  init 6
+   16  hostname db-nationxpress.local
+   17  vi /etc/hostname 
+   18  vi /etc/hosts
+   19  ping web2
+   20  ping web2-nationxpress.local
+   21  ping web1-nationxpress.local
+   22  ping ha-nationxpress.local
+   23  vi /etc/hosts
+   24  hostname db.nationxpress.local
+   25  vi /etc/hostname 
+   26  cat /etc/hosts
+   27  date
+   28  timedatectl set-timezone Asia/Kolkata
+   29  date
+   30  service NetworkManager stop
+   31  chkconfig NetworkManager off
+   32  date
+   33  vim /etc/yum.repos.d/MariaDB.repo
+   34  yum install vim -y
+   35  yum install nano wget curl net-tools lsof vim -y
+   36  service NetworkManager stop
+   37  chkconfig NetworkManager off
+   38  systemctl disable firewalld
+   39  systemctl stop firewalld
+   40  systemctl status firewalld
+   41  systemctl mask firewalld
+   42  systemctl status firewalld
+   43  yum install iptables-services -y
+   44  systemctl enable iptables
+   45  systemctl start iptables
+   46  systemctl status iptables
+   47  iptables -L
+   48  iptables -F
+   49  service  iptables save
+   50  iptables -L
+   51  iptables -t nat -L
+   52  vim /etc/yum.repos.d/MariaDB.repo
+   53  getenforce 
+   54  rpm --import http://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+   55  yum update
+   56  yum clean all
+   57  yum repolist
+   58  yum install MariaDB-server MariaDB-client -y
+   59  yum update
+   60  systemctl start mariadb
+   61  systemctl enable mariadb
+   62  systemctl status mariadb
+   63  mysql_secure_installation
+   64  mysql -u root -p
+   65  hostname
+   66  vim /etc/httpd/conf/httpd.conf
+   67  vim /etc/phpMyAdmin/config.inc.php
+   68  service httpd restart
+   69  yum install epel-release
+   70  yum install httpd -y
+   71  yum install php php-mysql php-pdo php-gd php-mbstring -y
+   72  yum install phpmyadmin -y
+   73  service httpd start
+   74  chkconfig httpd on
+   75  service httpd status
+   76  iptables -L
+   77  iptables -t nat -L
+   78  service iptables status
+   79  date
+   80  vim /var/www/html/test.php
+   81  vim /etc/php.ini
+   82  service httpd restart
+   83  cd /etc/phpMyAdmin/
+   84  ls
+   85  ls -l
+   86  chmod 644 config.inc.php
+   87  /etc/init.d/mysql restart
+   88  service httpd restart
+   89  ls -l
+   90  ls
+   91  ls -l
+   92  cp config.inc.php config.inc.php.org
+   93  ls -l
+   94  mv config.inc.php config.inc.php.orig
+   95  ls -l
+   96  service mysql restart
+   97  ls -l
+   98  mv config.inc.php.org config.inc.php
+   99  service mysql restart
+  100  vim /etc/httpd/conf.d/phpMyAdmin.conf
+  101  service httpd restart
+  102  ls -l
+  103  rm -rf config.inc.php
+  104  ls -l
+  105  service mysql restart
+  106  service httpd restart
+  107  ls
+  108  mv config.inc.php.orig config.inc.php
+  109  ls -l
+  110  service mysql restart
+  111  service httpd restart
+  112  vim /etc/httpd/conf.d/phpMyAdmin.conf
+  113  service httpd restart
+  114  vim /etc/httpd/conf.d/phpMyAdmin.conf
+  115  service httpd restart
+  116  cd
+  117  yum install mod_ssl -y
+  118  mkdir /etc/httpd/ssl
+  119  openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/httpd/ssl/apache.key -out /etc/httpd/ssl/apache.crt
+  120  df -h
+  121  lsblk 
+  122  cd /home/
+  123  ls
+  124  cd
+  125  vim /etc/fstab 
+  126  umount /home/
+  127  lvremove /dev/mapper/centos-home 
+  128  vgs
+  129  vgdisplay 
+  130  lvextend -l +241154 /dev/mapper/centos-root 
+  131  xfs_growfs /dev/mapper/centos-root 
+  132  df -h
+  133  lsblk 
+  134  df -h
+  135  service mysqld status
+  136  hostname
+  137  vi /etc/hosts
+  138  cat /etc/hosts
+  139  mysql -V
+  140  cd /etc/yum.repos.d/
+  141  ls
+  142  cat MariaDB.repo 
+  143  pwnd
+  144  pwd
+  145  cd
+  146  cat /etc/my.cnf
+  147  cd /etc/my.cnf.d/
+  148  ls
+  149  cat server.cnf 
+  150  ls
+  151  cat client.cnf 
+  152  cd
+  153  systemctl status firewalld
+  154  service iptables status
+  155  vi /etc/my.cnf
+  156  cd /etc/my.cnf.d/
+  157  ls
+  158  cd
+  159  vi /etc/my.cnf.d/server.cnf 
+  160  vim /etc/my.cnf.d/server.cnf 
+  161  vim /etc/my.cnf.d/server.cnf
+  162  mysql -u root -p
+  163  vim /etc/my.cnf.d/server.cnf 
+  164  cat /etc/my.cnf.d/server.cnf 
+  165  ifconfig 
+  166  systemctl restart mariadb
+  167  mysql -u root -p
+  168  mysqldump -u root -p nationxpress > nationxpress-dump.sql
+  169  ls
+  170  mysql -y root -p
+  171  Jai@@##2017
+  172  mysql -y root -p
+  173  mysql -u root -p
+  174  scp nationxpress-dump.sql root@192.168.10.217:/root/
+  175  mysql_upgrade -u root -p
+  176  systemctl restart mariadb
+  177  ifconfig 
+  178  mysql -u root -p
+  179  passwd 
+  180  mysql -u root -p
+  181  mysql -u root -pJai@@2017
+  182  mysql -u root -pJai@@##2017
+  183  mysql -u root -p
+  184  locate php.ini
+  185  yum install mlocate
+  186  updatedb 
+  187  locate php.ini
+  188  vim /etc/php.ini
+  189  service httpd restart
+  190  mysql -u root -p
+  191  init 0
+  192  df -h
+  193  lsblk 
+  194  mysql -u root -p
+  195  ifconfig 
+  196  service tomcat restart
+  197  mysql -u root -pJai@@##2017
+  198  vim /etc/ssh/sshd_config 
+  199  useradd jaiadmin
+  200  passwd jaiadmin
+  201  service sshd restart
+  202  ifconfig 
+  203  yum install xinetd
+  204  ls
+  205  cd /home/jaiadmin/
+  206  rpm -ivh check-mk-agent-1.5.0p11-1.noarch.rpm 
+  207  nano /etc/xinetd.d/check_mk 
+  208  ip add show
+  209  exit
+  210  dmesg
+  211  yum update
+  212  yum install yum yum-plugin-fastestmirror
+  213  netstat -tuna
+  214  history
+  215  cat /etc/redhat-release 
+  216  systemctl 
+  217  systemctl | grep nagios
+  218  ps -aux | grep nagios
+  219  netstat -tuna
+  220  systemctl mysqld status
+  221  systemctl mysql status
+  222  systemctl mariadb status
+  223  systemctl  status mariadb
+  224  systemctl  status mariadb -l
+  225  systemctl  restart  mariadb
+  226  systemctl  status mariadb -l
+  227  yum update
+  228  dmesg
+  229  yum update
+  230  yum update gzip httpd httpd-tools hwdata info
+  231  yum update initscripts iproute iprutils ipset ipset-libs iptables
+  232  dmesg
+  233  yum install iwl100-firmware iwl100-firmware  iwl105-firmware iwl135-firmware 
+  234  yum update *firmware*
+  235  top
+  236  dmesg
+  237  yum update vim
+  238  yum update systemd
+  239  top
+  240  dmesg
+  241  yum update php*
+  242  yum update device-mapper
+  243  yum update dbus
+  244  yum update NetworkManager
+  245  dmesg | grep microcode
+  246  yum install microcode_ctl
+  247  dmesg 
+  248  yum install nfs-utils nfs-utils-lib
+  249  mount
+  250  cd /mnt/
+  251  ls
+  252  cd
+  253   mount 192.168.10.218:/export/serverbackup /mnt
+  254  mount
+  255  ls
+  256  cd /home/
+  257  ls
+  258  history | grep mysql
+  259  mysqldump --all-databases -u root -p  > /mnt/217_irctc_all_databases.sql
+  260  ip add show
+  261  cd /mnt
+  262  ls
+  263  mv 217_irctc_all_databases.sql 216_irctc_all_databases.sql 
+  264  cd ..
+  265  umount /mnt
+  266  ip add show
+  267  ps -aux | grep mysql
+  268  cat /etc/passwd
+  269  cd /var/log/
+  270  ls
+  271  mkdir mysql
+  272  touch mysql/error.log
+  273  ls -lart
+  274  chown mysql:adm /var/log/mysql/error.log
+  275  chown mysql:adm /var/log/mysql 
+  276  chmod 0640 /var/log/mysql/error.log 
+  277  chmod 0750 /var/log/mysql
+  278  nano /etc/my.cnf
+  279  nano /etc/my.cnf.d/server.cnf 
+  280  top
+  281  systemctl mariadb reload
+  282  systemctl mysqld reload
+  283  systemctl mysql reload
+  284  service mysqld reload
+  285  systemctl reload mysqld 
+  286  systemctl restart  mysqld 
+  287  nano /etc/my.cnf.d/server.cnf 
+  288  systemctl restart  mysqld 
+  289  cd /var/log/mysql/
+  290  ls
+  291  cat error.log 
+  292  nano /etc/my.cnf.d/server.cnf 
+  293  systemctl restart  mysqld 
+  294  ls
+  295  tailf mysql.log 
+  296  tailf error.log 
+  297  nano /etc/my.cnf.d/server.cnf 
+  298  tailf mysql.log 
+  299  top
+  300  tailf error.log 
+  301  tailf mysql.log 
+  302  systemctl restart  mysqld 
+  303  ls
+  304  tailf slow-query.log 
+  305  nano /etc/my.cnf.d/server.cnf 
+  306  systemctl restart  mysqld 
+  307  tailf slow-query.log 
+  308  yum update
+  309  history 
+  310  cat passwd
+  311  cat /etc/passwd
+  312  cd /opt/
+  313  ls
+  314  cd /etc/httpd
+  315  find ./ -name "*nagios*"
+  316  grep -r -H "nagios" ./
+  317  grep -r -H "nag" ./
+  318  netstat -tuna
+  319  service nagios status
+  320  systemctl 
+  321  yum update
+  322  cat /usr/local/nagios/etc/htpasswd.users
+  323  find ./ -name "*nagios*"
+  324  find / -name "*nagios*"
+  325  cd /etc/nagios/
+  326  ls
+  327  cat nrpe.cfg 
+  328  yum update
+  329  yum install bash audit NetworkManager
+  330  yum install bind-libs
+  331  yum update cpio cronie cronie-anacron curl
+  332  yum install elfutils-*
+  333  yum install file
+  334  yum install grub2
+  335  yum install kbd
+  336  yum install kmod
+  337  yum install kpartx
+  338  yum install python
+  339  yum install samba-client
+  340  yum install tar teamd setup shadow-utils
+  341  yum install wget wpa_supplicant
+  342  yum install shadow-utils
+  343  yum update
+  344  yum install libsmartcols  phyton-ipaddress
+  345  yum install python-ipaddress
+  346  yum install vim-filesystem vim-minimal virt-what xfsprogs util-linux tzdata tuned sudo shared-mime-info rsyslog rsync rpm-python
+  347  yum install parted   pciutils  pciutils-libs  perl      perl-libs   
+  348  yum install net-snmp-libs             net-snmp-utils       net-tools             nrpe          ntp                      ntpdate                  numactl-libs 
+  349  yum update
+  350  yum install GeoIP acl alsa-lib avahi-autoipd avahi-libs binutils biosdevname ca-certificates  coreutils
+  351  top
+  352  yum update cups-libs cyrus-sasl-lib dbus  dbus-libs device-mapper-persistent-data dhclient 
+  353  top
+  354  dmesg
+  355  yum install  dhcp-common dhcp-libs dmidecode dnsmasq dracut dracut-config-rescue dracut-network e2fsprogs e2fsprogs-libs ebtables elfutils-default-yama-scope elfutils-libelf.i686 elfutils-libelf.x86_64
+  356  yum install ethtool filesystem firewalld 
+  357  yum install irqbalance
+  358  yum install libX11
+  359  yum install libsoups
+  360  yum install libsd
+  361  yum install libss
+  362  yum install lm_sensor
+  363  yum install lm_sensors
+  364  yum install lsof man-db openssh
+  365  yum update perl-*
+  366  yum upgrade libdb*
+  367  yum install libstdc++*
+  368  yum install logrotate
+  369  cd /var/log/mysql/
+  370  ls
+  371  du -sh *
+  372  cat error.log 
+  373  cd /etc/logrotate.d/
+  374  nano mysql 
+  375  cd /var/log/mysql/
+  376  ls -lart
+  377  > mysql.log 
+  378  ls -lart
+  379  tailf mysql.log 
+  380  cd /
+  381  history
+  382  history | grep mount
+  383   mount 192.168.10.218:/export/serverbackup /mnt
+  384  mount
+  385  cd /
+  386  ls -lart
+  387  tar -zcvpf /mnt/full-backup-10-216-`date '+%d-%B-%Y'`.tar.gz --directory / --exclude=mnt --exclude=proc --exclude=tmp --exclude=dev  --exclude=run --exclude=sys   .
+  388  history | grep mysql
+  389  mysqldump --all-databases -u root -p  > /mnt/217_irctc_all_databases_`date '+%d-%B-%Y'`.sql
+  390  mysqldump --all-databases -u root -p  > /mnt/10_216_irctc_all_databases_`date '+%d-%B-%Y'`.sql
+  391  mount
+  392  umount /mnt
+  393  dmesg
+  394  exit
+  395  cd /var/log/mysql/
+  396  ls -lart
+  397  > mysql.log 
+  398  > slow-query.log 
+  399  tailf error.log 
+  400  tailf mysql.log 
+  401  tailf /var/log/mysql.log 
+  402  tailf /var/log/mysql/mysql.log 
+  403  less  /var/log/mysql/mysql.log 
+  404  tailf /var/log/mysql/mysql.log 
+  405  tail -100  /var/log/mysql/mysql.log 
+  406  top
+  407  cd /var/log/httpd/
+  408  cat access_log
+  409  cat error_log
+  410  top
+  411  cd /var/log/mysql/
+  412  ls
+  413  cat slow-query.log 
+  414  tailf  slow-query.log 
+  415  cat /var/log/messages
+  416  cd /var/log/mysql/
+  417  ls
+  418  cat error.log 
+  419  cat mysql.log 
+  420  less  mysql.log 
+  421  cat  mysql.log 
+  422  cat  mysql.log  | grep 190429
+  423  yum update
+  424  yum install deltarpm
+  425  yum update
+  426  dmesg
+  427  reboot
+  428  history | grep check
+  429  history | grep mysql
+  430  history | grep my
+  431  history | grep plugin
+  432  find / -name "*plugin*"
+  433  cd /usr/lib/check_mk_agent/plugins
+  434  ls
+  435  cat mk_mysql 
+  436  #!/bin/bash
+  437  # +------------------------------------------------------------------+
+  438  # |             ____ _               _        __  __ _  __           |
+  439  # |            / ___| |__   ___  ___| | __   |  \/  | |/ /           |
+  440  # |           | |   | '_ \ / _ \/ __| |/ /   | |\/| | ' /            |
+  441  # |           | |___| | | |  __/ (__|   <    | |  | | . \            |
+  442  # |            \____|_| |_|\___|\___|_|\_\___|_|  |_|_|\_\           |
+  443  # |                                                                  |
+  444  # | Copyright Mathias Kettner 2014             mk@mathias-kettner.de |
+  445  # +------------------------------------------------------------------+
+  446  #
+  447  # This file is part of Check_MK.
+  448  # The official homepage is at http://mathias-kettner.de/check_mk.
+  449  #
+  450  # check_mk is free software;  you can redistribute it and/or modify it
+  451  # under the  terms of the  GNU General Public License  as published by
+  452  # the Free Software Foundation in version 2.  check_mk is  distributed
+  453  # in the hope that it will be useful, but WITHOUT ANY WARRANTY;  with-
+  454  # out even the implied warranty of  MERCHANTABILITY  or  FITNESS FOR A
+  455  # PARTICULAR PURPOSE. See the  GNU General Public License for more de-
+  456  # tails. You should have  received  a copy of the  GNU  General Public
+  457  # License along with GNU Make; see the file  COPYING.  If  not,  write
+  458  # to the Free Software Foundation, Inc., 51 Franklin St,  Fifth Floor,
+  459  # Boston, MA 02110-1301 USA.
+  460  # gets optional socket as argument
+  461  function do_query() {   INSTANCE=$(echo $1|awk -v FS="=" '{print $2}');   COUNT=$(ps -fww -C mysqld | grep socket | wc -l);   if [ $COUNT -gt 1 ];   then       INSTANCE_NAME=$(ps -efww|grep socket|grep "${INSTANCE}"|grep "[u]ser" | sed -ne 's/.*socket=\([^.]*\).*/\1/p');       INSTANCE_NAME="[[${INSTANCE_NAME##*/}]]";   else       INSTANCE_NAME="[[$(ps -efww|grep socket|grep "${INSTANCE}"|grep "[u]ser" | sed -ne 's/.*user=\([^ ]*\).*/\1/p')]]";   fi; 
+  462    echo "<<<mysql_ping>>>";   echo $INSTANCE_NAME;   mysqladmin --defaults-extra-file=$MK_CONFDIR/mysql.cfg $1 ping 2>&1;    if [ $? -eq 0 ]; then
+  463      echo "<<<mysql>>>";     echo $INSTANCE_NAME;     mysql --defaults-extra-file=$MK_CONFDIR/mysql.cfg $1 -sN      -e "show global status ; show global variables ;"; 
+  464      echo "<<<mysql_capacity>>>";     echo $INSTANCE_NAME;     mysql --defaults-extra-file=$MK_CONFDIR/mysql.cfg $1 -sN       -e "SELECT table_schema, sum(data_length + index_length), sum(data_free)
+  465           FROM information_schema.TABLES GROUP BY table_schema"; 
+  466      echo "<<<mysql_slave>>>";     echo $INSTANCE_NAME;     mysql --defaults-extra-file=$MK_CONFDIR/mysql.cfg $1 -s      -e "show slave status\G";    fi;  }
+  467  if which mysqladmin >/dev/null; then   mysql_sockets=$(fgrep socket $MK_CONFDIR/mysql.cfg|sed -ne 's/.*socket=\([^ ]*\).*/\1/p');   if [ -z "$mysql_sockets" ] ; then     mysql_sockets=$(ps -fww -C mysqld | grep "[s]ocket" | sed -ne 's/.*socket=\([^ ]*\).*/\1/p');   fi;   if [ -z "$mysql_sockets" ] ; then     do_query "";   else     for socket in $mysql_sockets ; do       do_query "--socket="$socket;     done;   fi
+  468    echo "<<<mysql_port>>>";   ps -fww -C mysqld |while read LINE; do echo $LINE|grep "[u]ser" | sed -ne 's/.*user=\([^ ]*\).*/\1/p'; echo $LINE|grep mysqld | grep "[p]ort"|sed -ne 's/.*port=\([^ ]*\).*/\1/p' ; done|xargs -n2;  fi
+  469  ls
+  470  find / -name "my*.cfg"
+  471  cat /etc/check_mk/mysql.cfg
+  472  ls
+  473  nano apache_status 
+  474  cat apache_status 
+  475  #!/usr/bin/python
+  476  # -*- encoding: utf-8; py-indent-offset: 4 -*-
+  477  # +------------------------------------------------------------------+
+  478  # |             ____ _               _        __  __ _  __           |
+  479  # |            / ___| |__   ___  ___| | __   |  \/  | |/ /           |
+  480  # |           | |   | '_ \ / _ \/ __| |/ /   | |\/| | ' /            |
+  481  # |           | |___| | | |  __/ (__|   <    | |  | | . \            |
+  482  # |            \____|_| |_|\___|\___|_|\_\___|_|  |_|_|\_\           |
+  483  # |                                                                  |
+  484  # | Copyright Mathias Kettner 2014             mk@mathias-kettner.de |
+  485  # +------------------------------------------------------------------+
+  486  #
+  487  # This file is part of Check_MK.
+  488  # The official homepage is at http://mathias-kettner.de/check_mk.
+  489  #
+  490  # check_mk is free software;  you can redistribute it and/or modify it
+  491  # under the  terms of the  GNU General Public License  as published by
+  492  # the Free Software Foundation in version 2.  check_mk is  distributed
+  493  # in the hope that it will be useful, but WITHOUT ANY WARRANTY;  with-
+  494  # out even the implied warranty of  MERCHANTABILITY  or  FITNESS FOR A
+  495  # PARTICULAR PURPOSE. See the  GNU General Public License for more de-
+  496  # tails. You should have  received  a copy of the  GNU  General Public
+  497  # License along with GNU Make; see the file  COPYING.  If  not,  write
+  498  # to the Free Software Foundation, Inc., 51 Franklin St,  Fifth Floor,
+  499  # Boston, MA 02110-1301 USA.
+  500  # Check_MK-Agent-Plugin - Apache Server Status
+  501  #
+  502  # Fetches the server-status page from detected or configured apache
+  503  # processes to gather status information about this apache process.
+  504  #
+  505  # To make this agent plugin work you have to load the status_module
+  506  # into your apache process. It is also needed to enable the "server-status"
+  507  # handler below the URL "/server-status".
+  508  #
+  509  # By default this plugin tries to detect all locally running apache processes
+  510  # and to monitor them. If this is not good for your environment you might
+  511  # create an apache_status.cfg file in MK_CONFDIR and populate the servers
+  512  # list to prevent executing the detection mechanism.
+  513  #
+  514  # It is also possible to override or extend the ssl_ports variable to make the
+  515  # check contact other ports than 443 with HTTPS requests.
+  516  import os
+  517  import re
+  518  import socket
+  519  import sys
+  520  import urllib2
+  521  import ssl
+  522  config_dir = os.getenv("MK_CONFDIR", "/etc/check_mk")
+  523  config_file = config_dir + "/apache_status.conf"
+  524  if not os.path.exists(config_file):
+  525      config_file = config_dir + "/apache_status.cfg"
+  526  # We have to deal with socket timeouts. Python > 2.6
+  527  # supports timeout parameter for the urllib2.urlopen method
+  528  # but we are on a python 2.5 system here which seem to use the
+  529  # default socket timeout. We are local here so  set it to 1 second.
+  530  socket.setdefaulttimeout(5.0)
+  531  # None or list of (proto, ipaddress, port) tuples.
+  532  # proto is 'http' or 'https'
+  533  servers = None
+  534  ssl_ports = [443]
+  535  if os.path.exists(config_file):
+  536      execfile(config_file)
+  537  def try_detect_servers():
+  538      results = []
+  539      for line in os.popen('netstat -tlnp 2>/dev/null').readlines():
+  540          parts = line.split()
+  541          # Skip lines with wrong format
+  542          if len(parts) < 7 or '/' not in parts[6]:
+  543              continue
+  544          pid, proc = parts[6].split('/', 1)
+  545          to_replace = re.compile('^.*/')
+  546          proc = to_replace.sub('', proc)
+  547          procs = [ 'apache2', 'httpd', 'httpd2-prefork', 'httpd2-worker', 'httpd.worker', 'fcgi-pm' ]
+  548          # the pid/proc field length is limited to 19 chars. Thus in case of
+  549          # long PIDs, the process names are stripped of by that length.
+  550          # Workaround this problem here
+  551          procs = [ p[:19 - len(pid) - 1] for p in procs ]
+  552          # Skip unwanted processes
+  553          if proc not in procs:;             continue;          address, port = parts[3].rsplit(':', 1)
+  554          port = int(port)
+  555          # Use localhost when listening globally
+  556          if address == '0.0.0.0':;             address = '127.0.0.1';         elif address == '::':
+  557              address = '[::1]'
+  558          elif ':' in address:
+  559              address = '[%s]' % address
+  560          # Switch protocol if port is SSL port. In case you use SSL on another
+  561          # port you would have to change/extend the ssl_port list
+  562          if port in ssl_ports:;             proto = 'https';         else:;             proto = 'http';          results.append((proto, address, port))
+  563      return results
+  564  if servers is None:;     servers = try_detect_servers()
+  565  if not servers:;     sys.exit(0)
+  566  sys.stdout.write('<<<apache_status>>>\n')
+  567  for server in servers:;     if isinstance(server, tuple):
+  568          proto, address, port = server
+  569          page = 'server-status'
+  570      else:
+  571          proto = server['protocol']
+  572          address = server['address']
+  573          port = server['port']
+  574          page = server.get('page', 'server-status')
+  575      portspec = port and ":%d" % port or ""
+  576      try:
+  577          url = '%s://%s%s/%s?auto' % (proto, address, portspec, page)
+  578          # Try to fetch the status page for each server
+  579          try:
+  580              request = urllib2.Request(url, headers={"Accept" : "text/plain"})
+  581              fd = urllib2.urlopen(request)
+  582          except urllib2.URLError, e:
+  583              if 'unknown protocol' in str(e):
+  584                  # HACK: workaround misconfigurations where port 443 is used for
+  585                  # serving non ssl secured http
+  586                  url = 'http://%s%s/server-status?auto' % (address, portspec)
+  587                  fd = urllib2.urlopen(url)
+  588              else:
+  589                  raise
+  590          except Exception, e:
+  591              if 'doesn\'t match' in str(e) and address in ("127.0.0.1", "[::1]", "localhost"):
+  592                  # HACK: workaround if SSL port is found and localhost is using
+  593                  # SSL connections but certificate does not match
+  594                  no_cert_context = ssl.create_default_context()
+  595                  no_cert_context.check_hostname = False
+  596                  no_cert_context.verify_mode = ssl.CERT_NONE
+  597                  fd = urllib2.urlopen(url, context=no_cert_context)
+  598              else:
+  599                  raise
+  600          for line in fd.read().split('\n'):
+  601              if not line.strip():
+  602                  continue
+  603              if line.lstrip()[0] == '<':
+  604                  # Seems to be html output. Skip this server.
+  605                  break
+  606              sys.stdout.write("%s %s %s\n" % (address, port, line))
+  607      excep
+  608          s
+  609      except E
+  610          sy
+  611  top
+  612  cd /usr/lib/check_mk_agent/
+  613  ls
+  614  cd plugins/
+  615  ls
+  616  cat apache_status 
+  617  exit
+  618  cd /var/log/
+  619  ls
+  620  cd mysql/
+  621  ls
+  622  tailf slow-query.log 
+  623  du -sh *
+  624  cat error.log 
+  625  ls
+  626  tailf mysql.log 
+  627  tailf slow-query.log 
+  628  tailf  /var/log/messages
+  629  cd /etc/rsyslog.d/
+  630  ls
+  631  cd /var/log/mysql/
+  632  ls
+  633  ls -lart
+  634  > mysql.log 
+  635  > slow-query.log 
+  636  cat error.log 
+  637  cd /var/log/mysql/
+  638  ls
+  639  du -sh *
+  640  > mysql.log 
+  641  yum update
+  642  nano /etc/ssh/sshd_config 
+  643  service sshd restart
+  644  passwd
+  645  exit
+  646  cd /var/log/mysql/
+  647  ls
+  648  cat mysql.log
+  649  tail -n 100 mysql.log 
+  650           12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00285'
+  651                  12170415 Query  SHOW WARNINGS
+  652                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00285'
+  653                  12170415 Query  SHOW WARNINGS
+  654                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00286'
+  655                  12170415 Query  SHOW WARNINGS
+  656                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00286'
+  657                  12170415 Query  SHOW WARNINGS
+  658                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00287'
+  659                  12170415 Query  SHOW WARNINGS
+  660                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00287'
+  661                  12170415 Query  SHOW WARNINGS
+  662                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00288'
+  663                  12170415 Query  SHOW WARNINGS
+  664                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_,
+  665                  12170415 Query  SHOW WARNINGS
+  666                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STA
+  667                  12170415 Query  SHOW WARNINGS
+  668                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00289'
+  669                  12170415 Query  SHOW WARNINGS
+  670                  12170415 Query  select address0_.USERID as USE
+  671                  12170415 Query  SHOW WARNINGS
+  672                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS0029'
+  673                  12170415 Query  SHOW WARNINGS
+  674                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00290'
+  675                  12170415 Query  SHOW WARNINGS
+  676                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00290'
+  677                  12170415 Query  SHOW WARNINGS
+  678                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STATE13_0_0_, address0_.STREET_VILLAGE as STREET_14_0_0_ from ADDRESS address0_ where address0_.USERID='JS00291'
+  679                  12170415 Query  SHOW WARNINGS
+  680                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, 
+  681                  12170415 Query  SHOW WARNINGS
+  682                  12170415 Query  select address0_.USERID as USERID1_0_0_, address0_.CITY as CITY2_0_0_, address0_.COPRATENAME as COPRATEN3_0_0_, address0_.COUNTRY as COUNTRY4_0_0_, address0_.DISTRIC as DISTRIC5_0_0_, address0_.FLOOR as FLOOR6_0_0_, address0_.HOUSE_BUILDING_NAME as HOUSE_BU7_0_0_, address0_.HOUSE_BUILDING_NUMBER as HOUSE_BU8_0_0_, address0_.LANDMARK as LANDMARK9_0_0_, address0_.PINCODE as PINCODE10_0_0_, address0_.POSTOFFICE as POSTOFF11_0_0_, address0_.ROOM_OFFICE_NUMBER as ROOM_OF12_0_0_, address0_.STATE as STA
+  683                  12170415 Query  SHOW WARNINGS
+  684                  12170415 Query  select userdetail0_.USERID as USERID1_41_0_, userdetail0_.CONTACTNO as CONTACTN2_41_0_, userdetail0_.CORPORATENAME as CORPORAT3_41_0_, userdetail0_.CREATEDATE as CREATEDA4_41_0_, userdetail0_.DOB as DOB5_41_0_, userdetail0_.EMAIL as EMAIL6_41_0_, userdetail0_.FNAME as FNAME7_41_0_, userdetail0_.GENDER as GENDER8_41_0_, userdetail0_.LNAME as LNAME9_41_0_, userdetail0_.MNAME as MNAME10_41_0_, userdetail0_.MODIFYDATE as MODIFYD11_41_0_ from USERDETAIL userdetail0_ where userdetail0_.USERID='JS00292'
+  685                  12170415 Query  SHOW WARNINGS
+  686                  12170415 Query  select address0_.USERID as USE
+  687  cd /var/log/mysql/
+  688  ls
+  689  cat error.log 
+  690  ls
+  691  cat slow-query.log 
+  692  mysqldumpslow slow-query.log 
+  693  ls -lart
+  694  top
+  695  mysqldumpslow slow-query.log 
+  696  ls
+  697  cat error.log 
+  698  yum update
+  699  dmesg
+  700  top
+  701  cd /var/www/html/
+  702  ls
+  703  rpm -qa | grep php
+  704  cd /etc/httpd/conf.d/phpMyAdmin.conf 
+  705  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  706  service httpd restart
+  707  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  708  service httpd restart
+  709  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  710  service httpd restart
+  711  top
+  712  cd /var/log/
+  713  ls
+  714  cd mysql/
+  715  ls
+  716  cat error.log 
+  717  htop
+  718  top
+  719  mysqldumpslow slow-query.log  >~/slowreport.txt
+  720  cd /var/log/httpd/
+  721  ls
+  722  cat access_log
+  723  cat error_log_log
+  724  cat error_log
+  725  ls
+  726  cd ..
+  727  ls
+  728  who
+  729  netstat -tuna
+  730  cd /etc/httpd/
+  731  ls
+  732  cd conf.d
+  733  ls
+  734  cat phpMyAdmin.conf 
+  735  nano phpMyAdmin.conf 
+  736  service httpd restart
+  737  nano phpMyAdmin.conf 
+  738  service httpd restart
+  739  yum update
+  740  htop
+  741  top
+  742  df -kh
+  743  yum install rkhunter
+  744   rkhunter --update
+  745  rkhunter --propupd
+  746  rkhunter --check --sk
+  747  history
+  748  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  749  service httpd restart
+  750  yum update
+  751  netstat -tuna
+  752  nano /etc/ssh/sshd_config 
+  753  service sshd restart
+  754  ip add show
+  755  passwd
+  756  cat /etc/passwd
+  757  hostnamectl 
+  758  passwd
+  759  netstat -tuna
+  760  mysql -u root -p
+  761  yum update
+  762  top
+  763  ip add show
+  764  nano /etc/rsyslog.conf 
+  765  hostname
+  766  cat /etc/hosts
+  767  netstat -tuna
+  768  nano /etc/hosts
+  769  hostnamectl set-hostname oldirctcdb.nationxpress.local
+  770  systemctl restart rsyslog
+  771  logger "oldirctc db loggging.............."
+  772  hostnamectl 
+  773  nano /etc/rsyslog.conf 
+  774  y
+  775  systemctl restart rsyslog
+  776  logger "oldirctc db loggging.............."
+  777  ping 192.168.10.228
+  778  nano /etc/rsyslog.conf 
+  779  systemctl restart rsyslog
+  780  logger "oldirctc db loggging.............."
+  781  cat /var/log/messages
+  782  history
+  783  echo 'if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Starting User Slice of" or $msg contains "Removed session" or $msg contains "Removed slice User Slice of" or $msg contains "Stopping User Slice of") then stop' >/etc/rsyslog.d/ignore-systemd-session-slice.conf
+  784  systemctl restart rsyslog
+  785  yum update
+  786  nano /etc/.my.cnf
+  787  cd /
+  788  mkdir mscript
+  789  mkdir mbackup
+  790  mount 192.168.10.250:/mnt/zpool01/serverbackup /mbackup
+  791  mount
+  792  cd mscript/
+  793  nano mysqlbackup.sh
+  794  chmod mysqlbackup.sh 
+  795  chmod +x mysqlbackup.sh 
+  796  which bin
+  797  which bash
+  798  nano mysqlbackup.sh
+  799  ./mysqlbackup.sh 
+  800  nano mysqlbackup.sh
+  801  ./mysqlbackup.sh 
+  802  nano /etc/.my.cnf 
+  803  mysql -u root -p
+  804  nano /etc/.my.cnf 
+  805  ./mysqlbackup.sh 
+  806  nano mysqlbackup.sh
+  807  ./mysqlbackup.sh 
+  808  nano mysqlbackup.sh
+  809  ./mysqlbackup.sh 
+  810  nano mysqlbackup.sh
+  811  which mysqldump
+  812  nano mysqlbackup.sh
+  813  ./mysqlbackup.sh 
+  814  nano ./mysqlbackup.sh 
+  815  ./mysqlbackup.sh 
+  816  nano ./mysqlbackup.sh 
+  817  nano /etc/.my.cnf 
+  818  nano ./mysqlbackup.sh 
+  819  ./mysqlbackup.sh 
+  820  crontab -e
+  821  cat /var/log/messages
+  822  date
+  823  ntpdate 
+  824  ntpq -p
+  825  ntpq -p 
+  826  yum install ntp
+  827  ntpdate time.apple.com
+  828  date
+  829  service ntp status
+  830  service ntpd status
+  831  service ntpd start
+  832  systemctl enable ntpd
+  833  cd /mbackup/
+  834  ls
+  835  ls -lart
+  836  umount -f /mbackup
+  837  mount 192.168.10.251:/export/backup /mbackup
+  838  crontab -e
+  839  mysql 
+  840  mysql -u root -p
+  841  exit
+  842  find / -name "phpmyadmin"
+  843  find / -name "php"
+  844  cd /var/www/html/
+  845  ls
+  846  ip add show
+  847  cd /etc/httpd/conf.d/phpMyAdmin.conf 
+  848  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  849  service httpd reload
+  850  service mysqld restart
+  851  exit
+  852  service ntpd restart
+  853  ntpq -p
+  854  systemctl status mariadb
+  855  systemctl restart  mariadb
+  856  systemctl status mariadb
+  857  mount
+  858  crontab -l
+  859  cat /var/log/messages | grep back
+  860  history
+  861  mount 192.168.10.251:/export/backup /mbackup
+  862  service mysql status
+  863  service mysql restart
+  864  service mysql status
+  865  dmesg
+  866  df -kh
+  867  cd /var/lib/mysql/
+  868  ls
+  869  dmesg
+  870  history
+  871  nano /etc/httpd/conf.d/phpMyAdmin.conf
+  872  service mysql status
+  873  systemctl status mariadb
+  874  mysql -u root -p
+  875  history | grep nano
+  876  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  877  service httpd restart
+  878  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  879  service httpd restart
+  880  yum update
+  881  history 
+  882  nano /etc/httpd/conf.d/phpMyAdmin.conf 
+  883  service apache2 restart
+  884  service httpd restart
+  885  passwd
+  886  exit
+  887  passwd jaiadmin
+  888  history
+  889  history ~/mun-oldirctcdb-216.txt
+  890  history > ~/mun-oldirctcdb-216.txt
